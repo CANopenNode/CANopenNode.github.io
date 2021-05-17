@@ -1,0 +1,4 @@
+<map id="Data storage base" name="Data storage base">
+<area shape="rect" id="node1" title="Base module for Data storage." alt="" coords="192,5,333,31"/>
+<area shape="rect" id="node2" href="$group__CO__CANopen__storage.html" title="CANopen Object Dictionary and other data storage." alt="" coords="5,5,144,31"/>
+</map>

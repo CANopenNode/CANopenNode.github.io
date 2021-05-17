@@ -1,0 +1,4 @@
+<map id="Data storage in eeprom" name="Data storage in eeprom">
+<area shape="rect" id="node1" title="Eeprom specific data storage functions." alt="" coords="192,5,368,31"/>
+<area shape="rect" id="node2" href="$group__CO__CANopen__storage.html" title="CANopen Object Dictionary and other data storage." alt="" coords="5,5,144,31"/>
+</map>

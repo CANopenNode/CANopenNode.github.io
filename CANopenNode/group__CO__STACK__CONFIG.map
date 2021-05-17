@@ -1,0 +1,19 @@
+<map id="Stack configuration" name="Stack configuration">
+<area shape="rect" id="node1" href="$group__CO__STACK__CONFIG__EMERGENCY.html" title="Specified in standard CiA 301." alt="" coords="325,5,481,45"/>
+<area shape="rect" id="node2" href="$group__CO__STACK__CONFIG__SDO.html" title="Specified in standard CiA 301." alt="" coords="336,70,471,95"/>
+<area shape="rect" id="node3" href="$group__CO__STACK__CONFIG__TIME.html" title="Specified in standard CiA 301." alt="" coords="312,119,495,145"/>
+<area shape="rect" id="node4" href="$group__CO__STACK__CONFIG__DEBUG.html" title="Messages from different parts of the stack." alt="" coords="336,169,471,194"/>
+<area shape="rect" id="node5" href="$group__CO__STACK__CONFIG__LEDS.html" title="Specified in standard CiA 303&#45;3." alt="" coords="324,218,483,243"/>
+<area shape="rect" id="node6" href="$group__CO__driver.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="5,366,68,391"/>
+<area shape="rect" id="node9" title="Stack configuration and enabling macros." alt="" coords="116,366,264,391"/>
+<area shape="rect" id="node7" href="$group__CO__STACK__CONFIG__LSS.html" title="Specified in standard CiA 305." alt="" coords="336,267,471,293"/>
+<area shape="rect" id="node8" href="$group__CO__STACK__CONFIG__STORAGE.html" title="Data storage with CANopen OD objects 1010 and 1011, CiA 301." alt="" coords="350,317,457,342"/>
+<area shape="rect" id="node10" href="$group__CO__STACK__CONFIG__COMMON.html" title="Constants for common definitions." alt="" coords="326,366,481,391"/>
+<area shape="rect" id="node11" href="$group__CO__STACK__CONFIG__SYNC__PDO.html" title="Specified in standard CiA 301." alt="" coords="314,416,493,456"/>
+<area shape="rect" id="node12" href="$group__CO__STACK__CONFIG__TRACE.html" title="Non standard object." alt="" coords="346,481,461,506"/>
+<area shape="rect" id="node13" href="$group__CO__STACK__CONFIG__FIFO.html" title="Helper object for FIFO buffer." alt="" coords="356,530,451,555"/>
+<area shape="rect" id="node14" href="$group__CO__STACK__CONFIG__GATEWAY.html" title="Specified in standard CiA 309." alt="" coords="332,579,475,605"/>
+<area shape="rect" id="node15" href="$group__CO__STACK__CONFIG__NMT__HB.html" title="Specified in standard CiA 301." alt="" coords="316,629,491,669"/>
+<area shape="rect" id="node16" href="$group__CO__STACK__CONFIG__CRC16.html" title="Helper object for CRC&#45;16 checksum." alt="" coords="331,694,475,719"/>
+<area shape="rect" id="node17" href="$group__CO__STACK__CONFIG__SRDO.html" title="Specified in standard EN 50325&#45;5 (CiA 304)" alt="" coords="327,744,480,784"/>
+</map>

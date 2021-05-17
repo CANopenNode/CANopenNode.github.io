@@ -1,0 +1,4 @@
+<map id="Transmission of CAN messages" name="Transmission of CAN messages">
+<area shape="rect" id="node1" title="Target specific definitions and description of CAN message transmission." alt="" coords="116,5,273,45"/>
+<area shape="rect" id="node2" href="$group__CO__driver.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="5,13,68,38"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="CO_SDOserver_t" name="CO_SDOserver_t">
+<area shape="rect" id="node1" title="SDO server object." alt="" coords="246,288,375,315"/>
+<area shape="rect" id="node2" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="21,184,96,211"/>
+<area shape="rect" id="node3" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="5,95,112,121"/>
+<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="136,95,237,121"/>
+<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="242,184,379,211"/>
+<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="261,95,363,121"/>
+<area shape="rect" id="node7" href="$structOD__t.html" title="Object Dictionary." alt="" coords="505,184,559,211"/>
+<area shape="rect" id="node8" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="495,95,590,121"/>
+<area shape="rect" id="node9" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="376,5,501,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="CO_SRDO_t" name="CO_SRDO_t">
+<area shape="rect" id="node1" title="SRDO object." alt="" coords="468,320,565,347"/>
+<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="274,229,354,256"/>
+<area shape="rect" id="node3" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="355,5,457,32"/>
+<area shape="rect" id="node4" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="5,95,143,121"/>
+<area shape="rect" id="node5" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="23,5,125,32"/>
+<area shape="rect" id="node6" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="167,95,293,121"/>
+<area shape="rect" id="node7" href="$structCO__SRDOCommPar__t.html" title="SRDO communication parameter." alt="" coords="555,229,716,256"/>
+<area shape="rect" id="node8" href="$structCO__SRDOGuard__t.html" title="Gurad Object for SRDO monitors:" alt="" coords="741,229,877,256"/>
+</map>

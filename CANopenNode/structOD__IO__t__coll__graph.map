@@ -1,0 +1,4 @@
+<map id="OD_IO_t" name="OD_IO_t">
+<area shape="rect" id="node1" title="Structure for input / output on the OD variable." alt="" coords="21,95,96,121"/>
+<area shape="rect" id="node2" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="5,5,112,32"/>
+</map>

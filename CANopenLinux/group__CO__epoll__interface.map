@@ -1,0 +1,4 @@
+<map id="Epoll interface" name="Epoll interface">
+<area shape="rect" id="node1" title="Linux epoll interface to CANopenNode." alt="" coords="145,5,261,31"/>
+<area shape="rect" id="node2" href="$group__CO__socketCAN.html" title="Linux specific interface to CANopenNode." alt="" coords="5,5,97,31"/>
+</map>

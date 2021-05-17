@@ -1,0 +1,5 @@
+<map id="CANopen_storage" name="CANopen_storage">
+<area shape="rect" id="node1" href="$group__CO__storage.html" title="Base module for Data storage." alt="" coords="209,5,351,31"/>
+<area shape="rect" id="node2" href="$group__CO__storage__eeprom.html" title="Eeprom specific data storage functions." alt="" coords="192,55,368,80"/>
+<area shape="rect" id="node3" title="CANopen Object Dictionary and other data storage." alt="" coords="5,31,144,56"/>
+</map>

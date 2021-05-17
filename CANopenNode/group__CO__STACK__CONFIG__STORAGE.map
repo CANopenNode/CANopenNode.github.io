@@ -1,0 +1,4 @@
+<map id="Data storage" name="Data storage">
+<area shape="rect" id="node1" title="Data storage with CANopen OD objects 1010 and 1011, CiA 301." alt="" coords="201,5,308,31"/>
+<area shape="rect" id="node2" href="$group__CO__STACK__CONFIG.html" title="Stack configuration and enabling macros." alt="" coords="5,5,153,31"/>
+</map>

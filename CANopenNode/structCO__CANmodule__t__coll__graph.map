@@ -1,0 +1,5 @@
+<map id="CO_CANmodule_t" name="CO_CANmodule_t">
+<area shape="rect" id="node1" title="Complete CAN module object." alt="" coords="50,95,187,121"/>
+<area shape="rect" id="node2" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node3" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="131,5,232,32"/>
+</map>

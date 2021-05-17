@@ -1,0 +1,4 @@
+<map id="Application interface to CANopenNode" name="Application interface to CANopenNode">
+<area shape="rect" id="node1" title="Application interface, similar to Arduino, extended to CANopen and additional, realtime thread." alt="" coords="145,5,303,45"/>
+<area shape="rect" id="node2" href="$group__CO__socketCAN.html" title="Linux specific interface to CANopenNode." alt="" coords="5,13,97,38"/>
+</map>

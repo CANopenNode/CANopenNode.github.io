@@ -1,0 +1,4 @@
+<map id="CAN errors &amp; Log" name="CAN errors &amp; Log">
+<area shape="rect" id="node1" href="$group__CO__socketCAN.html" title="Linux specific interface to CANopenNode." alt="" coords="5,5,97,31"/>
+<area shape="rect" id="node2" title="CANopen Errors and System message log." alt="" coords="145,5,279,31"/>
+</map>

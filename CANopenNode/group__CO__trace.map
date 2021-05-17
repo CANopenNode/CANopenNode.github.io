@@ -1,0 +1,4 @@
+<map id="Trace" name="Trace">
+<area shape="rect" id="node1" title="CANopen trace object for recording variables over time." alt="" coords="176,5,233,31"/>
+<area shape="rect" id="node2" href="$group__CO__CANopen__extra.html" title="Additional non&#45;standard objects related to CANopenNode." alt="" coords="5,5,128,31"/>
+</map>

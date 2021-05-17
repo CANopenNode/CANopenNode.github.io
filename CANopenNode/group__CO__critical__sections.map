@@ -1,0 +1,4 @@
+<map id="Critical sections" name="Critical sections">
+<area shape="rect" id="node1" href="$group__CO__driver.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="5,5,68,31"/>
+<area shape="rect" id="node2" title="Protection of critical sections in multi&#45;threaded operation." alt="" coords="116,5,243,31"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="storage/CO_storage.h" name="storage/CO_storage.h">
+<area shape="rect" id="node1" title="CANopen data storage base object." alt="" coords="69,5,231,32"/>
+<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,155,213,181"/>
+<area shape="rect" id="node6" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="128,80,295,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,76,256"/>
+<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,229,200,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="225,229,369,256"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CANopen gateway" name="CANopen gateway">
+<area shape="rect" id="node1" href="$group__CO__STACK__CONFIG.html" title="Stack configuration and enabling macros." alt="" coords="5,5,153,31"/>
+<area shape="rect" id="node2" title="Specified in standard CiA 309." alt="" coords="201,5,344,31"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CO_LSSslave_t" name="CO_LSSslave_t">
+<area shape="rect" id="node1" title="LSS slave object." alt="" coords="130,213,249,240"/>
+<area shape="rect" id="node2" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node3" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="121,95,258,121"/>
+<area shape="rect" id="node4" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="139,5,240,32"/>
+<area shape="rect" id="node5" href="$unionCO__LSS__address__t.html" title="The LSS address is a 128 bit number, uniquely identifying each node." alt="" coords="283,95,424,121"/>
+</map>

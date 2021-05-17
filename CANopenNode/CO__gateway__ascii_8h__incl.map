@@ -1,0 +1,16 @@
+<map id="309/CO_gateway_ascii.h" name="309/CO_gateway_ascii.h">
+<area shape="rect" id="node1" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="300,5,481,32"/>
+<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="391,379,518,405"/>
+<area shape="rect" id="node6" href="$CO__fifo_8h.html" title="FIFO circular buffer." alt="" coords="43,229,154,256"/>
+<area shape="rect" id="node7" href="$CO__SDOclient_8h.html" title="CANopen Service Data Object &#45; client protocol." alt="" coords="232,155,384,181"/>
+<area shape="rect" id="node10" href="$CO__NMT__Heartbeat_8h.html" title="CANopen Network management and Heartbeat producer protocol." alt="" coords="453,155,643,181"/>
+<area shape="rect" id="node12" href="$CO__LSSmaster_8h.html" title="CANopen Layer Setting Service &#45; master protocol." alt="" coords="725,80,883,107"/>
+<area shape="rect" id="node14" href="$CO__LEDs_8h.html" title="CANopen Indicator specification (CiA 303&#45;3 v1.4.0)" alt="" coords="488,80,608,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="310,453,381,480"/>
+<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="405,453,505,480"/>
+<area shape="rect" id="node5" title=" " alt="" coords="529,453,673,480"/>
+<area shape="rect" id="node8" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="371,304,538,331"/>
+<area shape="rect" id="node9" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="229,229,387,256"/>
+<area shape="rect" id="node11" href="$CO__Emergency_8h.html" title="CANopen Emergency protocol." alt="" coords="513,229,671,256"/>
+<area shape="rect" id="node13" href="$CO__LSS_8h.html" title="CANopen Layer Setting Services protocol (common)." alt="" coords="798,304,909,331"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CANopen_305" name="CANopen_305">
+<area shape="rect" id="node1" href="$group__CO__LSSslave.html" title="CANopen Layer Setting Service &#45; slave protocol." alt="" coords="171,5,257,31"/>
+<area shape="rect" id="node2" href="$group__CO__LSS.html" title="CANopen Layer Setting Services protocol (common)." alt="" coords="191,55,237,80"/>
+<area shape="rect" id="node3" href="$group__CO__LSSmaster.html" title="CANopen Layer Setting Service &#45; master protocol." alt="" coords="167,104,261,129"/>
+<area shape="rect" id="node4" title="CANopen layer setting services (LSS) and protocols (CiA 305 DSP v3.0.0)" alt="" coords="5,55,119,80"/>
+</map>

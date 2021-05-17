@@ -1,0 +1,9 @@
+<map id="extra/CO_trace.h" name="extra/CO_trace.h">
+<area shape="rect" id="node1" title="CANopen trace object for recording variables over time." alt="" coords="91,5,222,32"/>
+<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,229,213,256"/>
+<area shape="rect" id="node6" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="137,80,294,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,304,76,331"/>
+<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,304,200,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="225,304,369,331"/>
+<area shape="rect" id="node7" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="188,155,355,181"/>
+</map>

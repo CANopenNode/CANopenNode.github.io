@@ -1,0 +1,5 @@
+<map id="CANopen_304" name="CANopen_304">
+<area shape="rect" id="node1" href="$group__CO__SRDO.html" title="CANopen Safety Related Data Object protocol." alt="" coords="167,5,225,31"/>
+<area shape="rect" id="node2" title="CANopen Safety (EN 50325­&#45;5:2010 (formerly CiA 304))" alt="" coords="5,31,119,56"/>
+<area shape="rect" id="node3" href="$group__CO__GFC.html" title="Global fail&#45;safe command protocol." alt="" coords="171,55,221,80"/>
+</map>

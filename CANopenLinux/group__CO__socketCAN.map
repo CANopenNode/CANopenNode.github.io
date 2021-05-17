@@ -1,0 +1,8 @@
+<map id="socketCAN" name="socketCAN">
+<area shape="rect" id="node1" href="$group__CO__storageLinux.html" title="Data initialize, store and restore functions with Linux." alt="" coords="145,5,323,31"/>
+<area shape="rect" id="node2" href="$group__CO__socketCAN__driver__target.html" title="Linux socketCAN specific Driver definitions for CANopenNode." alt="" coords="162,55,306,80"/>
+<area shape="rect" id="node3" href="$group__CO__epoll__interface.html" title="Linux epoll interface to CANopenNode." alt="" coords="176,104,292,129"/>
+<area shape="rect" id="node4" href="$group__CO__applicationLinux.html" title="Application interface, similar to Arduino, extended to CANopen and additional, realtime thread." alt="" coords="155,154,313,194"/>
+<area shape="rect" id="node5" title="Linux specific interface to CANopenNode." alt="" coords="5,104,97,129"/>
+<area shape="rect" id="node6" href="$group__CO__socketCAN__ERROR.html" title="CANopen Errors and System message log." alt="" coords="167,219,301,244"/>
+</map>
