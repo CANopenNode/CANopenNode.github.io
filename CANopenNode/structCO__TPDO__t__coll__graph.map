@@ -1,14 +1,15 @@
 <map id="CO_TPDO_t" name="CO_TPDO_t">
-<area shape="rect" id="node1" title="TPDO object." alt="" coords="260,441,356,468"/>
-<area shape="rect" id="node2" href="$structCO__SYNC__t.html" title="SYNC producer and consumer object." alt="" coords="261,352,355,379"/>
-<area shape="rect" id="node3" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="367,261,447,288"/>
-<area shape="rect" id="node8" href="$structCO__PDO__common__t.html" title="PDO object, common properties." alt="" coords="548,352,700,379"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="96,5,197,32"/>
-<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="275,111,413,137"/>
-<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="293,5,395,32"/>
-<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="645,5,771,32"/>
-<area shape="rect" id="node12" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="821,111,915,137"/>
-<area shape="rect" id="node9" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="952,261,1027,288"/>
-<area shape="rect" id="node10" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="963,111,1069,137"/>
-<area shape="rect" id="node11" href="$structOD__t.html" title="Object Dictionary." alt="" coords="846,261,901,288"/>
+<area shape="rect" id="node1" title="TPDO object." alt="" coords="228,441,324,468"/>
+<area shape="rect" id="node2" href="$structCO__SYNC__t.html" title="SYNC producer and consumer object." alt="" coords="229,352,323,379"/>
+<area shape="rect" id="node3" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="432,261,512,288"/>
+<area shape="rect" id="node9" href="$structCO__PDO__common__t.html" title="PDO object, common properties." alt="" coords="616,352,768,379"/>
+<area shape="rect" id="node4" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="437,111,547,137"/>
+<area shape="rect" id="node5" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="119,5,220,32"/>
+<area shape="rect" id="node6" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="154,111,291,137"/>
+<area shape="rect" id="node7" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="333,5,435,32"/>
+<area shape="rect" id="node8" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="759,5,884,32"/>
+<area shape="rect" id="node13" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="913,111,1007,137"/>
+<area shape="rect" id="node10" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="1044,261,1119,288"/>
+<area shape="rect" id="node11" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="1055,111,1161,137"/>
+<area shape="rect" id="node12" href="$structOD__t.html" title="Object Dictionary." alt="" coords="938,261,993,288"/>
 </map>

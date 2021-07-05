@@ -1,36 +1,37 @@
 <map id="CO_t" name="CO_t">
-<area shape="rect" id="node1" title="CANopen object &#45; collection of all CANopenNode objects." alt="" coords="1499,1279,1552,1305"/>
-<area shape="rect" id="node2" href="$structCO__LEDs__t.html" title="LEDs object, initialized by CO_LEDs_init()" alt="" coords="1023,784,1115,811"/>
-<area shape="rect" id="node15" href="$structCO__GTWA__t.html" title="CANopen Gateway&#45;ascii object." alt="" coords="1309,951,1409,977"/>
-<area shape="rect" id="node3" href="$structCO__TPDO__t.html" title="TPDO object." alt="" coords="1311,1523,1407,1549"/>
-<area shape="rect" id="node4" href="$structCO__SYNC__t.html" title="SYNC producer and consumer object." alt="" coords="1021,1637,1116,1664"/>
-<area shape="rect" id="node24" href="$structCO__RPDO__t.html" title="RPDO object." alt="" coords="1311,1176,1408,1203"/>
-<area shape="rect" id="node5" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="675,1629,755,1656"/>
-<area shape="rect" id="node10" href="$structCO__PDO__common__t.html" title="PDO object, common properties." alt="" coords="993,1065,1145,1092"/>
-<area shape="rect" id="node16" href="$structCO__NMT__t.html" title="NMT consumer and Heartbeat producer object." alt="" coords="1023,1264,1114,1291"/>
-<area shape="rect" id="node22" href="$structCO__HBconsumer__t.html" title="Heartbeat consumer object." alt="" coords="997,1392,1140,1419"/>
-<area shape="rect" id="node26" href="$structCO__SRDO__t.html" title="SRDO object." alt="" coords="1020,1961,1117,1988"/>
-<area shape="rect" id="node6" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="17,1505,119,1532"/>
-<area shape="rect" id="node7" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="261,1175,399,1201"/>
-<area shape="rect" id="node17" href="$structCO__SDOclient__t.html" title="SDO client object." alt="" coords="1007,713,1131,740"/>
-<area shape="rect" id="node19" href="$structCO__LSSmaster__t.html" title="LSS master object." alt="" coords="820,1284,949,1311"/>
-<area shape="rect" id="node29" href="$structCO__SDOserver__t.html" title="SDO server object." alt="" coords="1004,359,1133,385"/>
-<area shape="rect" id="node30" href="$structCO__GFC__t.html" title="GFC object." alt="" coords="672,1844,759,1871"/>
-<area shape="rect" id="node33" href="$structCO__TIME__t.html" title="TIME producer and consumer object." alt="" coords="669,449,761,476"/>
-<area shape="rect" id="node34" href="$structCO__LSSslave__t.html" title="LSS slave object." alt="" coords="1009,643,1128,669"/>
-<area shape="rect" id="node8" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="17,333,119,360"/>
-<area shape="rect" id="node9" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="5,711,131,737"/>
-<area shape="rect" id="node14" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="283,332,377,359"/>
-<area shape="rect" id="node11" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="678,601,753,628"/>
-<area shape="rect" id="node12" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="277,660,383,687"/>
-<area shape="rect" id="node13" href="$structOD__t.html" title="Object Dictionary." alt="" coords="688,399,743,425"/>
-<area shape="rect" id="node25" href="$structCO__config__t.html" title="CANopen configuration, used with CO_new()" alt="" coords="835,177,935,204"/>
-<area shape="rect" id="node18" href="$structCO__fifo__t.html" title="Fifo object." alt="" coords="674,843,757,869"/>
-<area shape="rect" id="node20" href="$unionCO__LSS__address__t.html" title="The LSS address is a 128 bit number, uniquely identifying each node." alt="" coords="645,893,786,920"/>
-<area shape="rect" id="node21" href="$structCO__LSSmaster__fastscan__t.html" title="Parameters for LSS fastscan CO_LSSmaster_IdentifyFastscan." alt="" coords="973,1001,1164,1028"/>
-<area shape="rect" id="node23" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="644,1501,787,1528"/>
-<area shape="rect" id="node27" href="$structCO__SRDOCommPar__t.html" title="SRDO communication parameter." alt="" coords="635,2073,796,2100"/>
-<area shape="rect" id="node28" href="$structCO__SRDOGuard__t.html" title="Gurad Object for SRDO monitors:" alt="" coords="647,2135,783,2161"/>
-<area shape="rect" id="node31" href="$structCO__trace__t.html" title="Trace object." alt="" coords="1313,2011,1406,2037"/>
-<area shape="rect" id="node32" href="$structCO__trace__dataType__t.html" title="structure for reading variables and printing points for specific data type." alt="" coords="989,2012,1148,2039"/>
+<area shape="rect" id="node1" title="CANopen object &#45; collection of all CANopenNode objects." alt="" coords="1563,1089,1616,1116"/>
+<area shape="rect" id="node2" href="$structCO__LEDs__t.html" title="LEDs object, initialized by CO_LEDs_init()" alt="" coords="1023,155,1115,181"/>
+<area shape="rect" id="node16" href="$structCO__GTWA__t.html" title="CANopen Gateway&#45;ascii object." alt="" coords="1373,325,1473,352"/>
+<area shape="rect" id="node3" href="$structCO__TPDO__t.html" title="TPDO object." alt="" coords="1375,1496,1471,1523"/>
+<area shape="rect" id="node4" href="$structCO__SYNC__t.html" title="SYNC producer and consumer object." alt="" coords="1021,1652,1116,1679"/>
+<area shape="rect" id="node25" href="$structCO__RPDO__t.html" title="RPDO object." alt="" coords="1375,1561,1472,1588"/>
+<area shape="rect" id="node5" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="675,1700,755,1727"/>
+<area shape="rect" id="node11" href="$structCO__PDO__common__t.html" title="PDO object, common properties." alt="" coords="993,1532,1145,1559"/>
+<area shape="rect" id="node17" href="$structCO__NMT__t.html" title="NMT consumer and Heartbeat producer object." alt="" coords="1023,676,1114,703"/>
+<area shape="rect" id="node23" href="$structCO__HBconsumer__t.html" title="Heartbeat consumer object." alt="" coords="997,1901,1140,1928"/>
+<area shape="rect" id="node27" href="$structCO__SRDO__t.html" title="SRDO object." alt="" coords="1020,1016,1117,1043"/>
+<area shape="rect" id="node6" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="275,1960,385,1987"/>
+<area shape="rect" id="node7" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="17,796,119,823"/>
+<area shape="rect" id="node8" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="261,864,399,891"/>
+<area shape="rect" id="node18" href="$structCO__SDOclient__t.html" title="SDO client object." alt="" coords="1007,511,1131,537"/>
+<area shape="rect" id="node20" href="$structCO__LSSmaster__t.html" title="LSS master object." alt="" coords="820,292,949,319"/>
+<area shape="rect" id="node30" href="$structCO__SDOserver__t.html" title="SDO server object." alt="" coords="1004,1216,1133,1243"/>
+<area shape="rect" id="node31" href="$structCO__GFC__t.html" title="GFC object." alt="" coords="672,556,759,583"/>
+<area shape="rect" id="node34" href="$structCO__TIME__t.html" title="TIME producer and consumer object." alt="" coords="669,836,761,863"/>
+<area shape="rect" id="node35" href="$structCO__LSSslave__t.html" title="LSS slave object." alt="" coords="1009,91,1128,117"/>
+<area shape="rect" id="node9" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="17,1829,119,1856"/>
+<area shape="rect" id="node10" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="5,1535,131,1561"/>
+<area shape="rect" id="node15" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="283,1648,377,1675"/>
+<area shape="rect" id="node12" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="678,1244,753,1271"/>
+<area shape="rect" id="node13" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="277,1244,383,1271"/>
+<area shape="rect" id="node14" href="$structOD__t.html" title="Object Dictionary." alt="" coords="688,1295,743,1321"/>
+<area shape="rect" id="node26" href="$structCO__config__t.html" title="CANopen configuration, used with CO_new()" alt="" coords="835,2021,935,2048"/>
+<area shape="rect" id="node19" href="$structCO__fifo__t.html" title="Fifo object." alt="" coords="674,327,757,353"/>
+<area shape="rect" id="node21" href="$unionCO__LSS__address__t.html" title="The LSS address is a 128 bit number, uniquely identifying each node." alt="" coords="645,175,786,201"/>
+<area shape="rect" id="node22" href="$structCO__LSSmaster__fastscan__t.html" title="Parameters for LSS fastscan CO_LSSmaster_IdentifyFastscan." alt="" coords="973,207,1164,233"/>
+<area shape="rect" id="node24" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="644,1965,787,1992"/>
+<area shape="rect" id="node28" href="$structCO__SRDOCommPar__t.html" title="SRDO communication parameter." alt="" coords="635,937,796,964"/>
+<area shape="rect" id="node29" href="$structCO__SRDOGuard__t.html" title="Gurad Object for SRDO monitors:" alt="" coords="647,1065,783,1092"/>
+<area shape="rect" id="node32" href="$structCO__trace__t.html" title="Trace object." alt="" coords="1377,2124,1470,2151"/>
+<area shape="rect" id="node33" href="$structCO__trace__dataType__t.html" title="structure for reading variables and printing points for specific data type." alt="" coords="989,2124,1148,2151"/>
 </map>

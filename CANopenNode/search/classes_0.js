@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['co_5fcanmodule_5ft_1301',['CO_CANmodule_t',['../structCO__CANmodule__t.html',1,'']]],
-  ['co_5fcanrx_5ft_1302',['CO_CANrx_t',['../structCO__CANrx__t.html',1,'']]],
-  ['co_5fcantx_5ft_1303',['CO_CANtx_t',['../structCO__CANtx__t.html',1,'']]],
-  ['co_5fconfig_5ft_1304',['CO_config_t',['../structCO__config__t.html',1,'']]],
+  ['co_5fcanmodule_5ft_1300',['CO_CANmodule_t',['../structCO__CANmodule__t.html',1,'']]],
+  ['co_5fcanrx_5ft_1301',['CO_CANrx_t',['../structCO__CANrx__t.html',1,'']]],
+  ['co_5fcantx_5ft_1302',['CO_CANtx_t',['../structCO__CANtx__t.html',1,'']]],
+  ['co_5fconfig_5ft_1303',['CO_config_t',['../structCO__config__t.html',1,'']]],
+  ['co_5fem_5ffifo_5ft_1304',['CO_EM_fifo_t',['../structCO__EM__fifo__t.html',1,'']]],
   ['co_5fem_5ft_1305',['CO_EM_t',['../structCO__EM__t.html',1,'']]],
   ['co_5ffifo_5ft_1306',['CO_fifo_t',['../structCO__fifo__t.html',1,'']]],
   ['co_5fgfc_5ft_1307',['CO_GFC_t',['../structCO__GFC__t.html',1,'']]],

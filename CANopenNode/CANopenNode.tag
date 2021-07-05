@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile>
+<tagfile doxygen_version="1.9.1">
   <compound kind="file">
     <name>CO_config.h</name>
     <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
@@ -69,13 +69,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>CO_CONFIG_HB_CONS_SIZE</name>
-      <anchorfile>group__CO__STACK__CONFIG__NMT__HB.html</anchorfile>
-      <anchor>ga0cbe9ab929ff9d122ab6727d66fe7752</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>CO_CONFIG_EM</name>
       <anchorfile>group__CO__STACK__CONFIG__EMERGENCY.html</anchorfile>
       <anchor>ga16aa1479ffd52a627d1053c20f844b62</anchor>
@@ -86,13 +79,6 @@
       <name>CO_CONFIG_EM_ERR_STATUS_BITS_COUNT</name>
       <anchorfile>group__CO__STACK__CONFIG__EMERGENCY.html</anchorfile>
       <anchor>gab87776d4802748671b234112263760af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>CO_CONFIG_EM_BUFFER_SIZE</name>
-      <anchorfile>group__CO__STACK__CONFIG__EMERGENCY.html</anchorfile>
-      <anchor>ga3c35cf4947c82a0b15afdbfa43a10d67</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -953,6 +939,7 @@
     <filename>CO__Emergency_8h.html</filename>
     <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
     <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
+    <class kind="struct">CO_EM_fifo_t</class>
     <class kind="struct">CO_EM_t</class>
     <member kind="define">
       <type>#define</type>
@@ -1605,8 +1592,8 @@
       <type>CO_ReturnError_t</type>
       <name>CO_EM_init</name>
       <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga644903fa4c0621298a228615d028190d</anchor>
-      <arglist>(CO_EM_t *em, CO_CANmodule_t *CANdevTx, const OD_entry_t *OD_1001_errReg, OD_entry_t *OD_1014_cobIdEm, uint16_t CANdevTxIdx, OD_entry_t *OD_1015_InhTime, OD_entry_t *OD_1003_preDefErr, OD_entry_t *OD_statusBits, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, const uint8_t nodeId, uint32_t *errInfo)</arglist>
+      <anchor>gab95c4ab9c40fe529bdcbcbe80b69b8dc</anchor>
+      <arglist>(CO_EM_t *em, CO_CANmodule_t *CANdevTx, const OD_entry_t *OD_1001_errReg, CO_EM_fifo_t *fifo, uint8_t fifoSize, OD_entry_t *OD_1014_cobIdEm, uint16_t CANdevTxIdx, OD_entry_t *OD_1015_InhTime, OD_entry_t *OD_1003_preDefErr, OD_entry_t *OD_statusBits, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, const uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2081,8 +2068,8 @@
       <type>CO_ReturnError_t</type>
       <name>CO_HBconsumer_init</name>
       <anchorfile>group__CO__HBconsumer.html</anchorfile>
-      <anchor>gaf5b01e928af46561905b43fa545a4f58</anchor>
-      <arglist>(CO_HBconsumer_t *HBcons, CO_EM_t *em, OD_entry_t *OD_1016_HBcons, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxStart, uint32_t *errInfo)</arglist>
+      <anchor>gaa50d07a8896bd03a1632c099f0a989e9</anchor>
+      <arglist>(CO_HBconsumer_t *HBcons, CO_EM_t *em, CO_HBconsNode_t *monitoredNodes, uint8_t monitoredNodesCount, OD_entry_t *OD_1016_HBcons, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxStart, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -4193,13 +4180,6 @@
     <class kind="union">CO_LSS_address_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>CO_LSS_BIT_TIMING_VALID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaf1a3d7df8dcd93e4a0e0b29aa6b003a1</anchor>
-      <arglist>(index)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>CO_LSS_NODE_ID_ASSIGNMENT</name>
       <anchorfile>group__CO__LSS.html</anchorfile>
       <anchor>ga02771497ab59dd86f2dbe59cd1fb04b1</anchor>
@@ -5590,6 +5570,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>uint8_t</type>
+      <name>CNT_ARR_1016</name>
+      <anchorfile>structCO__config__t.html</anchorfile>
+      <anchor>aa33354c4dd1f0770b79ca77efcb653f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>OD_entry_t *</type>
       <name>ENTRY_H1016</name>
       <anchorfile>structCO__config__t.html</anchorfile>
@@ -5622,6 +5609,13 @@
       <name>ENTRY_H1015</name>
       <anchorfile>structCO__config__t.html</anchorfile>
       <anchor>a7afc9b9a90464cd0c43cec20406a097e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>CNT_ARR_1003</name>
+      <anchorfile>structCO__config__t.html</anchorfile>
+      <anchor>a13a6fbad8b1da3fb5deb3861b6610fdd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -5836,6 +5830,10 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>CO_EM_fifo_t</name>
+    <filename>structCO__EM__fifo__t.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>CO_EM_t</name>
     <filename>structCO__EM__t.html</filename>
     <member kind="variable">
@@ -5867,11 +5865,18 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>CO_EM_fifo_t *</type>
       <name>fifo</name>
       <anchorfile>structCO__EM__t.html</anchorfile>
-      <anchor>ac84d3cf89e04ee48fff85d59bb91f3d9</anchor>
-      <arglist>[CO_CONFIG_EM_BUFFER_SIZE+1][2]</arglist>
+      <anchor>afff8da551aa61212ed8703c4c070c36b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>fifoSize</name>
+      <anchorfile>structCO__EM__t.html</anchorfile>
+      <anchor>a3bba79f8041aecfbce60e50072577ed5</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
@@ -6475,11 +6480,11 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_HBconsNode_t</type>
+      <type>CO_HBconsNode_t *</type>
       <name>monitoredNodes</name>
       <anchorfile>structCO__HBconsumer__t.html</anchorfile>
-      <anchor>aab1cb611c8110bfb9d1e7f8d5e3c3a59</anchor>
-      <arglist>[CO_CONFIG_HB_CONS_SIZE]</arglist>
+      <anchor>a737b37c544a28eff8de0b03b51cbeec8</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
@@ -8272,6 +8277,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>CO_HBconsNode_t *</type>
+      <name>HBconsMonitoredNodes</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>a5e848ef54f352676cf4f43b7f03e61ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>uint16_t</type>
       <name>RX_IDX_HB_CONS</name>
       <anchorfile>structCO__t.html</anchorfile>
@@ -8297,6 +8309,13 @@
       <name>TX_IDX_EM_PROD</name>
       <anchorfile>structCO__t.html</anchorfile>
       <anchor>a3d2f250c5c3bc972ce45418d22e79caa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_EM_fifo_t *</type>
+      <name>em_fifo</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>a8ddc38c772519a5a79f9331ae068a7b4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -9321,6 +9340,7 @@
     <subgroup>CO_STACK_CONFIG_FIFO</subgroup>
     <subgroup>CO_STACK_CONFIG_TRACE</subgroup>
     <subgroup>CO_STACK_CONFIG_DEBUG</subgroup>
+    <file>CO_config.h</file>
   </compound>
   <compound kind="group">
     <name>CO_STACK_CONFIG_COMMON</name>
@@ -9394,13 +9414,6 @@
       <anchor>ga7368d68cb039983bc8cc164410877098</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>CO_CONFIG_HB_CONS_SIZE</name>
-      <anchorfile>group__CO__STACK__CONFIG__NMT__HB.html</anchorfile>
-      <anchor>ga0cbe9ab929ff9d122ab6727d66fe7752</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>CO_STACK_CONFIG_EMERGENCY</name>
@@ -9418,13 +9431,6 @@
       <name>CO_CONFIG_EM_ERR_STATUS_BITS_COUNT</name>
       <anchorfile>group__CO__STACK__CONFIG__EMERGENCY.html</anchorfile>
       <anchor>gab87776d4802748671b234112263760af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>CO_CONFIG_EM_BUFFER_SIZE</name>
-      <anchorfile>group__CO__STACK__CONFIG__EMERGENCY.html</anchorfile>
-      <anchor>ga3c35cf4947c82a0b15afdbfa43a10d67</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9693,7 +9699,6 @@
     <subgroup>CO_CAN_Message_reception</subgroup>
     <subgroup>CO_CAN_Message_transmission</subgroup>
     <subgroup>CO_critical_sections</subgroup>
-    <file>CO_config.h</file>
     <file>CO_driver.h</file>
     <class kind="struct">CO_CANmodule_t</class>
     <class kind="struct">CO_storage_entry_t</class>
@@ -10371,6 +10376,7 @@
     <title>Emergency</title>
     <filename>group__CO__Emergency.html</filename>
     <file>CO_Emergency.h</file>
+    <class kind="struct">CO_EM_fifo_t</class>
     <class kind="struct">CO_EM_t</class>
     <member kind="define">
       <type>#define</type>
@@ -11023,8 +11029,8 @@
       <type>CO_ReturnError_t</type>
       <name>CO_EM_init</name>
       <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga644903fa4c0621298a228615d028190d</anchor>
-      <arglist>(CO_EM_t *em, CO_CANmodule_t *CANdevTx, const OD_entry_t *OD_1001_errReg, OD_entry_t *OD_1014_cobIdEm, uint16_t CANdevTxIdx, OD_entry_t *OD_1015_InhTime, OD_entry_t *OD_1003_preDefErr, OD_entry_t *OD_statusBits, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, const uint8_t nodeId, uint32_t *errInfo)</arglist>
+      <anchor>gab95c4ab9c40fe529bdcbcbe80b69b8dc</anchor>
+      <arglist>(CO_EM_t *em, CO_CANmodule_t *CANdevTx, const OD_entry_t *OD_1001_errReg, CO_EM_fifo_t *fifo, uint8_t fifoSize, OD_entry_t *OD_1014_cobIdEm, uint16_t CANdevTxIdx, OD_entry_t *OD_1015_InhTime, OD_entry_t *OD_1003_preDefErr, OD_entry_t *OD_statusBits, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, const uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11496,8 +11502,8 @@
       <type>CO_ReturnError_t</type>
       <name>CO_HBconsumer_init</name>
       <anchorfile>group__CO__HBconsumer.html</anchorfile>
-      <anchor>gaf5b01e928af46561905b43fa545a4f58</anchor>
-      <arglist>(CO_HBconsumer_t *HBcons, CO_EM_t *em, OD_entry_t *OD_1016_HBcons, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxStart, uint32_t *errInfo)</arglist>
+      <anchor>gaa50d07a8896bd03a1632c099f0a989e9</anchor>
+      <arglist>(CO_HBconsumer_t *HBcons, CO_EM_t *em, CO_HBconsNode_t *monitoredNodes, uint8_t monitoredNodesCount, OD_entry_t *OD_1016_HBcons, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxStart, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13595,13 +13601,6 @@
     <file>CO_LSSmaster.h</file>
     <file>CO_LSSslave.h</file>
     <class kind="union">CO_LSS_address_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>CO_LSS_BIT_TIMING_VALID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaf1a3d7df8dcd93e4a0e0b29aa6b003a1</anchor>
-      <arglist>(index)</arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_LSS_NODE_ID_ASSIGNMENT</name>

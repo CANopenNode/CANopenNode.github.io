@@ -1,7 +1,7 @@
 <map id="305/CO_LSS.h" name="305/CO_LSS.h">
-<area shape="rect" id="node1" title="CANopen Layer Setting Services protocol (common)." alt="" coords="81,5,191,32"/>
-<area shape="rect" id="node2" href="$CO__LSSslave_8h.html" title="CANopen Layer Setting Service &#45; slave protocol." alt="" coords="5,155,152,181"/>
-<area shape="rect" id="node4" href="$CO__LSSmaster_8h.html" title="CANopen Layer Setting Service &#45; master protocol." alt="" coords="116,80,273,107"/>
-<area shape="rect" id="node3" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="142,229,237,256"/>
-<area shape="rect" id="node5" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="227,155,408,181"/>
+<area shape="rect" id="node1" title="CANopen Layer Setting Services protocol (common)." alt="" coords="133,5,244,32"/>
+<area shape="rect" id="node2" href="$CO__LSSmaster_8h.html" title="CANopen Layer Setting Service &#45; master protocol." alt="" coords="34,80,191,107"/>
+<area shape="rect" id="node5" href="$CO__LSSslave_8h.html" title="CANopen Layer Setting Service &#45; slave protocol." alt="" coords="227,155,374,181"/>
+<area shape="rect" id="node3" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="65,229,160,256"/>
+<area shape="rect" id="node4" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="22,155,203,181"/>
 </map>

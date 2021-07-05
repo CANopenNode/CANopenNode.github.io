@@ -1,8 +1,9 @@
 <map id="CO_SYNC_t" name="CO_SYNC_t">
-<area shape="rect" id="node1" title="SYNC producer and consumer object." alt="" coords="347,320,442,347"/>
-<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="195,229,275,256"/>
-<area shape="rect" id="node3" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="163,5,264,32"/>
-<area shape="rect" id="node4" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="18,95,155,121"/>
-<area shape="rect" id="node5" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node6" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="345,95,471,121"/>
+<area shape="rect" id="node1" title="SYNC producer and consumer object." alt="" coords="420,320,515,347"/>
+<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="257,229,337,256"/>
+<area shape="rect" id="node3" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="167,95,277,121"/>
+<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="274,5,375,32"/>
+<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="5,95,143,121"/>
+<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="23,5,125,32"/>
+<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="457,95,582,121"/>
 </map>

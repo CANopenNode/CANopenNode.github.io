@@ -1,9 +1,10 @@
 <map id="CO_HBconsumer_t" name="CO_HBconsumer_t">
-<area shape="rect" id="node1" title="Heartbeat consumer object." alt="" coords="313,317,455,344"/>
-<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="196,228,276,255"/>
-<area shape="rect" id="node3" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="147,5,248,32"/>
-<area shape="rect" id="node4" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="17,95,154,121"/>
-<area shape="rect" id="node5" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node6" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="344,95,469,121"/>
-<area shape="rect" id="node7" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="601,228,743,255"/>
+<area shape="rect" id="node1" title="Heartbeat consumer object." alt="" coords="483,317,626,344"/>
+<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="167,228,247,255"/>
+<area shape="rect" id="node3" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="5,95,115,121"/>
+<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="133,5,235,32"/>
+<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="261,95,398,121"/>
+<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="279,5,380,32"/>
+<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="488,95,613,121"/>
+<area shape="rect" id="node8" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="775,228,918,255"/>
 </map>
