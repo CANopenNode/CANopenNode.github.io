@@ -119,6 +119,7 @@ make
 ./demoLinuxDevice can0 -i 4
 </pre><h1><a class="anchor" id="autotoc_md78"></a>
 Run in PIC32</h1>
+<p>See CANopenPIC/README.md</p>
 <p>Program runs in Arduino style <a href="https://reference.digilentinc.com/reference/microprocessor/max32/start">Max32 board</a> with <a href="https://www.microchip.com/wwwproducts/en/PIC32MX795F512L">PIC32MX795F512L</a> Microcontroller or in Explorer16 board. Prepare device as specified in CANopenPIC/README.md. Load demoDevice program, and connect to CANopen Network. Device runs with 250kbps with NodeId=4. First initialize the eeprom: </p><pre class="fragment">cocomm "4 w 0x1011 1 vs load"
 cocomm "4 reset node"
 cocomm "4 w 0x1010 1 vs save"
