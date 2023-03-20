@@ -69,7 +69,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>This chapter describes some more advanced SDO access to some parameters of the <a class="el" href="md_demo_README.html">demoDevice</a>. Example runs with CANopen devices as specified in <a class="elRef" href="CANopenNode/index.html#md_README">tutorial/README.md</a>.</p>
 <p>We will communicate with demoDevice, so set the default Node-ID to 4: </p><pre class="fragment"> cocomm "set node 4"
-</pre><h1><a class="anchor" id="autotoc_md110"></a>
+</pre><h1><a class="anchor" id="autotoc_md109"></a>
 Demo record</h1>
 <p>Read 64-bit integer: </p><pre class="fragment">cocomm "r 0x2120 1 i64"
 [1] -1234567890123456789
@@ -85,7 +85,7 @@ Demo record</h1>
 </pre><p> Change one of the input values and re-read the average: </p><pre class="fragment">cocomm "w 0x2120 3 r32 -7.720058e+16" "r 0x2120 5 r64"
 [1] OK
 [2] 7.8681e+07
-</pre><h1><a class="anchor" id="autotoc_md111"></a>
+</pre><h1><a class="anchor" id="autotoc_md110"></a>
 Demo strings</h1>
 <p>Read three strings: </p><pre class="fragment">cocomm "r 0x2121 1 vs" "r 0x2121 2 vs" "r 0x2121 3 hex"
 [1] "str"
@@ -128,7 +128,7 @@ and transfer data as octet string or domain."
 [1] ERROR:0x06070013 #Data type does not match, length of service parameter too short.
 </pre><p> Our parameter is 10 bytes long: </p><pre class="fragment">cocomm "w 0x2121 3 hex 01 2 30 456789 0A b0 0 ff"
 [1] OK
-</pre><h1><a class="anchor" id="autotoc_md112"></a>
+</pre><h1><a class="anchor" id="autotoc_md111"></a>
 Demo domain</h1>
 <p>Domain enables transfer an arbitrary large block of data in one SDO communication cycle. Application must provide own OD read/write access functions to use domain data type. In our example basic device just transfers incremental sequence of bytes. See <a class="el" href="md_demo_README.html">demoDevice</a> for details.</p>
 <p>SDO block transfer is used for highest efficiency over CAN. If internal virtual CAN network is used, communication is very fast. On real CAN networks data transfer rates are significantly lower. However, SDO communication does not disturb higher priority real time data transfer, which is likely present on CAN bus. SDO block transfer is also resistant to disturbances to some degree. If necessary, it re-transmits corrupted data automatically.</p>

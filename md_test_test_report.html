@@ -67,7 +67,7 @@ $(function() {
 <div class="title">TEST REPORTS </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md118"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md122"></a>
 Complete tests in running CANopen</h1>
 <p><code>./test_all.sh</code>, two CAN devices, 250 kbps: </p><div class="fragment"><div class="line">Running &#39;basic_NMT_SDO_heartbeat.bats&#39;:</div>
 <div class="line"> ✓ NMT: all preoperational</div>
@@ -118,10 +118,10 @@ Complete tests in running CANopen</h1>
 <div class="line">6 tests, 0 failures</div>
 <div class="line"> </div>
 <div class="line">Test duration: 13.384309162 sec</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md119"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md123"></a>
 SDO transfer test reports for different target systems</h1>
 <p>Running tests with <code>SDO_transfer.bats</code>, see <a class="elRef" href="CANopenNode/index.html#md_README">test/README.md</a> for preparation of devices.</p>
-<h2><a class="anchor" id="autotoc_md120"></a>
+<h2><a class="anchor" id="autotoc_md124"></a>
 Devices tested 2021-05-02</h2>
 <ul>
 <li>systems:<ul>
@@ -154,7 +154,7 @@ Devices tested 2021-05-02</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md121"></a>
+<h2><a class="anchor" id="autotoc_md125"></a>
 Virtual CAN device</h2>
 <p>Test result: </p><div class="fragment"><div class="line">✓ Segmented transfer - set filename for upload</div>
 <div class="line">✓ Block transfer, create 100000 bytes long random binaryFile</div>
@@ -167,7 +167,7 @@ Virtual CAN device</h2>
 <div class="line">✓ Segmented transfer, files equal</div>
 <div class="line">  100000 bytes block down/upload: 70/145 milliseconds.</div>
 <div class="line">  1000 bytes segmented down/upload: 10/24 milliseconds.</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md122"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md126"></a>
 CAN bus 1000 Kbps</h2>
 <p>Test result: </p><div class="fragment"><div class="line">✓ Segmented transfer - set filename for upload</div>
 <div class="line">✓ Block transfer, create 100000 bytes long random binaryFile</div>
@@ -180,18 +180,18 @@ CAN bus 1000 Kbps</h2>
 <div class="line">✓ Segmented transfer, files equal</div>
 <div class="line">  100000 bytes block down/upload: 2316/1840 milliseconds.</div>
 <div class="line">  1000 bytes segmented down/upload: 254/270 milliseconds.</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md123"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md127"></a>
 Notes USBtin</h3>
 <p>USBtin interface doesn't work when sending sequence of data. In block transfer it sends first CAN message in sub-block correctly, then there is a mess on the bus. However data was transferred correctly in all test cases, because of the robustness of the block transfer. But communication time is up to 300 times longer. Reception of the sequence of data as well as segmented transfer always works correctly with USBtin.</p>
-<h3><a class="anchor" id="autotoc_md124"></a>
+<h3><a class="anchor" id="autotoc_md128"></a>
 Notes Raspberry PI with CAN shield MCP2515</h3>
 <p>Raspberry PI shows had problems with CAN overflow with received sequence of data. It couldn't process fast enough and there was socket overflow. RPI sends emergency message and sets error register. Otherwise data transfer was always correct and time to transfer was not significantly longer. With 250 Kbps there were still overflows, but less. Problem was the same, when RPI was demoDevice (multithreaded program) or canopend (single threaded program). Problem was also the same, when using RPI2 or RPI4. But everything works perfectly when using CPC-USB instead of CAN shield with RPI2 or RPI4. </p><div class="fragment"><div class="line">demoDevice: (CO_CANerror_rxMsgError) Socket error msg ID: 0x20000004, Data[0..7]: 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 (can0)</div>
 <div class="line">demoDevice: CAN Interface &quot;can0&quot; Rx buffer overflow. Message dropped</div>
 <div class="line">canopend: CANopen Emergency message from node 0x04: errorCode=0x0013, errorRegister=0x10, errorBit=0x13, infoCode=0x00000000</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md125"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md129"></a>
 Notes other</h3>
 <p>No problems were detected on other CAN interfaces.</p>
-<h2><a class="anchor" id="autotoc_md126"></a>
+<h2><a class="anchor" id="autotoc_md130"></a>
 CAN bus 10 Kbps</h2>
 <p>Enlarge SDO timeout and reduce data size: </p><div class="fragment"><div class="line">cocomm &quot;set sdo_timeout 2000&quot;</div>
 <div class="line">export binaryFileSize=1000</div>
@@ -206,7 +206,7 @@ CAN bus 10 Kbps</h2>
 <div class="line">✓ Segmented transfer, files equal</div>
 <div class="line">  1000 bytes block down/upload: 1741/1731 milliseconds.</div>
 <div class="line">  1000 bytes segmented down/upload: 3611/3621 milliseconds.</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md127"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md131"></a>
 Notes</h3>
 <p>USBtin shows the same problems as with 1000 Kbps. All others worked perfectly. </p>
 </div></div><!-- contents -->

@@ -110,12 +110,13 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga1e8c2a6c0fd4a33183503d25a7c6d744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal network state of the CANopen node.  <a href="group__CO__NMT__Heartbeat.html#ga1e8c2a6c0fd4a33183503d25a7c6d744">More...</a><br /></td></tr>
 <tr class="separator:ga1e8c2a6c0fd4a33183503d25a7c6d744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac396242e2e12ef6b0b22ff48636bc4eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__NMT__Heartbeat.html#gac396242e2e12ef6b0b22ff48636bc4eb">CO_NMT_command_t</a> { <br />
-&#160;&#160;<a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146">CO_NMT_ENTER_OPERATIONAL</a> = 1
+&#160;&#160;<a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4ebadd20dae22397140d63682a3cb592a98c">CO_NMT_NO_COMMAND</a> = 0
+, <a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146">CO_NMT_ENTER_OPERATIONAL</a> = 1
 , <a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4eba8a2911a2a576a1bd83b7f4a247cd77c9">CO_NMT_ENTER_STOPPED</a> = 2
 , <a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4eba575ed4f3386e8a63498921e659aa7ba4">CO_NMT_ENTER_PRE_OPERATIONAL</a> = 128
-, <a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4ebaa8558d18a80148a598e6295ef41cdf97">CO_NMT_RESET_NODE</a> = 129
 , <br />
-&#160;&#160;<a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4ebabc6aef9d84c816eecaea38f9fe2cbd9c">CO_NMT_RESET_COMMUNICATION</a> = 130
+&#160;&#160;<a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4ebaa8558d18a80148a598e6295ef41cdf97">CO_NMT_RESET_NODE</a> = 129
+, <a class="el" href="group__CO__NMT__Heartbeat.html#ggac396242e2e12ef6b0b22ff48636bc4ebabc6aef9d84c816eecaea38f9fe2cbd9c">CO_NMT_RESET_COMMUNICATION</a> = 130
 <br />
  }</td></tr>
 <tr class="memdesc:gac396242e2e12ef6b0b22ff48636bc4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands from NMT master.  <a href="group__CO__NMT__Heartbeat.html#gac396242e2e12ef6b0b22ff48636bc4eb">More...</a><br /></td></tr>
@@ -173,7 +174,7 @@ Functions</h2></td></tr>
 <li>Stopped. Only Heartbeat producer and NMT consumer are active.</li>
 </ul>
 <p>NMT master can change the internal state of the devices by sending <a class="el" href="group__CO__NMT__Heartbeat.html#gac396242e2e12ef6b0b22ff48636bc4eb">CO_NMT_command_t</a>.</p>
-<h3><a class="anchor" id="autotoc_md105"></a>
+<h3><a class="anchor" id="autotoc_md106"></a>
 NMT message contents:</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -183,7 +184,7 @@ NMT message contents:</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Node ID. If zero, command addresses all nodes.   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md106"></a>
+<h3><a class="anchor" id="autotoc_md107"></a>
 Heartbeat message contents:</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -235,7 +236,9 @@ Heartbeat message contents:</h3>
 
 <p>Commands from NMT master. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146"></a>CO_NMT_ENTER_OPERATIONAL&#160;</td><td class="fielddoc"><p>1, Start device </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac396242e2e12ef6b0b22ff48636bc4ebadd20dae22397140d63682a3cb592a98c"></a>CO_NMT_NO_COMMAND&#160;</td><td class="fielddoc"><p>0, No command </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146"></a>CO_NMT_ENTER_OPERATIONAL&#160;</td><td class="fielddoc"><p>1, Start device </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac396242e2e12ef6b0b22ff48636bc4eba8a2911a2a576a1bd83b7f4a247cd77c9"></a>CO_NMT_ENTER_STOPPED&#160;</td><td class="fielddoc"><p>2, Stop device </p>
 </td></tr>

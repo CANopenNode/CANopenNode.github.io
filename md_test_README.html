@@ -67,33 +67,79 @@ $(function() {
 <div class="title">Test </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md113"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md112"></a>
 Tests in Running CANopen network</h1>
 <p>Tests on Running CANopen network are implemented with two CANopenNode devices, running on CAN interface. Example runs with CANopen devices as specified in <a class="el" href="md_tutorial_README.html">tutorial/README.md</a>. First is <code>canopend</code>, CANopenLinux device with gateway interface, second is <code>demoDevice</code>. <code>cocomm</code> program from CANopenLinux is used for communication with CANopenLinux gateway device.</p>
 <p>Tests are run in Linux command line with <a href="https://github.com/bats-core/bats-core">Bash Automated Testing System - BATS</a>, which is included in CANopenDemo as three git submodules.</p>
 <p>Test results are available in <a class="el" href="md_test_test_report.html">test_report.md</a>.</p>
-<h2><a class="anchor" id="autotoc_md114"></a>
+<h2><a class="anchor" id="autotoc_md113"></a>
 Prerequisites</h2>
 <ul>
 <li>Get CANopenDemo and all submodules as described in README.md</li>
 <li>prepare <code>cocomm</code>, <code>canopend</code> and <code>demoDevice</code> as described in <a class="el" href="md_tutorial_README.html">tutorial/README.md</a>. <code>canopend</code> with NodeId=1 must run in Linux, <code>demoDevice</code> with NodeId=4 must run on any platform, <code>can0</code> is the default CAN interface in Linux.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md115"></a>
+<h2><a class="anchor" id="autotoc_md114"></a>
 Options</h2>
 <p>See file <code>config_bats.sh</code> for configuration options. To change the default values, type the following before running the tests:</p><ul>
 <li>CAN interface: <code>export test_can_device=&lt;customCanDevice&gt;</code> (default <code>export test_can_device=can0</code>)</li>
 <li>Node-Id of the Device 1 (<code>canopend</code>): <code>export D1=&lt;nodeID&gt;; export B1=&lt;80+nodeID&gt;;</code> (default <code>export D1=01; export B1=81</code> - hex value)</li>
 <li>Node-Id of the Device 2 (<code>demoDevice</code>): <code>export D2=&lt;nodeID&gt;; export B2=&lt;80+nodeID&gt;;</code> (default <code>export D2=04; export B2=84</code> - hex value)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md116"></a>
+<h2><a class="anchor" id="autotoc_md115"></a>
 Run the tests</h2>
 <p>Run individual tests from the terminal: </p><pre class="fragment">running_canopen/basic_NMT_SDO_heartbeat.bats
 running_canopen/heartbeat_consumer.bats
 running_canopen/SDO_transfer.bats
 </pre><p> Run all tests: </p><pre class="fragment">./test_all.sh
-</pre><h2><a class="anchor" id="autotoc_md117"></a>
+</pre><h2><a class="anchor" id="autotoc_md116"></a>
 Testing environment</h2>
-<p>Open the <code>*.bats</code> script file in text editor and examine the contents. Script is quite straightforward, see <a href="https://bats-core.readthedocs.io/en/latest/writing-tests.html">BATS usage</a> and <a href="https://github.com/bats-core/bats-assert">BATS assert</a> for information on testing commands. Command line program <a class="elRef" href="CANopenLinux/md_cocomm_README.html">cocomm</a> is used for running each test. Testing program uses one additional functionality of <code>cocomm</code> - it prints dump of actual CAN messages, which occur with each <code>cocomm</code> command. So BATS can verify the complete result. </p>
+<p>Open the <code>*.bats</code> script file in text editor and examine the contents. Script is quite straightforward, see <a href="https://bats-core.readthedocs.io/en/latest/writing-tests.html">BATS usage</a> and <a href="https://github.com/bats-core/bats-assert">BATS assert</a> for information on testing commands. Command line program <a class="elRef" href="CANopenLinux/md_cocomm_README.html">cocomm</a> is used for running each test. Testing program uses one additional functionality of <code>cocomm</code> - it prints dump of actual CAN messages, which occur with each <code>cocomm</code> command. So BATS can verify the complete result.</p>
+<h1><a class="anchor" id="autotoc_md117"></a>
+CANopen Conformance Test Tool</h1>
+<h2><a class="anchor" id="autotoc_md118"></a>
+Testing environment</h2>
+<p><a href="https://www.can-cia.org/services/test-center/conformance-test-tool/">CANopen Conformance Test Tool</a>, version 3.0.3.10, running on Windows PC with CAN interface</p>
+<h2><a class="anchor" id="autotoc_md119"></a>
+Device under test</h2>
+<p>Device under test is <code>demoDevice</code> with with some additional settings, device dependent:</p><ul>
+<li>PIC32:<ul>
+<li>commented out from code: <code>CO_errorReport(CO-&gt;em, CO_EM_NON_VOLATILE_MEMORY</code> (file CO_main_PIC32.c)</li>
+<li>remove <code>CO_NMT_STARTUP_TO_OPERATIONAL</code> (file CO_main_PIC32.c)</li>
+<li>add <code>CO_CONFIG_EM_PROD_CONFIGURABLE</code> to <code>CO_CONFIG_EM</code> (re-define macro <code>CO_CONFIG_EM</code> in CO_driver_custom.h file)</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md120"></a>
+Test results</h2>
+<p>Complete test result are available in <a class="el" href="md_test_test_report_CCT.html">test_report_CCT.md</a>. Note that sequence of CAN messages may not be always correct. Note also, test "OD 10" takes very long time. Test succeed, but data is skipped from report.</p>
+<h2><a class="anchor" id="autotoc_md121"></a>
+Failures and explanation</h2>
+<ul>
+<li>Test case : 1.0 (EDS checker 01): Check EDS file<ul>
+<li>Some warnings: Access type in section xxxx has no clear mapping direction.</li>
+</ul>
+</li>
+<li>Test case : 3.7 (PDO 07): Configure TPDO for sync (acyclic) mode, if supported (Did not find PDO traffic, but should)<ul>
+<li>This is acyclic mode, one PDO is sent, but second isn't, because there is no change-of-state. Failure is still reported.</li>
+</ul>
+</li>
+<li>Test case : 3.22 (PDO 22): Try to write a new correct mapping with the mapping procedure.<ul>
+<li>Failure is reported, no reason indicated, erroneous behavior wasn't recognized.</li>
+</ul>
+</li>
+<li>Test case : 4.2 (OD 02), Test case : 4.8 (OD 08): Compare the read value against the default value in the EDS if it exists.<ul>
+<li>There are some differences between the values in some objects.</li>
+</ul>
+</li>
+<li>Test case : 5.6 (Emergency 06): read object 1003:1 and compare it with received msg (Additional information 0x42 doesn't match)<ul>
+<li>Additional information are manufacturer specific anyway</li>
+</ul>
+</li>
+<li>Test case : 9.4 (State 04): Test if DUT supports NMT state stopped correctly.<ul>
+<li>Test sometimes fails: CCT tool detects SYNC message immediately after NMT command stop. NMT status may not be updated fast enough. However, on another CANdump terminal there is no SYNC after NMT stop command. </li>
+</ul>
+</li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

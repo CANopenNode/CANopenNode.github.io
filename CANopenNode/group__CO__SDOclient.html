@@ -133,7 +133,125 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>CANopen Service Data Object - client protocol. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__CO__SDOserver.html">SDO server</a> </dd></dl>
+<p>SDO client is able to access Object Dictionary variables from remote nodes. Usually there is one SDO client on CANopen network, which is able to configure other CANopen nodes. It is also possible to establish individual SDO client-server communication channels between devices.</p>
+<p>SDO client is used in CANopenNode from CO_gateway_ascii.c with default SDO CAN identifiers. There is quite advanced usage in non-blocking function.</p>
+<p>If enabled, SDO client is initialized in CANopen.c file with <a class="el" href="group__CO__SDOclient.html#gaf3452c1ce2676e57b22ac9687aa8e755">CO_SDOclient_init()</a> function.</p>
+<p>Basic usage: </p><div class="fragment"><div class="line"><a class="code" href="group__CO__SDOserver.html#ga7587ddcf798747fe6d97d03bf1bf2979">CO_SDO_abortCode_t</a> read_SDO(<a class="code" href="structCO__SDOclient__t.html">CO_SDOclient_t</a> *SDO_C, <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nodeId,</div>
+<div class="line">                            <a class="code" href="group__CO__dataTypes.html#ga1f1825b69244eb3ad2c7165ddc99c956">uint16_t</a> index, <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex,</div>
+<div class="line">                            <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <span class="keywordtype">size_t</span> bufSize, <span class="keywordtype">size_t</span> *readSize)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="group__CO__SDOserver.html#ga7f729ab203285c7623df493916f22a73">CO_SDO_return_t</a> SDO_ret;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// setup client (this can be skipped, if remote device don&#39;t change)</span></div>
+<div class="line">    SDO_ret = <a class="code" href="group__CO__SDOclient.html#gade3bf4e3249aa4c611570ec43563a08d">CO_SDOclient_setup</a>(SDO_C,</div>
+<div class="line">                                 <a class="code" href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5">CO_CAN_ID_SDO_CLI</a> + nodeId,</div>
+<div class="line">                                 <a class="code" href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c">CO_CAN_ID_SDO_SRV</a> + nodeId,</div>
+<div class="line">                                 nodeId);</div>
+<div class="line">    <span class="keywordflow">if</span> (SDO_ret != <a class="code" href="group__CO__SDOserver.html#gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c">CO_SDO_RT_ok_communicationEnd</a>) {</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a58d6be7d156bbe576b8438a6fd5b446d">CO_SDO_AB_GENERAL</a>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// initiate upload</span></div>
+<div class="line">    SDO_ret = <a class="code" href="group__CO__SDOclient.html#ga3180f82563b3ed768fe7d3bd34fe1886">CO_SDOclientUploadInitiate</a>(SDO_C, index, subIndex, 1000, <span class="keyword">false</span>);</div>
+<div class="line">    <span class="keywordflow">if</span> (SDO_ret != <a class="code" href="group__CO__SDOserver.html#gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c">CO_SDO_RT_ok_communicationEnd</a>) {</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a58d6be7d156bbe576b8438a6fd5b446d">CO_SDO_AB_GENERAL</a>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// upload data</span></div>
+<div class="line">    <span class="keywordflow">do</span> {</div>
+<div class="line">        <a class="code" href="group__CO__dataTypes.html#ga33594304e786b158f3fb30289278f5af">uint32_t</a> timeDifference_us = 10000;</div>
+<div class="line">        <a class="code" href="group__CO__SDOserver.html#ga7587ddcf798747fe6d97d03bf1bf2979">CO_SDO_abortCode_t</a> abortCode = <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6">CO_SDO_AB_NONE</a>;</div>
+<div class="line"> </div>
+<div class="line">        SDO_ret = <a class="code" href="group__CO__SDOclient.html#gabd3a3be7e3d1649adfdd253c979ec21f">CO_SDOclientUpload</a>(SDO_C,</div>
+<div class="line">                                     timeDifference_us,</div>
+<div class="line">                                     <span class="keyword">false</span>,</div>
+<div class="line">                                     &amp;abortCode,</div>
+<div class="line">                                     <a class="code" href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code" href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code" href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line">        <span class="keywordflow">if</span> (SDO_ret &lt; 0) {</div>
+<div class="line">            <span class="keywordflow">return</span> abortCode;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        sleep_us(timeDifference_us);</div>
+<div class="line">    } <span class="keywordflow">while</span>(SDO_ret &gt; 0);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// copy data to the user buffer (for long data function must be called</span></div>
+<div class="line">    <span class="comment">// several times inside the loop)</span></div>
+<div class="line">    *readSize = <a class="code" href="group__CO__SDOclient.html#gaba7a9e342e612ac78994b0747f74e55d">CO_SDOclientUploadBufRead</a>(SDO_C, buf, bufSize);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6">CO_SDO_AB_NONE</a>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="group__CO__SDOserver.html#ga7587ddcf798747fe6d97d03bf1bf2979">CO_SDO_abortCode_t</a> write_SDO(<a class="code" href="structCO__SDOclient__t.html">CO_SDOclient_t</a> *SDO_C, <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nodeId,</div>
+<div class="line">                             <a class="code" href="group__CO__dataTypes.html#ga1f1825b69244eb3ad2c7165ddc99c956">uint16_t</a> index, <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex,</div>
+<div class="line">                             <a class="code" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <span class="keywordtype">size_t</span> dataSize)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="group__CO__SDOserver.html#ga7f729ab203285c7623df493916f22a73">CO_SDO_return_t</a> SDO_ret;</div>
+<div class="line">    <a class="code" href="group__CO__dataTypes.html#ga490ee355f57f2815cb1aa4626cf525f7">bool_t</a> bufferPartial = <span class="keyword">false</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// setup client (this can be skipped, if remote device is the same)</span></div>
+<div class="line">    SDO_ret = <a class="code" href="group__CO__SDOclient.html#gade3bf4e3249aa4c611570ec43563a08d">CO_SDOclient_setup</a>(SDO_C,</div>
+<div class="line">                                 <a class="code" href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5">CO_CAN_ID_SDO_CLI</a> + nodeId,</div>
+<div class="line">                                 <a class="code" href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c">CO_CAN_ID_SDO_SRV</a> + nodeId,</div>
+<div class="line">                                 nodeId);</div>
+<div class="line">    <span class="keywordflow">if</span> (SDO_ret != <a class="code" href="group__CO__SDOserver.html#gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c">CO_SDO_RT_ok_communicationEnd</a>) {</div>
+<div class="line">        <span class="keywordflow">return</span> -1</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// initiate download</span></div>
+<div class="line">    SDO_ret = <a class="code" href="group__CO__SDOclient.html#ga40f6e79592e1d587d02bbb4eaefa9489">CO_SDOclientDownloadInitiate</a>(SDO_C, index, subIndex,</div>
+<div class="line">                                           dataSize, 1000, <span class="keyword">false</span>);</div>
+<div class="line">    <span class="keywordflow">if</span> (SDO_ret != <a class="code" href="group__CO__SDOserver.html#gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c">CO_SDO_RT_ok_communicationEnd</a>) {</div>
+<div class="line">        <span class="keywordflow">return</span> -1</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// fill data</span></div>
+<div class="line">    <span class="keywordtype">size_t</span> nWritten = <a class="code" href="group__CO__SDOclient.html#ga5c6d3bdac43c5c0a9ab73357f7250dc9">CO_SDOclientDownloadBufWrite</a>(SDO_C, data, dataSize);</div>
+<div class="line">    <span class="keywordflow">if</span> (nWritten &lt; dataSize) {</div>
+<div class="line">        bufferPartial = <span class="keyword">true</span>;</div>
+<div class="line">        <span class="comment">// If SDO Fifo buffer is too small, data can be refilled in the loop.</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//download data</span></div>
+<div class="line">    <span class="keywordflow">do</span> {</div>
+<div class="line">        <a class="code" href="group__CO__dataTypes.html#ga33594304e786b158f3fb30289278f5af">uint32_t</a> timeDifference_us = 10000;</div>
+<div class="line">        <a class="code" href="group__CO__SDOserver.html#ga7587ddcf798747fe6d97d03bf1bf2979">CO_SDO_abortCode_t</a> abortCode = <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6">CO_SDO_AB_NONE</a>;</div>
+<div class="line"> </div>
+<div class="line">        SDO_ret = <a class="code" href="group__CO__SDOclient.html#gaab262f0a8d08ba023639a2c197d0943a">CO_SDOclientDownload</a>(SDO_C,</div>
+<div class="line">                                       timeDifference_us,</div>
+<div class="line">                                       <span class="keyword">false</span>,</div>
+<div class="line">                                       bufferPartial,</div>
+<div class="line">                                       &amp;abortCode,</div>
+<div class="line">                                       <a class="code" href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code" href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line">        <span class="keywordflow">if</span> (SDO_ret &lt; 0) {</div>
+<div class="line">            <span class="keywordflow">return</span> abortCode;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        sleep_us(timeDifference_us);</div>
+<div class="line">    } <span class="keywordflow">while</span>(SDO_ret &gt; 0);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6">CO_SDO_AB_NONE</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__CO__SDOclient_html_ga3180f82563b3ed768fe7d3bd34fe1886"><div class="ttname"><a href="group__CO__SDOclient.html#ga3180f82563b3ed768fe7d3bd34fe1886">CO_SDOclientUploadInitiate</a></div><div class="ttdeci">CO_SDO_return_t CO_SDOclientUploadInitiate(CO_SDOclient_t *SDO_C, uint16_t index, uint8_t subIndex, uint16_t SDOtimeoutTime_ms, bool_t blockEnable)</div><div class="ttdoc">Initiate SDO upload communication.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_ga40f6e79592e1d587d02bbb4eaefa9489"><div class="ttname"><a href="group__CO__SDOclient.html#ga40f6e79592e1d587d02bbb4eaefa9489">CO_SDOclientDownloadInitiate</a></div><div class="ttdeci">CO_SDO_return_t CO_SDOclientDownloadInitiate(CO_SDOclient_t *SDO_C, uint16_t index, uint8_t subIndex, size_t sizeIndicated, uint16_t SDOtimeoutTime_ms, bool_t blockEnable)</div><div class="ttdoc">Initiate SDO download communication.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_ga5c6d3bdac43c5c0a9ab73357f7250dc9"><div class="ttname"><a href="group__CO__SDOclient.html#ga5c6d3bdac43c5c0a9ab73357f7250dc9">CO_SDOclientDownloadBufWrite</a></div><div class="ttdeci">size_t CO_SDOclientDownloadBufWrite(CO_SDOclient_t *SDO_C, const uint8_t *buf, size_t count)</div><div class="ttdoc">Write data into SDO client buffer.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_gaab262f0a8d08ba023639a2c197d0943a"><div class="ttname"><a href="group__CO__SDOclient.html#gaab262f0a8d08ba023639a2c197d0943a">CO_SDOclientDownload</a></div><div class="ttdeci">CO_SDO_return_t CO_SDOclientDownload(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, bool_t bufferPartial, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeTransferred, uint32_t *timerNext_us)</div><div class="ttdoc">Process SDO download communication.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_gaba7a9e342e612ac78994b0747f74e55d"><div class="ttname"><a href="group__CO__SDOclient.html#gaba7a9e342e612ac78994b0747f74e55d">CO_SDOclientUploadBufRead</a></div><div class="ttdeci">size_t CO_SDOclientUploadBufRead(CO_SDOclient_t *SDO_C, uint8_t *buf, size_t count)</div><div class="ttdoc">Read data from SDO client buffer.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_gabd3a3be7e3d1649adfdd253c979ec21f"><div class="ttname"><a href="group__CO__SDOclient.html#gabd3a3be7e3d1649adfdd253c979ec21f">CO_SDOclientUpload</a></div><div class="ttdeci">CO_SDO_return_t CO_SDOclientUpload(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeIndicated, size_t *sizeTransferred, uint32_t *timerNext_us)</div><div class="ttdoc">Process SDO upload communication.</div></div>
+<div class="ttc" id="agroup__CO__SDOclient_html_gade3bf4e3249aa4c611570ec43563a08d"><div class="ttname"><a href="group__CO__SDOclient.html#gade3bf4e3249aa4c611570ec43563a08d">CO_SDOclient_setup</a></div><div class="ttdeci">CO_SDO_return_t CO_SDOclient_setup(CO_SDOclient_t *SDO_C, uint32_t COB_IDClientToServer, uint32_t COB_IDServerToClient, uint8_t nodeIDOfTheSDOServer)</div><div class="ttdoc">Setup SDO client object.</div></div>
+<div class="ttc" id="agroup__CO__SDOserver_html_ga7587ddcf798747fe6d97d03bf1bf2979"><div class="ttname"><a href="group__CO__SDOserver.html#ga7587ddcf798747fe6d97d03bf1bf2979">CO_SDO_abortCode_t</a></div><div class="ttdeci">CO_SDO_abortCode_t</div><div class="ttdoc">SDO abort codes.</div><div class="ttdef"><b>Definition:</b> CO_SDOserver.h:336</div></div>
+<div class="ttc" id="agroup__CO__SDOserver_html_ga7f729ab203285c7623df493916f22a73"><div class="ttname"><a href="group__CO__SDOserver.html#ga7f729ab203285c7623df493916f22a73">CO_SDO_return_t</a></div><div class="ttdeci">CO_SDO_return_t</div><div class="ttdoc">Return values from SDO server or client functions.</div><div class="ttdef"><b>Definition:</b> CO_SDOserver.h:413</div></div>
+<div class="ttc" id="agroup__CO__SDOserver_html_gga7587ddcf798747fe6d97d03bf1bf2979a58d6be7d156bbe576b8438a6fd5b446d"><div class="ttname"><a href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a58d6be7d156bbe576b8438a6fd5b446d">CO_SDO_AB_GENERAL</a></div><div class="ttdeci">@ CO_SDO_AB_GENERAL</div><div class="ttdoc">0x08000000, General error</div><div class="ttdef"><b>Definition:</b> CO_SDOserver.h:394</div></div>
+<div class="ttc" id="agroup__CO__SDOserver_html_gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6"><div class="ttname"><a href="group__CO__SDOserver.html#gga7587ddcf798747fe6d97d03bf1bf2979a5fc84558a4ca47e067189a14543691b6">CO_SDO_AB_NONE</a></div><div class="ttdeci">@ CO_SDO_AB_NONE</div><div class="ttdoc">0x00000000, No abort</div><div class="ttdef"><b>Definition:</b> CO_SDOserver.h:338</div></div>
+<div class="ttc" id="agroup__CO__SDOserver_html_gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c"><div class="ttname"><a href="group__CO__SDOserver.html#gga7f729ab203285c7623df493916f22a73a2d0d1d8d1bc297205b3e87174642199c">CO_SDO_RT_ok_communicationEnd</a></div><div class="ttdeci">@ CO_SDO_RT_ok_communicationEnd</div><div class="ttdoc">Success, end of communication.</div><div class="ttdef"><b>Definition:</b> CO_SDOserver.h:429</div></div>
+<div class="ttc" id="agroup__CO__dataTypes_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__CO__dataTypes.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdoc">NULL, for general usage.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:147</div></div>
+<div class="ttc" id="agroup__CO__dataTypes_html_ga1f1825b69244eb3ad2c7165ddc99c956"><div class="ttname"><a href="group__CO__dataTypes.html#ga1f1825b69244eb3ad2c7165ddc99c956">uint16_t</a></div><div class="ttdeci">unsigned int uint16_t</div><div class="ttdoc">UNSIGNED16 in CANopen (0006h), 16-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:165</div></div>
+<div class="ttc" id="agroup__CO__dataTypes_html_ga33594304e786b158f3fb30289278f5af"><div class="ttname"><a href="group__CO__dataTypes.html#ga33594304e786b158f3fb30289278f5af">uint32_t</a></div><div class="ttdeci">unsigned long int uint32_t</div><div class="ttdoc">UNSIGNED32 in CANopen (0007h), 32-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:167</div></div>
+<div class="ttc" id="agroup__CO__dataTypes_html_ga490ee355f57f2815cb1aa4626cf525f7"><div class="ttname"><a href="group__CO__dataTypes.html#ga490ee355f57f2815cb1aa4626cf525f7">bool_t</a></div><div class="ttdeci">uint_fast8_t bool_t</div><div class="ttdoc">Boolean data type for general use.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:153</div></div>
+<div class="ttc" id="agroup__CO__dataTypes_html_gaba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">UNSIGNED8 in CANopen (0005h), 8-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:163</div></div>
+<div class="ttc" id="agroup__CO__driver_html_gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c"><div class="ttname"><a href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c">CO_CAN_ID_SDO_SRV</a></div><div class="ttdeci">@ CO_CAN_ID_SDO_SRV</div><div class="ttdoc">0x580, SDO response from server (+nodeID)</div><div class="ttdef"><b>Definition:</b> CO_driver.h:494</div></div>
+<div class="ttc" id="agroup__CO__driver_html_gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5"><div class="ttname"><a href="group__CO__driver.html#gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5">CO_CAN_ID_SDO_CLI</a></div><div class="ttdeci">@ CO_CAN_ID_SDO_CLI</div><div class="ttdoc">0x600, SDO request from client (+nodeID)</div><div class="ttdef"><b>Definition:</b> CO_driver.h:495</div></div>
+<div class="ttc" id="astructCO__SDOclient__t_html"><div class="ttname"><a href="structCO__SDOclient__t.html">CO_SDOclient_t</a></div><div class="ttdoc">SDO client object.</div><div class="ttdef"><b>Definition:</b> CO_SDOclient.h:176</div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__CO__SDOserver.html">SDO server</a> </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaf3452c1ce2676e57b22ac9687aa8e755"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf3452c1ce2676e57b22ac9687aa8e755">&#9670;&nbsp;</a></span>CO_SDOclient_init()</h2>

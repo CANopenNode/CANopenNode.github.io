@@ -413,6 +413,13 @@
       <anchor>ga044da4253aeed15c3e0bb7fce13664af</anchor>
       <arglist>(rxNew)</arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_IS_RESTRICTED_CAN_ID</name>
+      <anchorfile>group__CO__driver.html</anchorfile>
+      <anchor>ga0ba23070b812ad4dcc369c0b5130e39b</anchor>
+      <arglist>(CAN_ID)</arglist>
+    </member>
     <member kind="typedef">
       <type>uint_fast8_t</type>
       <name>bool_t</name>
@@ -2188,6 +2195,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CO_NMT_NO_COMMAND</name>
+      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
+      <anchor>ggac396242e2e12ef6b0b22ff48636bc4ebadd20dae22397140d63682a3cb592a98c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CO_NMT_ENTER_OPERATIONAL</name>
       <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
       <anchor>ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146</anchor>
@@ -3218,6 +3231,20 @@
       <name>CO_PDO_MAX_MAPPED_ENTRIES</name>
       <anchorfile>group__CO__PDO.html</anchorfile>
       <anchor>gaa28b11531b508a9984f29b9e65a9590d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_RPDO_DEFAULT_CANID_COUNT</name>
+      <anchorfile>group__CO__PDO.html</anchorfile>
+      <anchor>gaadf09455fe94a94a52fe2d025b360f22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_TPDO_DEFAULT_CANID_COUNT</name>
+      <anchorfile>group__CO__PDO.html</anchorfile>
+      <anchor>ga152e398fbfd0b6a4c4c050a36f033519</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -6875,24 +6902,24 @@
     <name>CO_NMT_t</name>
     <filename>structCO__NMT__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>CO_NMT_internalState_t</type>
       <name>operatingState</name>
       <anchorfile>structCO__NMT__t.html</anchorfile>
-      <anchor>abebf973c819c48fa36c48ba2eb84818a</anchor>
+      <anchor>aaccc89ac956131330518afd7632a74fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>CO_NMT_internalState_t</type>
       <name>operatingStatePrev</name>
       <anchorfile>structCO__NMT__t.html</anchorfile>
-      <anchor>a544df8108d0853dd6d2938fa253ef018</anchor>
+      <anchor>aa158da268507ebe279834be82992bdb2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>CO_NMT_command_t</type>
       <name>internalCommand</name>
       <anchorfile>structCO__NMT__t.html</anchorfile>
-      <anchor>a7a56fcf387bd2922ece9106538d986ef</anchor>
+      <anchor>a3280dbd9fc3abbdaf174683455916e20</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -9716,6 +9743,13 @@
       <anchor>gaac3f110c1dd3cfc2b994b5c20d1c6ace</anchor>
       <arglist></arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_IS_RESTRICTED_CAN_ID</name>
+      <anchorfile>group__CO__driver.html</anchorfile>
+      <anchor>ga0ba23070b812ad4dcc369c0b5130e39b</anchor>
+      <arglist>(CAN_ID)</arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>CO_Default_CAN_ID_t</name>
@@ -11620,6 +11654,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CO_NMT_NO_COMMAND</name>
+      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
+      <anchor>ggac396242e2e12ef6b0b22ff48636bc4ebadd20dae22397140d63682a3cb592a98c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CO_NMT_ENTER_OPERATIONAL</name>
       <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
       <anchor>ggac396242e2e12ef6b0b22ff48636bc4eba6c7cdae79e5939cf321cdf82aa6b4146</anchor>
@@ -12660,6 +12700,20 @@
       <name>CO_PDO_MAX_MAPPED_ENTRIES</name>
       <anchorfile>group__CO__PDO.html</anchorfile>
       <anchor>gaa28b11531b508a9984f29b9e65a9590d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_RPDO_DEFAULT_CANID_COUNT</name>
+      <anchorfile>group__CO__PDO.html</anchorfile>
+      <anchor>gaadf09455fe94a94a52fe2d025b360f22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_TPDO_DEFAULT_CANID_COUNT</name>
+      <anchorfile>group__CO__PDO.html</anchorfile>
+      <anchor>ga152e398fbfd0b6a4c4c050a36f033519</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">

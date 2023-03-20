@@ -129,6 +129,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__driver.html#gaac3f110c1dd3cfc2b994b5c20d1c6ace">CO_VERSION_MINOR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:gaac3f110c1dd3cfc2b994b5c20d1c6ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor version number of CANopenNode. <br /></td></tr>
 <tr class="separator:gaac3f110c1dd3cfc2b994b5c20d1c6ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ba23070b812ad4dcc369c0b5130e39b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__driver.html#ga0ba23070b812ad4dcc369c0b5130e39b">CO_IS_RESTRICTED_CAN_ID</a>(CAN_ID)</td></tr>
+<tr class="memdesc:ga0ba23070b812ad4dcc369c0b5130e39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricted CAN-IDs.  <a href="group__CO__driver.html#ga0ba23070b812ad4dcc369c0b5130e39b">More...</a><br /></td></tr>
+<tr class="separator:ga0ba23070b812ad4dcc369c0b5130e39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -262,10 +265,10 @@ static <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ce
 <p>Interface between CAN hardware and CANopenNode. </p>
 <p>CANopenNode is designed for speed and portability. It runs efficiently on devices from simple 16-bit microcontrollers to PC computers. It can run in multiple threads. Reception of CAN messages is pre-processed with very fast functions. Time critical objects, such as PDO or SYNC are processed in real-time thread and other objects are processed in normal thread. See Flowchart in <a href="index.html">README.md</a> for more information.</p>
 <p><a class="anchor" id="CO_obj"></a></p>
-<h4><a class="anchor" id="autotoc_md97"></a>
+<h4><a class="anchor" id="autotoc_md98"></a>
 CANopenNode Object</h4>
 <p>CANopenNode is implemented as a collection of different objects, for example SDO, SYNC, Emergency, PDO, NMT, Heartbeat, etc. Code is written in C language and tries to be object oriented. So each CANopenNode Object is implemented in a pair of .h/.c files. It basically contains a structure with all necessary variables and some functions which operates on it. CANopenNode Object is usually connected with one or more CAN receive or transmit Message Objects. (CAN message Object is a CAN message with specific 11-bit CAN identifier (usually one fixed or a range).)</p>
-<h4><a class="anchor" id="autotoc_md98"></a>
+<h4><a class="anchor" id="autotoc_md99"></a>
 Hardware interface of CANopenNode</h4>
 <p>It consists of minimum three files:</p><ul>
 <li><b><a class="el" href="CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode.">CO_driver.h</a></b> file declares common functions. This file is part of the CANopenNode. It is included from each .c file from CANopenNode.</li>
@@ -275,6 +278,34 @@ Hardware interface of CANopenNode</h4>
 <p><b>CO_driver_target.h</b> and <b>CO_driver.c</b> files are specific for each different microcontroller and are not part of CANopenNode. There are separate projects for different microcontrollers, which usually include CANopenNode as a git submodule. CANopenNode only includes those two files in the <code>example</code> directory and they are basically empty. It should be possible to compile the <code>CANopenNode/example</code> on any system, however compiled program is not usable. <a class="el" href="CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode.">CO_driver.h</a> contains documentation for all necessary macros, types and functions.</p>
 <p>See <a href="https://github.com/CANopenNode/CANopenNode/wiki">CANopenNode/Wiki</a> for a known list of available implementations of CANopenNode on different systems and microcontrollers. Everybody is welcome to extend the list with a link to his own implementation.</p>
 <p>Implementation of the hardware interface for specific microcontroller is not always an easy task. For reliable and efficient operation it is necessary to know some parts of the target microcontroller in detail (for example threads (or interrupts), CAN module, etc.). </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga0ba23070b812ad4dcc369c0b5130e39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ba23070b812ad4dcc369c0b5130e39b">&#9670;&nbsp;</a></span>CO_IS_RESTRICTED_CAN_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CO_IS_RESTRICTED_CAN_ID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CAN_ID</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        ((CAN_ID) &lt;= 0x7F \</div>
+<div class="line">        || ((CAN_ID) &gt;= 0x101 &amp;&amp; (CAN_ID) &lt;= 0x180) \</div>
+<div class="line">        || ((CAN_ID) &gt;= 0x581 &amp;&amp; (CAN_ID) &lt;= 0x5FF) \</div>
+<div class="line">        || ((CAN_ID) &gt;= 0x601 &amp;&amp; (CAN_ID) &lt;= 0x67F) \</div>
+<div class="line">        || ((CAN_ID) &gt;= 0x6E0 &amp;&amp; (CAN_ID) &lt;= 0x6FF) \</div>
+<div class="line">        || (CAN_ID) &gt;= 0x701)</div>
+</div><!-- fragment -->
+<p>Restricted CAN-IDs. </p>
+<p>Macro for verifying 'Restricted CAN-IDs', as specified by standard CiA301. They shall not be used for SYNC, TIME, EMCY, PDO and SDO. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga01dd35ae53fd2209ceccabdc8bf8dd06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga01dd35ae53fd2209ceccabdc8bf8dd06">&#9670;&nbsp;</a></span>CO_Default_CAN_ID_t</h2>

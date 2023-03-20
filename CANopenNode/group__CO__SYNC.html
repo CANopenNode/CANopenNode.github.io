@@ -124,10 +124,10 @@ Functions</h2></td></tr>
 <p>CANopen Synchronisation protocol. </p>
 <p>For CAN identifier see <a class="el" href="group__CO__driver.html#ga01dd35ae53fd2209ceccabdc8bf8dd06" title="Default CANopen identifiers.">CO_Default_CAN_ID_t</a></p>
 <p>SYNC message is used for synchronization of the nodes on network. One node can be SYNC producer, others can be SYNC consumers. Synchronous TPDOs are transmitted after the CANopen SYNC message. Synchronous received PDOs are accepted(copied to OD) immediatelly after the reception of the next SYNC message.</p>
-<h4><a class="anchor" id="autotoc_md108"></a>
+<h4><a class="anchor" id="autotoc_md109"></a>
 Contents of SYNC message</h4>
 <p>By default SYNC message has no data. If <em>Synchronous counter overflow value</em> from Object dictionary (index 0x1019) is different than 0, SYNC message has one data byte: <em>counter</em> incremented by 1 with every SYNC transmission.</p>
-<h4><a class="anchor" id="autotoc_md109"></a>
+<h4><a class="anchor" id="autotoc_md110"></a>
 SYNC in CANopenNode</h4>
 <p>According to CANopen, synchronous RPDOs must be processed after reception of the next sync messsage. For that reason, there is a double receive buffer for each synchronous RPDO. At the moment, when SYNC is received or transmitted, internal variable CANrxToggle toggles. That variable is then used by synchronous RPDO to determine, which of the two buffers is used for RPDO reception and which for RPDO processing. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>

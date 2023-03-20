@@ -70,7 +70,7 @@ $(function() {
 <div class="textblock"><p>LSS (Layer settings service) is an extension to CANopen described in CiA DSP 305. The interface is described in CiA DS 309 3.0.0 (ASCII mapping). LSS allows the user to change node ID and bitrate, as well as setting the node ID on an unconfigured node.</p>
 <p>LSS uses the the OD Identity register (0x1018) as an unique value to select a node. Therefore the LSS address always consists of four 32 bit values. This also means that LSS relies on this register to actually be unique. (<em>vendorID</em>, <em>productCode</em>, <em>revisionNumber</em> and <em>serialNumber</em> must be configured and unique on each device.)</p>
 <p>This example runs with CANopen devices as specified in <a class="elRef" href="CANopenNode/index.html#md_README">tutorial/README.md</a>. demoDevice will be configured, its identity object is {0x0, 0x1, 0x2, 0x3}.</p>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<h1><a class="anchor" id="autotoc_md79"></a>
 Typical usage of LSS</h1>
 <p>Change the node-ID for a known slave, store the new node ID to eeprom, apply new node ID. The node currently has the node-ID = 4: </p><pre class="fragment">cocomm "help lss"
 
@@ -91,7 +91,7 @@ cocomm "10 reset node"
 cocomm "lss_set_node 4"
 cocomm "lss_store"
 cocomm "lss_switch_glob 0"
-</pre><h1><a class="anchor" id="autotoc_md81"></a>
+</pre><h1><a class="anchor" id="autotoc_md80"></a>
 LSS fastscan</h1>
 <p>LSS fastscan searches for an unconfigured node. For this example to work, set demoDevice to unconfigured Node_ID as described above.</p>
 <p>Search unconfigured node via LSS fastscan: </p><pre class="fragment">cocomm "_lss_fastscan"
@@ -101,7 +101,7 @@ cocomm "lss_store"
 cocomm "lss_switch_glob 0"
 </pre><p> To increase scanning speed, you can use: </p><pre class="fragment">cocomm "_lss_fastscan 25"
 </pre><p> Where 25 is the scan step delay in ms. Be aware that the scan will become unreliable when the delay is set too low.</p>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 Auto enumerate all nodes</h1>
 <p>Auto enumerate all unconfigured nodes via LSS fastscan. Enumeration automatically begins at node ID 2 and node ID is automatically stored to the eeprom. Like with _lss_fastscan, an optional parameter can be used to change the default delay time. For this example to work, set demoDevice to unconfigured Node_ID as described above. </p><pre class="fragment">cocomm "lss_allnodes"
 </pre><p> After a while, one or more matches are found: </p><pre class="fragment"># Node-ID 2 assigned to: 0x00000000 0x00000001 0x00000002 0x00000003

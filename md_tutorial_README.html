@@ -67,21 +67,21 @@ $(function() {
 <div class="title">CANopenNode Tutorial </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md93"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md92"></a>
 CANopen</h1>
 <p>Before starting tutorial with CANopenNode you should be familiar with the CANopen. CANopen is the internationally standardized CAN-based higher-layer protocol for embedded control system. It is specified by CiA301 (or by EN 50325-4) standard. It can be freely downloaded from <a href="https://can-cia.org/groups/specifications/">https://can-cia.org/groups/specifications/</a>. Some information about CAN and CANopen can be found on <a href="https://can-cia.org/can-knowledge/">https://can-cia.org/can-knowledge/</a> website. Very efficient way to get familiar with CANopen is by reading a book, for example <a href="https://can-newsletter.org/engineering/engineering-miscellaneous/nr_e_cia_can_books_3-2008_emb_can_pfeiffer_120529">Embedded Networking with CAN and CANopen</a>.</p>
 <p>CANopen itself is not a typical master/slave protocol (or commander/responder protocol in the new terminology). It is more like producer/consumer protocol. It is also possible to operate CANopen network without a commander. For example, pre-configured process data objects (PDO) are transmitted from producers. Each PDO may be consumed by multiple nodes. Other useful CANopen functionalities of each CANopen device are also: Heartbeat producer and consumer, Emergency producer, Sync producer or consumer, Time producer or consumer, SDO server (Service data objects - serve variables from Object dictionary), NMT slave (network management - start or stop parts of communication), LSS slave (configuration of Node-Id and Bitrate).</p>
 <p>CANopen network usually has one device with commander functionalities for network configuration, such as: NMT master, LSS master, SDO client, Emergency consumer. Commander functionalities in CANopenNode are implemented with Ascii command line interface according to standard CiA309-3.</p>
-<h1><a class="anchor" id="autotoc_md94"></a>
+<h1><a class="anchor" id="autotoc_md93"></a>
 Environment</h1>
 <p>The only requirement for this tutorial is computer with Linux. Examples will run from several windows of Command Line Interface. There are many other CANopen tools available for configuration and working with CANopen network. Some of them have GUI, some can import electronic data sheet of particular device, etc. Here we will use CLI tools from CANopenNode for most basic demonstration of CANopen principles.</p>
-<h2><a class="anchor" id="autotoc_md95"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 CANopen devices</h2>
 <p>Two CANopen devices will be used, both based on CANopenNode:</p><ol type="1">
 <li><code>canopend</code> from CANopenLinux repository will be a commander device with CANopen ASCII command interface. It will run with CANopen NodeId = 1. Application <code>cocomm</code> will be used for sending commands to <code>canopend</code>. For information on compiling and installing those two applications see CANopenLinux repository.</li>
 <li>CANopen <a class="el" href="md_demo_README.html">demoDevice</a> from demo directory. It will run with CANopen NodeId = 4. It can use any target platform listed there. Prepare the device according to the instructions.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md96"></a>
+<h2><a class="anchor" id="autotoc_md95"></a>
 CANopen network</h2>
 <p>If you don't have CAN interface and both devices are Linux based, then virtual CAN interface can be used, which runs internally. Otherwise connect CANopen devices with wires: </p><pre class="fragment">+-------------------+                             +-------------------+
 | Node-id = 1       |                             | Node-id = 4       |
@@ -97,36 +97,36 @@ CANopen network</h2>
   +-------+-------------------------------------------------+---------+
       |                  gnd                            |
       +-------------------------------------------------+
-</pre> <h3><a class="anchor" id="autotoc_md97"></a>
+</pre> <h3><a class="anchor" id="autotoc_md96"></a>
 Start CANopen network</h3>
 <p>Start CAN interface in Linux according to instructions in the CANopenLinux repository or according to specifications of your CAN interface. By default network runs with 250kbps.</p>
 <p>Alternatively enable virtual CAN interface (named <code>can0</code>): </p><pre class="fragment">sudo modprobe vcan
 sudo ip link add dev can0 type vcan
 sudo ip link set up can0
-</pre> <h2><a class="anchor" id="autotoc_md98"></a>
+</pre> <h2><a class="anchor" id="autotoc_md97"></a>
 candump</h2>
 <p>Run a tool, which will display raw CAN messages, for example <code>candump</code> from <code>can-utils</code> package. Run from own terminal window: </p><pre class="fragment">sudo apt-get install can-utils
 candump -td can0
-</pre> <h2><a class="anchor" id="autotoc_md99"></a>
+</pre> <h2><a class="anchor" id="autotoc_md98"></a>
 Start devices</h2>
 <p>This is an example, devices may also be started different way.</p>
-<h3><a class="anchor" id="autotoc_md100"></a>
+<h3><a class="anchor" id="autotoc_md99"></a>
 canopend</h3>
 <p>Use own terminal window: </p><pre class="fragment">cd CANopenLinux
 make
 rm *.persist
 ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
-</pre> <h3><a class="anchor" id="autotoc_md101"></a>
+</pre> <h3><a class="anchor" id="autotoc_md100"></a>
 demoDevice</h3>
 <p>If demoDevice is not Linux device skip this chapter and run it as necessary. If it is a Linux device, then run in own terminal window: </p><pre class="fragment">cd demo
 make
 rm *.persist
 ./demoLinuxDevice can0
 </pre><p> As set by application, startup Node-ID for demoDevice is 4. It can be changed by LSS.</p>
-<h2><a class="anchor" id="autotoc_md102"></a>
+<h2><a class="anchor" id="autotoc_md101"></a>
 cocomm</h2>
 <p>Make sure, utility <a class="elRef" href="CANopenLinux/md_cocomm_README.html">cocomm</a> is working properly. Use another terminal window and display help (help string is received from canopend): </p><pre class="fragment">cocomm "help"
-</pre><h1><a class="anchor" id="autotoc_md103"></a>
+</pre><h1><a class="anchor" id="autotoc_md102"></a>
 First steps</h1>
 <p>candump shows the following raw CAN messages: </p><pre class="fragment">can0  701   [1]  00                       # Boot-up message from canopend
 can0  081   [8]  00 50 01 2F 14 00 00 00  # Emergency from canopend
@@ -134,7 +134,7 @@ can0  704   [1]  00                       # Boot-up message from demoDevice
 can0  084   [8]  00 50 01 2F 74 00 00 00  # Emergency from demoDevice
 </pre><p> Second column is 11-bit standard CAN identifier. See <a class="elRef" href="CANopenNode/group__CO__driver.html#ga01dd35ae53fd2209ceccabdc8bf8dd06">CO_Default_CAN_ID_t</a> for information, how it is used in CANopen. Bootup message has the same 11-bit CAN ID as Heartbeat: 0x700 + CANopen Node-ID.</p>
 <p>There are no more messages from CANopen devices, because nothing is configured.</p>
-<h2><a class="anchor" id="autotoc_md104"></a>
+<h2><a class="anchor" id="autotoc_md103"></a>
 Emergency messages</h2>
 <p>Both devices sends Emergency message after the boot-up. Contents of emergency message is:</p><ul>
 <li>bytes 0..1: <a class="elRef" href="CANopenNode/group__CO__Emergency.html#ga0653c307fd6bc5238babf48e01c9fa02">CO_EM_errorCode_t</a>, in our case 0x5000 (Device Hardware) (mind that CANopen is little endian).</li>
@@ -144,7 +144,7 @@ Emergency messages</h2>
 </ul>
 <p>Emergency messages are triggered internally by <a class="elRef" href="CANopenNode/group__CO__Emergency.html#gab66d4a6daa5f7492704b56a46b135f71">CO_errorReport()</a> function. You may seek inside source code for <code>CO_EM_NON_VOLATILE_MEMORY</code> to find source of the emergency message.</p>
 <p><code>CO_EM_NON_VOLATILE_MEMORY</code> is generic, critical error, which by default sets the CANopen Error Register. If error register is different than zero, then node may be prohibited to enter NMT operational state and PDOs can not be exchanged with it.</p>
-<h2><a class="anchor" id="autotoc_md105"></a>
+<h2><a class="anchor" id="autotoc_md104"></a>
 Basic SDO communication and Heartbeat message</h2>
 <p>A SDO (Service Data Object) is providing direct access to object entries of a CANopen device's object dictionary. As these object entries may contain data of arbitrary size and data type. SDOs may be used to transfer multiple data sets (each containing an arbitrary large block of data) from a client to a server and vice versa. The client shall control via a multiplexer (index and sub-index of the object dictionary) which data set shall be transferred. The content of the data set is defined within the object dictionary.</p>
 <p>See <a class="el" href="md_demo_demoDevice.html">demo/demoDevice.md</a> for CANopen device documentation of demoDevice with description of all parameters accessible via SDO.</p>
@@ -163,13 +163,13 @@ can0  584   [8]  60 17 10 00 00 00 00 00
 can0  704   [1]  7F
 can0  701   [1]  7F
 </pre><p> Now there are heartbeat messages from each device in one second intervals. 7F means device is in NMT pre-operational state, see <a class="elRef" href="CANopenNode/group__CO__NMT__Heartbeat.html#ga1e8c2a6c0fd4a33183503d25a7c6d744">CO_NMT_internalState_t</a>. There is also one SDO communication cycle with demoDevice. SDO communication cycle with canopend is not visible, because it executes internally.</p>
-<h2><a class="anchor" id="autotoc_md106"></a>
+<h2><a class="anchor" id="autotoc_md105"></a>
 Network management - NMT</h2>
 <p>CANopen NMT messages have highest priority and are sent from NMT master, canopend in our case. They can be sent to specific node or all nodes. They can reset device, communication or set internal state of the remote device to operational, pre-operational(PDO disabled) or stopped(only heartbeat producer and NMT consumer enabled). </p><pre class="fragment">cocomm "4 reset communication"
 cocomm "4 start"
 cocomm "0 reset node"
 </pre><p> Observe CAN messages in candump. Second command does not work, because there is critical emergency which sets error register. Third command resets our devices, so go to their terminal windows and restart them.</p>
-<h2><a class="anchor" id="autotoc_md107"></a>
+<h2><a class="anchor" id="autotoc_md106"></a>
 Non-volatile storage</h2>
 <p>Emergency message, error register and NMT pre-operational state have source in uninitialized non-volatile storage. Objects 0x1010 and 0x1011 are used to store and restore the data, usually from CANopen Object Dictionary.</p>
 <p>Restore all non-volatile storage on both devices and reset them: </p><pre class="fragment">cocomm "1 w 0x1011 1 vs load"
@@ -194,7 +194,7 @@ cocomm "0 reset node"
 # re-run devices in their terminals
 </pre><p> Parameters from CANopen Object Dictionary are sorted into several storage groups. This is configured by Object dictionary editor. See <a class="el" href="md_demo_demoDevice.html">demo/demoDevice.md</a> for storage group for each OD object.</p>
 <p>Storage groups are configured for storage with array of <a class="elRef" href="CANopenNode/structCO__storage__entry__t.html">CO_storage_entry_t</a> objects. (For initialization in Linux devices see CANopenLinux/CO_main_basic.c and demo/linux/CO_driver_custom.h files.)</p>
-<h3><a class="anchor" id="autotoc_md108"></a>
+<h3><a class="anchor" id="autotoc_md107"></a>
 Default storage groups for demoDevice</h3>
 <ul>
 <li><code>RAM</code> is never stored</li>
@@ -204,7 +204,7 @@ Default storage groups for demoDevice</h3>
 <li>Internal data block used by mainline, which is stored automatically. Block is assigned to sub-index 4 of the 0x1010 and 0x1011 objects.</li>
 <li>Sub-index 1 of the 0x1010 and 0x1011 stores/restores all parameters.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md109"></a>
+<h1><a class="anchor" id="autotoc_md108"></a>
 Next steps</h1>
 <ul>
 <li><a class="el" href="md_tutorial_LSS.html">tutorial/LSS.md</a> - Assigning Node-ID or CAN bitrate to devices, which support LSS configuration.</li>

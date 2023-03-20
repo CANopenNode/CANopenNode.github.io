@@ -69,7 +69,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>A <b>PDO</b> (Process Data Object) is providing real-time data transfer of object entries of a CANopen device's object dictionary. The transfer of PDO is performed with no protocol overhead. The PDO correspond to objects in the object dictionary and provide the interface to the application objects. Data type and mapping of application objects into a PDO is determined by a corresponding PDO mapping structure within the object dictionary.</p>
 <p>This chapter describes PDO configuration and some experimenting with the <a class="el" href="md_demo_README.html">demoDevice</a>. Example runs with CANopen devices as specified in <a class="elRef" href="CANopenNode/index.html#md_README">tutorial/README.md</a>.</p>
-<h1><a class="anchor" id="autotoc_md83"></a>
+<h1><a class="anchor" id="autotoc_md82"></a>
 Basic principles</h1>
 <p>TPDO with specific 11-bit CAN identifier is transmitted by one device and recieved by zero or more devices as RPDO. PDO communication parameters(COB-ID, transmission type, etc.) are in the Object Dictionary at index 0x1400+ and 0x1800+. PDO mapping parameters (size and contents of the PDO) are in the Object Dictionary at index 0x1600+ and 0x1A00+.</p>
 <p>Each PDO can be configured with any valid 11-bit CAN identifier. Lower numbers have higher priorities on CAN bus. As a general rule, each CAN message is identified with own CAN-ID, which must be unique and produced by single source. The same is with PDO objects: Any TPDO produced on the CANopen network must have unique CAN-ID and there can be zero to many RPDOs (from different devices) configured to match the CAN-ID of the TPDO of interest.</p>
@@ -84,7 +84,7 @@ Basic principles</h1>
 <li>Enable mapping by setting PDO mapping param, sub 0 to number of mapped objects</li>
 <li>Enable the PDO by setting bit-31 to 0 in PDO communication parameter, COB-ID</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md84"></a>
+<h2><a class="anchor" id="autotoc_md83"></a>
 PDO communication parameter</h2>
 <ol type="1">
 <li>COB-ID used by PDO:<ul>
@@ -111,7 +111,7 @@ PDO communication parameter</h2>
 </ul>
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md85"></a>
+<h2><a class="anchor" id="autotoc_md84"></a>
 PDO mapping parameter</h2>
 <ul>
 <li>subindex 0: Number of mapped application objects in PDO:<ul>
@@ -127,10 +127,10 @@ PDO mapping parameter</h2>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md86"></a>
+<h1><a class="anchor" id="autotoc_md85"></a>
 Read current PDO configuration in demoDevice</h1>
 <p>Set the default Node-ID to 4 for demoDevice: </p><pre class="fragment">cocomm "set node 4"
-</pre> <h2><a class="anchor" id="autotoc_md87"></a>
+</pre> <h2><a class="anchor" id="autotoc_md86"></a>
 RPDOs</h2>
 <p>RPDO communication parameters, COB-ID used by RPDO and RPDO mapping parameters, number of mapped application objects: </p><pre class="fragment">cocomm "r 0x1400 1 x32" "r 0x1401 1 x32" "r 0x1402 1 x32" "r 0x1403 1 x32"
 cocomm "r 0x1600 0 u8" "r 0x1601 0 u8" "r 0x1602 0 u8" "r 0x1603 0 u8"
@@ -182,7 +182,7 @@ cocomm "[0] r $pm 0 u8"; for i in {1..8}; do cocomm "[$i] r $pm $i x32"; done
 [7] 0x00000000
 [8] 0x00000000
 </pre><p> RPDO 2 accepts 0x304 CAN-ID, 8 bytes long and maps to four 16-bit analog outputs.</p>
-<h2><a class="anchor" id="autotoc_md88"></a>
+<h2><a class="anchor" id="autotoc_md87"></a>
 TPDOs</h2>
 <p>TPDO communication parameters, COB-ID used by TPDO and TPDO mapping parameters, number of mapped application objects: </p><pre class="fragment">cocomm "r 0x1800 1 x32" "r 0x1801 1 x32" "r 0x1802 1 x32" "r 0x1803 1 x32"
 cocomm "r 0x1A00 0 u8" "r 0x1A01 0 u8" "r 0x1A02 0 u8" "r 0x1A03 0 u8"
@@ -238,7 +238,7 @@ cocomm "[0] r $pm 0 u8"; for i in {1..8}; do cocomm "[$i] r $pm $i x32"; done
 [7] 0x00000000
 [8] 0x00000000
 </pre><p> TPDO 2 has mapped 4 16-bit analog inputs. It has CAN-ID 0x284 and 8 data bytes, when sent.</p>
-<h1><a class="anchor" id="autotoc_md89"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Configure TPDO 3 in demoDevice</h1>
 <p>One 32-bit OD variable will be mapped to TPDO 3: 0x2110,1. See <a class="el" href="md_demo_README.html">demoDevice</a>, section "OD variable mapped to TPDO".</p>
 <p>Disable TPDO, if not already disabled, configure mapping and enable TPDO with default CAN-ID: </p><pre class="fragment">cocomm "w 0x1802 1 u32 0x80000000"
@@ -258,10 +258,10 @@ cocomm "w 0x2110 1 u32 0x12345678"
 cocomm "w 0x2110 1 u32 0x12345678" # same data, no TPDO
 
 cocomm "w 0x2110 1 u32 0xAABBCCDD"
-</pre><h1><a class="anchor" id="autotoc_md90"></a>
+</pre><h1><a class="anchor" id="autotoc_md89"></a>
 Configure RPDO in one or several remote devices to accept TPDO 3 from demoDevice</h1>
 <p>Use any free RPDO and configure it to accept PDO with CAN-ID = 0x384 and data length of 4 bytes. Provide OD variables for data from demoDevice and map RPDO to them.</p>
-<h1><a class="anchor" id="autotoc_md91"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 Other mapping features</h1>
 <p>CANopenNode enables mapping length smaller than variable length. For example, only two bytes of variable of type uint32_t can be mapped, where its little end will be used.</p>
 <p>To adjust the length of TPDO or RPDO, dummy entries can be used for mapping, for example:</p>
@@ -278,7 +278,7 @@ Other mapping features</h1>
 <td class="markdownTableBodyNone">int64_t   </td><td class="markdownTableBodyNone">0x00150064   </td></tr>
 </table>
 <p>CANopenNode granularity is 8 bits, so smallest mappable length is one byte.</p>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 Other communication options</h1>
 <p>More deterministic transmission of PDOs may be configured with usage of CANopen SYNC messages. See CANopen documentation. </p>
 </div></div><!-- contents -->

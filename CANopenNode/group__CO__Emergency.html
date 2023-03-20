@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 <p>Error control and Emergency is used for control internal error state and for sending a CANopen Emergency message.</p>
 <p>In case of error condition stack or application calls <a class="el" href="group__CO__Emergency.html#gab66d4a6daa5f7492704b56a46b135f71" title="Report error condition, for description of parameters see CO_error.">CO_errorReport()</a> function with indication of the error. Specific error condition is reported (with CANopen Emergency message) only the first time after it occurs. Internal state of specific error condition is indicated by internal bitfield variable, with space for maximum <a class="el" href="group__CO__STACK__CONFIG__EMERGENCY.html#gab87776d4802748671b234112263760af">CO_CONFIG_EM_ERR_STATUS_BITS_COUNT</a> bits. Meaning for each bit is described by <a class="el" href="group__CO__Emergency.html#ga587034df9d350c8e121c253f1d4eeacc">CO_EM_errorStatusBits_t</a>. Specific error condition can be reset by <a class="el" href="group__CO__Emergency.html#ga24e2a9311cf704ec6ed43b0ea730c4a3" title="Reset error condition, for description of parameters see CO_error.">CO_errorReset()</a> function. In that case Emergency message is sent with CO_EM_NO_ERROR indication.</p>
 <p>Some error conditions are informative and some are critical. Critical error conditions set the corresponding bit in <a class="el" href="group__CO__Emergency.html#ga2cfc261cce03577083ee3f1a31d5e03c">CO_errorRegister_t</a>. Critical error conditions for generic error are specified by <a class="el" href="group__CO__STACK__CONFIG__EMERGENCY.html#gad6270eb7887b22c0365c304d7cf2c633">CO_CONFIG_ERR_CONDITION_GENERIC</a> macro. Similar macros are defined for other error bits in in <a class="el" href="group__CO__Emergency.html#ga2cfc261cce03577083ee3f1a31d5e03c">CO_errorRegister_t</a>.</p>
-<h3><a class="anchor" id="autotoc_md102"></a>
+<h3><a class="anchor" id="autotoc_md103"></a>
 Emergency producer</h3>
 <p>If <a class="el" href="group__CO__STACK__CONFIG__EMERGENCY.html#ga16aa1479ffd52a627d1053c20f844b62">CO_CONFIG_EM</a> has CO_CONFIG_EM_PRODUCER enabled, then CANopen Emergency message will be sent on each change of any error condition. Emergency message contents are:</p>
 <table class="markdownTable">
@@ -298,10 +298,10 @@ Emergency producer</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">4..7   </td><td class="markdownTableBodyNone">Additional informative argument to <a class="el" href="group__CO__Emergency.html#gab66d4a6daa5f7492704b56a46b135f71" title="Report error condition, for description of parameters see CO_error.">CO_errorReport()</a> function.   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md103"></a>
+<h3><a class="anchor" id="autotoc_md104"></a>
 Error history</h3>
 <p>If <a class="el" href="group__CO__STACK__CONFIG__EMERGENCY.html#ga16aa1479ffd52a627d1053c20f844b62">CO_CONFIG_EM</a> has CO_CONFIG_EM_HISTORY enabled, then latest errors can be read from <em>Pre Defined Error Field</em> (object dictionary, index 0x1003). Contents corresponds to bytes 0..3 from the Emergency message.</p>
-<h3><a class="anchor" id="autotoc_md104"></a>
+<h3><a class="anchor" id="autotoc_md105"></a>
 Emergency consumer</h3>
 <p>If <a class="el" href="group__CO__STACK__CONFIG__EMERGENCY.html#ga16aa1479ffd52a627d1053c20f844b62">CO_CONFIG_EM</a> has CO_CONFIG_EM_CONSUMER enabled, then callback can be registered by <a class="el" href="group__CO__Emergency.html#ga583245c954327c3cf7f9fdb97854e76b">CO_EM_initCallbackRx()</a> function. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>

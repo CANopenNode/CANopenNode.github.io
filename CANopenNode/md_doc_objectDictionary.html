@@ -74,16 +74,16 @@ Definitions from CiA 301</h1>
 <p>A <b>PDO</b> (Process Data Object) is providing real-time data transfer of object entries of a CANopen device's object dictionary. The transfer of PDO is performed with no protocol overhead. The PDO correspond to objects in the object dictionary and provide the interface to the application objects. Data type and mapping of application objects into a PDO is determined by a corresponding PDO mapping structure within the object dictionary.</p>
 <h1><a class="anchor" id="operation"></a>
 Operation</h1>
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 Terms</h2>
 <p>The term <b>OD object</b> means object from object dictionary located at specific 16-bit index. There are different types of OD objects in CANopen: variables, arrays and records (structures). Each OD object contains pointer to actual data, data length(s) and attribute(s). See <a class="el" href="group__CO__ODdefinition.html#gaae426e9d66ec1bacfef2d93f096d7805">OD_objectTypes_t</a>.</p>
 <p>The term <b>OD variable</b> is basic variable of specified type. For example: int8_t, uint32_t, float64_t, ... or just sequence of binary data with known or unknown data length. Each OD variable resides in Object dictionary at specified 16-bit index and 8-bit sub-index.</p>
 <p>The term <b>OD entry</b> means structure element, which contains some basic properties of the OD object, indication of type of OD object and pointer to all necessary data for the OD object. An array of OD entries together with information about total number of OD entries represents object dictionary as defined inside CANopenNode. See <a class="el" href="structOD__entry__t.html">OD_entry_t</a> and <a class="el" href="structOD__t.html">OD_t</a>.</p>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 Access</h2>
 <p>Application and the stack have access to OD objects via universal <a class="el" href="structOD__t.html">OD_t</a> object and <a class="el" href="group__CO__ODinterface.html#gae2d815788a1afbf69f74bf36329ed622">OD_find()</a> function. No direct access to custom structures, which define object dictionary, is required. Properties for specific OD variable is fetched with <a class="el" href="group__CO__ODinterface.html#gaa2f391591c6bc2571841860ff78f72ce">OD_getSub()</a> function. Access to actual variable is via <b>read</b> and <b>write</b> functions. Pointer to those two functions is fetched by <a class="el" href="group__CO__ODinterface.html#gaa2f391591c6bc2571841860ff78f72ce">OD_getSub()</a>. See <a class="el" href="structOD__stream__t.html">OD_stream_t</a>. See also shortcuts: <a class="el" href="group__CO__ODgetSetters.html">Getters and setters</a>, for access to data of different type.</p>
 <p>Note that OD variables can be accessed from different threads. CANopenNode basically runs in two threads: fast real-time (PDO processing, etc.) and time non-critical mainline (SDO etc.). Both threads have access to OD variables, so care must be taken into account. CANopenNode uses locking mechanism, where SDO server prevents execution of the real-time thread at the moment it reads or writes OD variable. The same protection of the OD variables is necessary in <a class="el" href="group__CO__storage.html">Data storage base</a>. For more information see <a class="el" href="group__CO__critical__sections.html">Critical sections</a> in <a class="el" href="CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode.">CO_driver.h</a>.</p>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Example usage</h2>
 <div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code" href="structOD__t.html">OD_t</a> *ODxyz;</div>
 <div class="line"> </div>
@@ -122,8 +122,8 @@ Example usage</h2>
 <div class="ttc" id="agroup__CO__ODinterface_html_gaadf3e12bc9179030777eb4041fbf13ae"><div class="ttname"><a href="group__CO__ODinterface.html#gaadf3e12bc9179030777eb4041fbf13ae">OD_size_t</a></div><div class="ttdeci">uint32_t OD_size_t</div><div class="ttdoc">Variable of type OD_size_t contains data length in bytes of OD variable.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.h:46</div></div>
 <div class="ttc" id="agroup__CO__ODinterface_html_gae2d815788a1afbf69f74bf36329ed622"><div class="ttname"><a href="group__CO__ODinterface.html#gae2d815788a1afbf69f74bf36329ed622">OD_find</a></div><div class="ttdeci">OD_entry_t * OD_find(OD_t *od, uint16_t index)</div><div class="ttdoc">Find OD entry in Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.c:143</div></div>
 <div class="ttc" id="agroup__CO__ODinterface_html_gga0e9afd8ad27de0920d1fe0738834869ca15f7f20e27f1c5f174bdeecfeef45cc2"><div class="ttname"><a href="group__CO__ODinterface.html#gga0e9afd8ad27de0920d1fe0738834869ca15f7f20e27f1c5f174bdeecfeef45cc2">ODR_OK</a></div><div class="ttdeci">@ ODR_OK</div><div class="ttdoc">SDO abort 0x00000000 - Read/write successfully finished.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.h:149</div></div>
-<div class="ttc" id="agroup__CO__critical__sections_html_ga37d2c1496e5304faf5f0670ef33a4704"><div class="ttname"><a href="group__CO__critical__sections.html#ga37d2c1496e5304faf5f0670ef33a4704">CO_UNLOCK_OD</a></div><div class="ttdeci">#define CO_UNLOCK_OD(CAN_MODULE)</div><div class="ttdoc">Unock critical section when accessing Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:459</div></div>
-<div class="ttc" id="agroup__CO__critical__sections_html_gae91e416633b4df1800e97a2bc02bbeb4"><div class="ttname"><a href="group__CO__critical__sections.html#gae91e416633b4df1800e97a2bc02bbeb4">CO_LOCK_OD</a></div><div class="ttdeci">#define CO_LOCK_OD(CAN_MODULE)</div><div class="ttdoc">Lock critical section when accessing Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:457</div></div>
+<div class="ttc" id="agroup__CO__critical__sections_html_ga37d2c1496e5304faf5f0670ef33a4704"><div class="ttname"><a href="group__CO__critical__sections.html#ga37d2c1496e5304faf5f0670ef33a4704">CO_UNLOCK_OD</a></div><div class="ttdeci">#define CO_UNLOCK_OD(CAN_MODULE)</div><div class="ttdoc">Unock critical section when accessing Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:458</div></div>
+<div class="ttc" id="agroup__CO__critical__sections_html_gae91e416633b4df1800e97a2bc02bbeb4"><div class="ttname"><a href="group__CO__critical__sections.html#gae91e416633b4df1800e97a2bc02bbeb4">CO_LOCK_OD</a></div><div class="ttdeci">#define CO_LOCK_OD(CAN_MODULE)</div><div class="ttdoc">Lock critical section when accessing Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:456</div></div>
 <div class="ttc" id="astructOD__IO__t_html"><div class="ttname"><a href="structOD__IO__t.html">OD_IO_t</a></div><div class="ttdoc">Structure for input / output on the OD variable.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.h:236</div></div>
 <div class="ttc" id="astructOD__IO__t_html_a7f31cae6c859c2a2eaf2610b65fd6626"><div class="ttname"><a href="structOD__IO__t.html#a7f31cae6c859c2a2eaf2610b65fd6626">OD_IO_t::stream</a></div><div class="ttdeci">OD_stream_t stream</div><div class="ttdoc">Object Dictionary stream object, passed to read or write.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.h:238</div></div>
 <div class="ttc" id="astructOD__IO__t_html_ae8c544ba658503d8568324ee3f2616ba"><div class="ttname"><a href="structOD__IO__t.html#ae8c544ba658503d8568324ee3f2616ba">OD_IO_t::read</a></div><div class="ttdeci">ODR_t(* read)(OD_stream_t *stream, void *buf, OD_size_t count, OD_size_t *countRead)</div><div class="ttdoc">Function pointer for reading value from specified variable from Object Dictionary.</div><div class="ttdef"><b>Definition:</b> CO_ODinterface.h:272</div></div>
@@ -132,7 +132,7 @@ Example usage</h2>
 </div><!-- fragment --><p> There is no need to include ODxyt.h file, it is only necessary to know, we have ODxyz defined somewhere.</p>
 <p>Second example is simpler and use helper function to access OD variable. However it is not very efficient, because it goes through all search procedures.</p>
 <p>If access to the same variable is very frequent, it is better to use first example. After initialization, application has to remember only "io1008" object. Frequent reading of the variable is then very efficient.</p>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Simple access to OD via globals</h2>
 <p>Some simple user applications can also access some OD variables directly via globals.</p>
 <dl class="section warning"><dt>Warning</dt><dd>If OD object has OD extension enabled, then direct access to its OD variables must not be used. Only valid access is via read or write or helper functions.</dd></dl>
@@ -149,13 +149,13 @@ Simple access to OD via globals</h2>
 <div class="ttc" id="agroup__CO__dataTypes_html_ga33594304e786b158f3fb30289278f5af"><div class="ttname"><a href="group__CO__dataTypes.html#ga33594304e786b158f3fb30289278f5af">uint32_t</a></div><div class="ttdeci">unsigned long int uint32_t</div><div class="ttdoc">UNSIGNED32 in CANopen (0007h), 32-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:167</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="object-dictionary-example"></a>
 Object Dictionary Example</h1>
-<p>Actual Object dictionary for one CANopen device is defined by pair of OD_xyz.h and ODxyz.h files.</p>
+<p>Actual Object dictionary for one CANopen device is defined by pair of OD_xyz.h and ODxyz.c files.</p>
 <p>Suffix "xyz" is unique name of the object dictionary. If single default object dictionary is used, suffix is omitted. Such way configuration with multiple object dictionaries is possible.</p>
 <p>Data for OD definition are arranged inside multiple structures. Structures are different for different configuration of OD. Data objects, created with those structures, are constant or are variable.</p>
 <p>Actual OD variables are arranged inside multiple structures, so called storage groups. Selected groups can optionally be stored to non-volatile memory.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Manual editing of ODxyz.h/.c files is very error-prone.</dd></dl>
 <p>Pair of ODxyz.h/.c files can be generated by OD editor tool. The tool can edit standard CANopen device description file in xml format. Xml file may include also some non-standard elements, specific to CANopenNode. Xml file is then used for automatic generation of ODxyz.h/.c files.</p>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 Example ODxyz.h file</h2>
 <div class="fragment"><div class="line"><span class="comment">/* OD data declaration of all groups ******************************************/</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
@@ -190,7 +190,7 @@ Example ODxyz.h file</h2>
 <div class="line"><span class="preprocessor">#define ODxyz_ENTRY_H1003_preDefinedErrorField &amp;ODxyz-&gt;list[2]</span></div>
 <div class="line"><span class="preprocessor">#define ODxyz_ENTRY_H1018_identity &amp;ODxyz-&gt;list[3]</span></div>
 <div class="ttc" id="agroup__CO__dataTypes_html_gaba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">UNSIGNED8 in CANopen (0005h), 8-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> CO_driver.h:163</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md51"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md52"></a>
 Example ODxyz.c file</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#define OD_DEFINITION</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="CO__ODinterface_8h.html">301/CO_ODinterface.h</a>&quot;</span></div>
@@ -311,7 +311,7 @@ XML Device Description</h1>
 <p>The device description file has "XDD" file extension. The name of this file shall contain the vendor-ID of the CANopen device in the form of 8 hexadecimal digits in any position of the name and separated with underscores. For example "name1_12345678_name2.XDD".</p>
 <p>CANopenNode includes multiple profile definition files, one for each CANopen object. Those files have "XPD" extension. They are in the same XML format as XDD files. The XML editor tool can use XPD files to insert prepared data into device description file (XDD), which is being edited.</p>
 <p>There are also device configuration files with "XDC" extension. They are describing a configured CANopen device and include additional elements, such as default value, denominator and device commissioning elements. Similar as "dcf" files in INI format.</p>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md53"></a>
 XDD, XPD file example</h2>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">ISO15745ProfileContainer</span> <span class="keyword">xmlns:xsi</span>=<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;http://www.canopen.org/xml/1.1&quot;</span>&gt;</div>
@@ -403,7 +403,7 @@ XDD, XPD file example</h2>
 <div class="line">    &lt;/<span class="keywordtype">ProfileBody</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">ISO15745Profile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">ISO15745ProfileContainer</span>&gt;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md53"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md54"></a>
 Parameter description</h2>
 <p>Above XML file example shows necessary data for OD interface used by CANopenNode and other parameters required by the standard. Standard specifies many other parameters, which are not used by CANopenNode for simplicity.</p>
 <p>XML file is divided into two parts:</p><ol type="1">
@@ -411,7 +411,7 @@ Parameter description</h2>
 <li>"ProfileBody_CommunicationNetwork_CANopen" - CANopen specific information</li>
 </ol>
 <p>Largest part of the XML file is definition of each OD object. All OD objects are listed in "CANopenObjectList", which resides in the second part of the XML file. Each "CANopenObject" and "CANopenSubObject" of the list contains a link to parameter ("uniqueIDRef"), which resides in the first part of the XML file. So data for each OD object is split between two parts of the XML file.</p>
-<h3><a class="anchor" id="autotoc_md54"></a>
+<h3><a class="anchor" id="autotoc_md55"></a>
 &lt;CANopenObject&gt;</h3>
 <ul>
 <li>"index" (required) - Object dictionary index</li>
@@ -428,7 +428,7 @@ Parameter description</h2>
 </li>
 <li>"uniqueIDRef" (required or see below) - Reference to &lt;parameter&gt;</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md55"></a>
+<h3><a class="anchor" id="autotoc_md56"></a>
 &lt;CANopenSubObject&gt;</h3>
 <ul>
 <li>"subIndex" (required) - Object dictionary sub-index</li>
@@ -437,7 +437,7 @@ Parameter description</h2>
 <li>"PDOmapping" (optional, same as above)</li>
 <li>"uniqueIDRef" (required or see below) - Reference to &lt;parameter&gt;</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md56"></a>
+<h3><a class="anchor" id="autotoc_md57"></a>
 uniqueIDRef</h3>
 <p>This is required attribute from "CANopenObject" and "CANopenSubObject". It contains reference to &lt;parameter&gt; in "ProfileBody_Device_CANopen" section of the XML file.</p>
 <p>If "uniqueIDRef" attribute is not specified and "objectType" is 7(VAR), then "CANopenObject" or "CANopenSubObject" must contain additional attributes:</p><ul>
@@ -445,7 +445,7 @@ uniqueIDRef</h3>
 <li>"accessType" (required for VAR) - "ro", "wo", "rw" or "const"</li>
 <li>"defaultValue" (optional) - Default value for the variable.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md57"></a>
+<h3><a class="anchor" id="autotoc_md58"></a>
 &lt;parameter&gt;</h3>
 <ul>
 <li>&quot;<b>uniqueID</b>&quot; (required)</li>
@@ -471,10 +471,10 @@ uniqueIDRef</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md58"></a>
+<h3><a class="anchor" id="autotoc_md59"></a>
 Other elements</h3>
 <p>Other elements listed in the above XML example are required by the standard. There are also many other elements, not listed above. All those does not influence the CANopenNode object dictionary exporter.</p>
-<h2><a class="anchor" id="autotoc_md59"></a>
+<h2><a class="anchor" id="autotoc_md60"></a>
 CANopen basic data types</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">

@@ -114,6 +114,12 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__PDO.html#gaa28b11531b508a9984f29b9e65a9590d">CO_PDO_MAX_MAPPED_ENTRIES</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:gaa28b11531b508a9984f29b9e65a9590d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of entries, which can be mapped to PDO, 8 for standard CAN, may be less to preserve RAM usage. <br /></td></tr>
 <tr class="separator:gaa28b11531b508a9984f29b9e65a9590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadf09455fe94a94a52fe2d025b360f22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__PDO.html#gaadf09455fe94a94a52fe2d025b360f22">CO_RPDO_DEFAULT_CANID_COUNT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:gaadf09455fe94a94a52fe2d025b360f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of CANopen RPDO objects, which uses default CAN indentifiers.  <a href="group__CO__PDO.html#gaadf09455fe94a94a52fe2d025b360f22">More...</a><br /></td></tr>
+<tr class="separator:gaadf09455fe94a94a52fe2d025b360f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga152e398fbfd0b6a4c4c050a36f033519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__PDO.html#ga152e398fbfd0b6a4c4c050a36f033519">CO_TPDO_DEFAULT_CANID_COUNT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ga152e398fbfd0b6a4c4c050a36f033519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of CANopen TPDO objects, which uses default CAN indentifiers.  <a href="group__CO__PDO.html#ga152e398fbfd0b6a4c4c050a36f033519">More...</a><br /></td></tr>
+<tr class="separator:ga152e398fbfd0b6a4c4c050a36f033519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf1eb79766e61b1ce280eb5df7107b337"><td class="memItemLeft" align="right" valign="top"><a id="gaf1eb79766e61b1ce280eb5df7107b337"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CO__PDO.html#gaf1eb79766e61b1ce280eb5df7107b337">CO_RPDO_CAN_BUFFERS_COUNT</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:gaf1eb79766e61b1ce280eb5df7107b337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of buffers for received CAN message for RPDO. <br /></td></tr>
@@ -174,7 +180,7 @@ Functions</h2></td></tr>
 <li>Function <a class="el" href="group__CO__PDO.html#ga2a4c4e70cea8797b4165e7d9783a876e" title="Process transmitting PDO messages.">CO_TPDO_process()</a> (called by application) sends TPDO when necessary. There are different transmission types possible, controlled by: SYNC message, event timer, <a class="el" href="group__CO__PDO.html#ga83b48c441965596e6d693f879c076ae4">CO_TPDOsendRequest()</a> by application or <a class="el" href="group__CO__ODinterface.html#gac3164283191a778559f10e331bc9d775">OD_requestTPDO()</a>, where application can request TPDO for OD variable mapped to any of them. In later case application may, for example, monitor change of state of the OD variable and indicate TPDO request on it.</li>
 </ul>
 <p><a class="anchor" id="CO_PDO_CAN_ID"></a></p>
-<h3><a class="anchor" id="autotoc_md107"></a>
+<h3><a class="anchor" id="autotoc_md108"></a>
 CAN identifiers for PDO</h3>
 <p>Each PDO can be configured with any valid 11-bit CAN identifier. Lower numbers have higher priorities on CAN bus. As a general rule, each CAN message is identified with own CAN-ID, which must be unique and produced by single source. The same is with PDO objects: Any TPDO produced on the CANopen network must have unique CAN-ID and there can be zero to many RPDOs (from different devices) configured to match the CAN-ID of the TPDO of interest.</p>
 <p>CANopen standard provides pre-defined connection sets for four RPDOs and four TPDOs on each device with specific 7-bit Node-ID. These are default values and are usable in configuration, where CANopen network contains a master device, which directly communicates with many slaves. In de-centralized systems, where devices operate without a master, it makes sense to configure CAN-IDs of the RPDOs to the non-default values.</p>
@@ -190,6 +196,41 @@ CAN identifiers for PDO</h3>
 <li>Enable mapping by setting PDO mapping param, sub 0 to number of mapped objects</li>
 <li>Enable the PDO by setting bit-31 to 0 in PDO communication parameter, COB-ID </li>
 </ul>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gaadf09455fe94a94a52fe2d025b360f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadf09455fe94a94a52fe2d025b360f22">&#9670;&nbsp;</a></span>CO_RPDO_DEFAULT_CANID_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CO_RPDO_DEFAULT_CANID_COUNT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of CANopen RPDO objects, which uses default CAN indentifiers. </p>
+<p>By default first four RPDOs have pre-defined CAN identifiers, which depends on node-id. This constant may be set to 0 to disable functionality or set to any other value. For example, if there are several logical devices inside single CANopen device, then more than four RPDOs may have pre-defined CAN identifiers. In that case RPDO5 has CAN_ID=0x200+NodeId+1, RPDO6 has CAN_ID=0x300+NodeId+1, RPDO9 has CAN_ID=0x200+NodeId+2 and so on. </p>
+
+</div>
+</div>
+<a id="ga152e398fbfd0b6a4c4c050a36f033519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga152e398fbfd0b6a4c4c050a36f033519">&#9670;&nbsp;</a></span>CO_TPDO_DEFAULT_CANID_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CO_TPDO_DEFAULT_CANID_COUNT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of CANopen TPDO objects, which uses default CAN indentifiers. </p>
+<p>If value is more than four, then pre-defined pre-defined CAN identifiers are: TPDO5 has CAN_ID=0x180+NodeId+1, TPDO6 has CAN_ID=0x280+NodeId+1, TPDO9 has CAN_ID=0x180+NodeId+2 and so on. For description see <a class="el" href="group__CO__PDO.html#gaadf09455fe94a94a52fe2d025b360f22">CO_RPDO_DEFAULT_CANID_COUNT</a>. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga0b182269e2b7df596f5c0b5b39e2a604"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0b182269e2b7df596f5c0b5b39e2a604">&#9670;&nbsp;</a></span>CO_PDO_transmissionTypes_t</h2>

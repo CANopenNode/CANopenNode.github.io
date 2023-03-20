@@ -123,18 +123,18 @@ Macros</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Protection of critical sections in multi-threaded operation. </p>
 <p>CANopenNode is designed to run in different threads, as described in <a href="index.html">README.md</a>. Threads are implemented differently in different systems. In microcontrollers threads are interrupts with different priorities, for example. It is necessary to protect sections, where different threads access to the same resource. In simple systems interrupts or scheduler may be temporary disabled between access to the shared resource. Otherwise mutexes or semaphores can be used.</p>
-<h4><a class="anchor" id="autotoc_md99"></a>
+<h4><a class="anchor" id="autotoc_md100"></a>
 Reentrant functions</h4>
 <p>Functions <a class="el" href="group__CO__driver.html#ga4664a9f5d547cb0605a9e929fb079f2e" title="Send CAN message.">CO_CANsend()</a> from C_driver.h, and <a class="el" href="group__CO__Emergency.html#ga9221f9f631ead4b6f66cfcff8614ba46" title="Set or reset error condition.">CO_error()</a> from <a class="el" href="CO__Emergency_8h.html" title="CANopen Emergency protocol.">CO_Emergency.h</a> may be called from different threads. Critical sections must be protected. Either by disabling scheduler or interrupts or by mutexes or semaphores. Lock/unlock macro is called with pointer to CAN module, which may be used inside.</p>
-<h4><a class="anchor" id="autotoc_md100"></a>
+<h4><a class="anchor" id="autotoc_md101"></a>
 Object Dictionary variables</h4>
 <p>In general, there are two threads, which accesses OD variables: mainline (initialization, storage, SDO access) and timer (PDO access). CANopenNode uses locking mechanism, where SDO server (or other mainline code) prevents execution of the real-time thread at the moment it reads or writes OD variable. <a class="el" href="group__CO__critical__sections.html#gae91e416633b4df1800e97a2bc02bbeb4" title="Lock critical section when accessing Object Dictionary.">CO_LOCK_OD(CAN_MODULE)</a> and <a class="el" href="group__CO__critical__sections.html#ga37d2c1496e5304faf5f0670ef33a4704" title="Unock critical section when accessing Object Dictionary.">CO_UNLOCK_OD(CAN_MODULE)</a> macros are used to protect:</p><ul>
 <li>Whole real-time thread,</li>
-<li>SDO server protects read/write access to OD variable, if specific OD variable has ODA_TRPDO or ODA_TRSRDO from <a class="el" href="group__CO__ODinterface.html#ga47b0d204aaf1ea64b4f826aaf8f5c151">OD_attributes_t</a> set. If those attributes are not set, OD variable is not locked by SDO server. Locking of long OD variables, not accessible from real-time thread, may block RT thread.</li>
+<li>SDO server protects read/write access to OD variable. Locking of long OD variables, not accessible from real-time thread, may block RT thread.</li>
 <li>Any mainline code, which accesses PDO-mappable OD variable, must protect read/write with locking macros. Use <a class="el" href="group__CO__ODinterface.html#gaef29df3d19b9f99fbfc803902140fdc3">OD_mappable()</a> for check.</li>
-<li>Other cases, where non-PDO-mappable OD variable is used inside real-time thread by some other part of the user application must be considered with special care.</li>
+<li>Other cases, where non-PDO-mappable OD variable is used inside real-time thread by some other part of the user application must be considered with special care. Also when there are multiple threads accessing the OD (e.g. when using a RTOS), you should always lock the OD.</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md101"></a>
+<h4><a class="anchor" id="autotoc_md102"></a>
 Synchronization functions for CAN receive</h4>
 <p>After CAN message is received, it is pre-processed in <a class="el" href="group__CO__CAN__Message__reception.html#ga23168979123a5ca8a87d49307eb2990e" title="CAN receive callback function which pre-processes received CAN message.">CANrx_callback()</a>, which copies some data into appropriate object and at the end sets <b>new_message</b> flag. This flag is then pooled in another thread, which further processes the message. The problem is, that compiler optimization may shuffle memory operations, so it is necessary to ensure, that <b>new_message</b> flag is surely set at the end. It is necessary to use <a href="https://en.wikipedia.org/wiki/Memory_barrier">Memory barrier</a>.</p>
 <p>If receive function runs inside IRQ, no further synchronization is needed. Otherwise, some kind of synchronization has to be included. The following example uses GCC builtin memory barrier <code>__sync_synchronize()</code>. More information can be found <a href="https://stackoverflow.com/questions/982129/what-does-sync-synchronize-do#982179">here</a>. </p>

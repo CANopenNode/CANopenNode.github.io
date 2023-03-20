@@ -68,7 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>CANopenNode can run on many different devices. There are possible many different implementations on many different hardware, with many different development tools, by many different developers. It is not possible for single project maintainer to keep all the hardware interfaces updated. For that reason all hardware specific files are not part of the CANopenNode project.</p>
-<p>It is necessary to implement interface to specific hardware. Interface to Linux socketCAN is part of this projects. Interfaces to other controllers are separate projects. There are interfaces to: Zephyr RTOS, PIC, Mbed-os RTOS + STM32, NXP, etc.</p>
+<p>It is necessary to implement interface to specific hardware. Interface to Linux socketCAN is part of this projects. Interfaces to other controllers are separate projects. There are interfaces to: Zephyr RTOS, PIC, <a href="https://www.analog.com">Analog Devices Inc. (ADI)</a>, Mbed-os RTOS + STM32, NXP, etc.</p>
 <h1><a class="anchor" id="autotoc_md37"></a>
 Note for device driver contributors</h1>
 <p>Most up-to-date implementations of CANopenNode are: <a href="https://github.com/CANopenNode/CANopenLinux">CANopenLinux</a> and <a href="https://github.com/CANopenNode/CANopenPIC">CANopenPIC</a> for PIC32 microcontroller (bare-metal). Those can be used for reference. There is also an example directory, which doesn't include specific device interface. It should compile on any system and can be used as a template. Device interface is documented in common <a class="el" href="CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode.">CO_driver.h</a> file.</p>
@@ -106,6 +106,18 @@ PIC32, dsPIC30, dsPIC33</h1>
 <li>Information updated 2021-05-07</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md40"></a>
+&lt;a href="https://www.analog.com"&gt;Analog Devices Inc&lt;/a&gt;: MAX32662, MAX32690</h1>
+<ul>
+<li>CANopenNode integration with Analog Devices MAX32662 and MAX32690 microcontrollers.</li>
+<li><a href="https://github.com/Analog-Devices-MSDK/CANopenADI">https://github.com/Analog-Devices-MSDK/CANopenADI</a></li>
+<li>CANopenNode version: (v4.0)</li>
+<li>Status: seems to be stable</li>
+<li>Features: LED indicators, error counters</li>
+<li>Development tools: Maxim Micros SDK</li>
+<li>Demo hardware: MAX32662-EVKIT and MAX32690-EVKIT</li>
+<li>Information updated 2023-02-17</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md41"></a>
 Zephyr RTOS</h1>
 <ul>
 <li>CANopenNode integration with Zephyr RTOS</li>
@@ -118,7 +130,7 @@ Zephyr RTOS</h1>
 <li>Demo hardware: Any development board with CAN interface and Zephyr support (see <a href="https://docs.zephyrproject.org/latest/boards/index.html">https://docs.zephyrproject.org/latest/boards/index.html</a>)</li>
 <li>Information updated 2020-09-28</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Mbed-os RTOS + STM32 (F091RC, L496ZG)</h1>
 <ul>
 <li>CANopenNode integration with Mbed-os RTOS</li>
@@ -130,7 +142,7 @@ Mbed-os RTOS + STM32 (F091RC, L496ZG)</h1>
 <li>Demo hardware: STM32 Nucleo F091RC (or similar) development board with CAN interface (see <a href="https://os.mbed.com/platforms/ST-Nucleo-F091RC">https://os.mbed.com/platforms/ST-Nucleo-F091RC</a>)</li>
 <li>Information updated 2020-01-21</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 Kinetis K20 (NXP Arm)</h1>
 <ul>
 <li>CANopenNode driver for Teensy3 (Kinetis K20 Arm)</li>
@@ -143,7 +155,7 @@ Kinetis K20 (NXP Arm)</h1>
 <li>Demo hardware: Teensyduino, <a href="https://www.pjrc.com/store/teensy32.html">Teensy3</a></li>
 <li>Information updated 2020-03-02</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md44"></a>
 S32DS (NXP S32 Design studio for Arm or Powerpc)</h1>
 <ul>
 <li>CANopenNode driver for S32DS and supported devices</li>
@@ -156,7 +168,7 @@ S32DS (NXP S32 Design studio for Arm or Powerpc)</h1>
 <li>Demo hardware: <a href="https://www.nxp.com/design/development-boards/automotive-development-platforms/s32k-mcu-platforms/s32k144-evaluation-board:S32K144EVB">S32K144EVB-Q100</a>, <a href="https://www.nxp.com/design/development-boards/automotive-development-platforms/mpc57xx-mcu-platforms/mpc5748g-development-board-for-secure-gateway:DEVKIT-MPC5748G">DEVKIT-MPC5748G</a></li>
 <li>Information updated 2020-03-02</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md44"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Other</h1>
 <ul>
 <li><a href="https://github.com/CANopenNode/CANopenNode/issues/198#issuecomment-658429391">ESP32</a>, 2020-07-14</li>
@@ -165,7 +177,7 @@ Other</h1>
 <li>K64F_FreeRTOS, Kinetis SDK, 2018-02-13, <a href="https://github.com/CANopenNode/CANopenNode/pull/28#issuecomment-365392867">zip file</a></li>
 <li>LPC1768 (MBED) (released in 2016) - <a href="https://github.com/CANopenNode/CANopenNode/tree/v1.0">CANopenNode v1.0</a>, <a href="https://github.com/exmachina-dev/CANopenMbed">known example from 2016</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 Other old versions</h1>
 <ul>
 <li>RTOS eCos - <a href="https://github.com/CANopenNode/CANopenNode/tree/v1.0">CANopenNode v1.0</a>, (<a href="http://sourceforge.net/p/canopennode/code_complete/">released in 2013, old repo</a>)</li>

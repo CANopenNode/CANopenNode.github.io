@@ -68,13 +68,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><code>cocomm</code> is a small command line program, which establishes socket connection with <code>canopend</code> (CANopen Linux commander device). It sends standardized CANopen commands (CiA309-3) to gateway and prints the responses to stdout and stderr. It is similar to command <code>nc -U /tmp/CO_command_socket</code>, but adjusted to CANopen.</p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Compile and install</h1>
 <pre class="fragment">cd cocomm
 make
 sudo make install
 </pre><p> This will compile the <code>cocomm</code> utility and copy it to the <code>/usr/bin/</code> directory.</p>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Example usage</h1>
 <pre class="fragment">cocomm --help
 cocomm "help"
@@ -93,7 +93,7 @@ cocomm "1 reset node"
 [2] OK
 </pre><p> Program writes data to stdout and messages in green or red color to stderr.</p>
 <p>For more examples see <a href="https://github.com/CANopenNode/CANopenDemo">CANopenDemo</a>.</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Background about communication paths, when using cocomm</h1>
 <ol type="1">
 <li><code>canopend</code> serves a socket connection on <code>/tmp/CO_command_socket</code> address. This is local Unix socket, TCP socket can be used also. <code>canopend</code> is pure CANopen device with commander functionalities and gateway. It listens for socket connections.</li>
