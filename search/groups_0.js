@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['application_20interface_20to_20canopennode_2567',['Application interface to CANopenNode',['CANopenLinux/group__CO__applicationLinux.html',1,'']]]
+  ['16_20calculation_0',['CRC 16 calculation',['CANopenNode/group__CO__STACK__CONFIG__CRC16.html',1,'']]],
+  ['16_20ccitt_1',['CRC 16 CCITT',['CANopenNode/group__CO__crc16__ccitt.html',1,'']]]
 ];

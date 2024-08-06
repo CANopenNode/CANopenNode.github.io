@@ -1,6 +1,12 @@
 <map id="CO_GFC_t" name="CO_GFC_t">
-<area shape="rect" id="node1" title="GFC object." alt="" coords="13,184,99,211"/>
-<area shape="rect" id="node2" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node3" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="133,95,270,121"/>
-<area shape="rect" id="node4" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="151,5,252,32"/>
+<area shape="rect" id="Node000001" title="GFC object." alt="" coords="181,181,267,207"/>
+<area shape="rect" id="Node000002" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="5,93,131,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,130,88,144,99,155,118,167,139,176,181,186,180,191,137,181,115,172,96,159,84,147,75,133"/>
+<area shape="rect" id="Node000003" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="155,93,293,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,133,227,181,221,181,221,133"/>
+<area shape="rect" id="Node000004" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="133,5,235,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="183,44,188,68,196,81,208,91,204,95,192,84,183,70,178,45"/>
+<area shape="rect" id="Node000005" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="275,5,376,31"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="331,44,329,100,321,131,305,159,288,174,269,184,266,179,285,169,301,156,316,129,323,100,326,44"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,40,271,57,235,95,231,91,268,53,291,36"/>
 </map>

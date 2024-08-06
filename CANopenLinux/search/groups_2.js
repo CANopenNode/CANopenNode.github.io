@@ -1,20 +1,13 @@
 var searchData=
 [
-  ['can_20errors_20_26_20log_2533',['CAN errors &amp; Log',['../group__CO__socketCAN__ERROR.html',1,'']]],
-  ['canopen_2534',['CANopen',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen.html',1,'']]],
-  ['canopen_20gateway_2535',['CANopen gateway',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__GATEWAY.html',1,'']]],
-  ['canopen_20led_20diodes_2536',['CANopen LED diodes',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__LEDS.html',1,'']]],
-  ['canopen_5f301_2537',['CANopen_301',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__301.html',1,'']]],
-  ['canopen_5f303_2538',['CANopen_303',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__303.html',1,'']]],
-  ['canopen_5f304_2539',['CANopen_304',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__304.html',1,'']]],
-  ['canopen_5f305_2540',['CANopen_305',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__305.html',1,'']]],
-  ['canopen_5f309_2541',['CANopen_309',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__309.html',1,'']]],
-  ['canopen_5fextra_2542',['CANopen_extra',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__extra.html',1,'']]],
-  ['canopen_5fstorage_2543',['CANopen_storage',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__storage.html',1,'']]],
-  ['co_5fdriver_5ftarget_2eh_2544',['CO_driver_target.h',['../group__CO__socketCAN__driver__target.html',1,'']]],
-  ['command_20syntax_2545',['Command syntax',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__309__3__Syntax.html',1,'']]],
-  ['common_20definitions_2546',['Common definitions',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__COMMON.html',1,'']]],
-  ['crc_2016_20calculation_2547',['CRC 16 calculation',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__CRC16.html',1,'']]],
-  ['crc_2016_20ccitt_2548',['CRC 16 CCITT',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__crc16__ccitt.html',1,'']]],
-  ['critical_20sections_2549',['Critical sections',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__critical__sections.html',1,'']]]
+  ['base_0',['Data storage base',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__storage.html',1,'']]],
+  ['basic_20definitions_1',['Basic definitions',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__dataTypes.html',1,'']]],
+  ['bitcheck_2',['CO_LSS_FASTSCAN bitcheck',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LSS__FASTSCAN__bitcheck.html',1,'']]],
+  ['bitfield_20for_20nmt_20internal_20state_3',['NMT control bitfield for NMT internal state.',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__NMT__control__t.html',1,'']]],
+  ['bitfields_20for_20status_20argument_20from_20co_5ffifo_5fcpytok2u8_20function_20and_20similar_4',['Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar',['../../../CANopenLinux/CANopenNode/doc/html/group__uint8__t.html',1,'']]],
+  ['bitmasks_5',['bitmasks',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CAN__ERR__status__t.html',1,'CAN error status bitmasks'],['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LED__bitmasks.html',1,'CO_LED bitmasks']]],
+  ['bits_6',['Error status bits',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__EM__errorStatusBits__t.html',1,'']]],
+  ['buffer_7',['FIFO buffer',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__FIFO.html',1,'']]],
+  ['buffer_20fifo_20circular_20buffer_20for_20continuous_20data_20flow_8',['FIFO circular buffer FIFO circular buffer for continuous data flow.',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__301__fifo.html',1,'']]],
+  ['buffer_20for_20continuous_20data_20flow_9',['FIFO circular buffer FIFO circular buffer for continuous data flow.',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__CANopen__301__fifo.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 <map id="demo/objectAccessOD.h" name="demo/objectAccessOD.h">
-<area shape="rect" id="node1" title="Example object oriented access to the Object Dictionary variable." alt="" coords="5,5,185,32"/>
-<area shape="rect" id="node2" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CO__ODinterface_8h.html.html" title=" " alt="" coords="12,80,179,107"/>
+<area shape="rect" id="Node000001" title="Example object oriented access to the Object Dictionary variable." alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000002" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CO__ODinterface_8h.html" title=" " alt="" coords="12,79,179,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,31,98,65,93,65,93,31"/>
 </map>

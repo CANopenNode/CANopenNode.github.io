@@ -1,8 +1,13 @@
 <map id="CO_storage_t" name="CO_storage_t">
-<area shape="rect" id="node1" title="Data storage object." alt="" coords="194,199,303,225"/>
-<area shape="rect" id="node2" href="$structCO__storage__entry__t.html" title="Data storage object for one entry." alt="" coords="5,95,156,121"/>
-<area shape="rect" id="node3" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="180,95,317,121"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="135,5,237,32"/>
-<area shape="rect" id="node5" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="261,5,362,32"/>
-<area shape="rect" id="node6" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="342,95,467,121"/>
+<area shape="rect" id="Node000001" title="Data storage object." alt="" coords="179,196,288,221"/>
+<area shape="rect" id="Node000002" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="5,93,131,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,131,79,152,91,170,110,184,133,194,179,204,178,209,131,199,108,189,87,174,74,154,68,133"/>
+<area shape="rect" id="Node000003" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="159,93,297,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,132,235,196,230,196,227,133"/>
+<area shape="rect" id="Node000004" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="115,5,216,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,40,221,91,217,94,180,43"/>
+<area shape="rect" id="Node000005" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="240,5,341,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="279,44,261,71,241,95,237,92,257,68,275,41"/>
+<area shape="rect" id="Node000006" href="$structCO__storage__entry__t.html" title="Data storage object for one entry." alt="" coords="321,93,471,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="376,130,349,153,319,174,268,198,266,193,316,170,346,148,372,126"/>
 </map>

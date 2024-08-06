@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1">
+<tagfile doxygen_version="1.11.0" doxygen_gitid="9b424b03c9833626cd435af22a444888fbbb192d">
   <compound kind="file">
     <name>CO_config.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__config_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -65,6 +65,20 @@
       <name>CO_CONFIG_HB_CONS</name>
       <anchorfile>group__CO__STACK__CONFIG__NMT__HB.html</anchorfile>
       <anchor>ga7368d68cb039983bc8cc164410877098</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CONFIG_NODE_GUARDING</name>
+      <anchorfile>group__CO__STACK__CONFIG__NODE__GUARDING.html</anchorfile>
+      <anchor>ga41167ab88193b5ce7c589a05bc8b0bb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CONFIG_NODE_GUARDING_MASTER_COUNT</name>
+      <anchorfile>group__CO__STACK__CONFIG__NODE__GUARDING.html</anchorfile>
+      <anchor>gade4cc89cb4cb67b242f1f51becd495a8</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -280,9 +294,9 @@
   </compound>
   <compound kind="file">
     <name>CO_driver.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__driver_8h.html</filename>
-    <includes id="CO__config_8h" name="CO_config.h" local="yes" imported="no">CO_config.h</includes>
+    <includes id="CO__config_8h" name="CO_config.h" local="yes" import="no" module="no" objc="no">CO_config.h</includes>
     <class kind="struct">CO_CANrx_t</class>
     <class kind="struct">CO_CANtx_t</class>
     <class kind="struct">CO_CANmodule_t</class>
@@ -415,10 +429,206 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>CO_CAN_ID_NMT_SERVICE</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga0850a5011fa073c47ba259ba6703ab2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_GFC</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga17a72193ece5a068f28a66c0529a4f9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SYNC</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gae30fc9a310a91984eb1915f958f203c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_EMERGENCY</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga7be71b3eb12452f9ccc1f870bcb21bc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TIME</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga68e5051711ead7ed58fef6f317e9965a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SRDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gafa5f121bb42b6173438759f6c145f67e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gabc975c2aab010bb1877a9eef3223baee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gac2dca2ba6e63409670e27393e52bee36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_2</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gaf8315e002b220873db0b49a3cb8888cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_2</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gae669bd43cb5cd8e806372a95ecf2f7ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_3</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga75491fa9c3fbedb14420c0c419f09294</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_3</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga4f783ecabc06aa9a5077a38d4e7ea9c0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_4</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga2f356883659a1dc29b889b8e75967b41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_4</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gab202baf55198034ba727a82e39280705</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SDO_SRV</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gacf9289aaf96b2ceb8b42a8b235f5daad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SDO_CLI</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga65d9f203b3ce90bb2a5640e0f85138aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_HEARTBEAT</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga8c0913c942068cf2cab564d180ded6f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_LSS_SLV</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gaa91b4bd69b3dde0b081748fc4ce0f33e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_LSS_MST</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gabe5d7577839b28cc9e79a8f8c0c7e394</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>CO_IS_RESTRICTED_CAN_ID</name>
       <anchorfile>group__CO__driver.html</anchorfile>
       <anchor>ga0ba23070b812ad4dcc369c0b5130e39b</anchor>
       <arglist>(CAN_ID)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_WARNING</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gacb2f40ccb12a3d514c89bc000d37a9b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gae411efd4d5d268c28e1614de863b7bd4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_BUS_OFF</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga98acbfe6d02f24e53aba5e2efbb2dd52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_OVERFLOW</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga3ed2ff6355221d0931e35bcfc36cd9c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_PDO_LATE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga97dccdebbfff8103eac358493dac7a2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_WARNING</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga9420ef79560520ff7268e2420ac4901d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga23ab70a0b1c524da7cc28c5c3698f4ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_OVERFLOW</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gacb9a838c58685606559aa6df7b9acc3c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERR_WARN_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga7a7d9b134be9b4a5e5fe4e8c62003b76</anchor>
+      <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>uint_fast8_t</type>
@@ -495,188 +705,6 @@
       <name>float64_t</name>
       <anchorfile>group__CO__dataTypes.html</anchorfile>
       <anchor>gac55f3ae81b5bc9053760baacf57e47f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_Default_CAN_ID_t</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga01dd35ae53fd2209ceccabdc8bf8dd06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_NMT_SERVICE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a335d0f6204819d267ba396b715f66ead</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_GFC</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0ba8a628aa1a873a21820070261c2783</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SYNC</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a7a8486aaf2f35eb83c6ca690d0cdce06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_EMERGENCY</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a94ffef8babcef5b807c5f8c865ef7666</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TIME</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ab2e20e54189f5cb565e80b05eb8c4931</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SRDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06aefe4dd6630902d36173b81c106a813bc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a848f2bdb085bc3a342400a6b43c37f82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0ab4be02961987ad817a99a4ef379517</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_2</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06acb90f0dab2e31982df1bebae6dd02e4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_2</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a60081a7b09921c6bfce3762a3dd4e49f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_3</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a83b73730655607582d1dabc8f78f7ca4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_3</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ad634b89f227db86bc8c633dda327e5fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_4</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06abe92c9f7938ad6566e8aa010ab6f5cae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_4</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06afec9dfa33a34beef50c434e5cde68c6b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SDO_SRV</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SDO_CLI</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_HEARTBEAT</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0cfd21623475a1a8522b30b8b16d9874</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_LSS_SLV</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a4a62af7fb0b8768e57945a558a0ceee4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_LSS_MST</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ad7d16ed89e513b035104e4b2634ce287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_CAN_ERR_status_t</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga6c5539afb3a95af43f5477d904607426</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_WARNING</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a725e4fe057c2f9d222850686a76c724d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a85d05e861dc03e256dccf977ae16ad6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_BUS_OFF</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ae58aa7d0eb5d13630f858a3869f0ee7d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_OVERFLOW</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ad6fba8a27d82774f53812d3a49655d12</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_PDO_LATE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ac0b993c7786f41a8c73ad0339124881b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_WARNING</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a6df88a8a296eb4addc12d9136c0566b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a51494ad0df1e2de6d9395f1803c4b233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_OVERFLOW</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a714a0b9c0978ffde5f138a81880a1fdd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERR_WARN_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a5ad44f86d5691f2bc809f722364516e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -828,10 +856,10 @@
       <arglist>(void *rxMsg)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static uint8_t *</type>
+      <type>static const uint8_t *</type>
       <name>CO_CANrxMsg_readData</name>
       <anchorfile>group__CO__CAN__Message__reception.html</anchorfile>
-      <anchor>gab02a5fe910acf9aa5021f97e523697f9</anchor>
+      <anchor>ga8cc8ae24ac32bef54a76b978f67688ff</anchor>
       <arglist>(void *rxMsg)</arglist>
     </member>
     <member kind="function">
@@ -873,7 +901,7 @@
       <type>CO_CANtx_t *</type>
       <name>CO_CANtxBufferInit</name>
       <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga01e2ee79e7e3a8b321dac831e7e00976</anchor>
+      <anchor>ga8be0e9c60676aaf1f7da6403cff959bb</anchor>
       <arglist>(CO_CANmodule_t *CANmodule, uint16_t index, uint16_t ident, bool_t rtr, uint8_t noOfBytes, bool_t syncFlag)</arglist>
     </member>
     <member kind="function">
@@ -942,12 +970,726 @@
   </compound>
   <compound kind="file">
     <name>CO_Emergency.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__Emergency_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
     <class kind="struct">CO_EM_fifo_t</class>
     <class kind="struct">CO_EM_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_GENERIC_ERR</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gaec84003941c9b04ff4f3ee3ecc0e1e91</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_CURRENT</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga28fdeb82ea095d784269f6989769b591</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_VOLTAGE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gaf2a8caafa84ae8347e08c8c9ae435d69</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_TEMPERATURE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga0657293752253ecfda8cc87dab4b15f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_COMMUNICATION</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga867530f202e49973e69ec8af7f48fb78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_DEV_PROFILE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga7257de865c100c9d6fc46cedce793897</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_RESERVED</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gace13d84abb2d2475f56cb3980ac2b761</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_MANUFACTURER</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga1e30d784aba346bb8e13976f541d8270</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_NO_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga529e20206c177d9fff20fe1d5579feb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_GENERIC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gab5fb864f66783cc31d46bff9cf742946</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga55b68e3e488382903a10b5a040f4bb4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_INPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga831834f6843fec4b9ec4705a8d4cdf0c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_INSIDE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga00f7933dee94a2d52b92b8fa9364e924</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_OUTPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga40c4eb878eaed394c4603d18701e993d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gab6c4cdc640bb484484dec0cab07e22fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_MAINS</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga6ac56fffd1a8e402b44ad646ef0cbcbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_INSIDE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga40ea6cc68f8f6ff7f748ff75e43e5348</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_OUTPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga4b3ffa597344469b96cccbd84670cdc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMPERATURE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga57d62995eebfcdea388b13f748560413</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMP_AMBIENT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga71900e0c60080e029943231d76a59016</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMP_DEVICE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga4048ceda12bd820facf23c0d8a7bab0d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_HARDWARE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad4fa09c69969be0e24c157e3282a5727</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_DEVICE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1d4f5b78034e0b1f12d7aacd12466289</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_INTERNAL</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga386ee56db45214285947191e7021e441</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_USER</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga6b557158c6f78b58d6e5d1eda5f11af1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DATA_SET</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga44689248039b7e7f29818e19d1c98132</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_ADDITIONAL_MODUL</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga5c6e8336ffb7561406d174bb5b6caf4b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_MONITORING</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaf6ad557d07c257baa0da6ac79044c258</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_COMMUNICATION</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gabcdeeb7597bbfae650ba0bc51fbab039</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_OVERRUN</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gade3366f2e7d4dd89be39e00150c8d0c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaeead0c18f063e5134d62d9a1677cef32</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_HEARTBEAT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga09d2b0be9b533084abafc824e5424b57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_BUS_OFF_RECOVERED</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gadc85ed14e906a94823828b6c4a1d6111</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_ID_COLLISION</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga35db6f30376552ff5fc4e7a959d428d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PROTOCOL_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga8196093f0267634a862a40ca52a33086</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PDO_LENGTH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaf48139606b8856fda331003611af32fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PDO_LENGTH_EXC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga38dcd6241d98617d18a2999352a8d97f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DAM_MPDO</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1f211f1a7e1201f5e8f5f241a322469d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SYNC_DATA_LENGTH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga2ddf1c5af83dd82e002aa6b66a2d2eb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_RPDO_TIMEOUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga28f3e9c8c510ccc035765c2338fa94bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_EXTERNAL_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad92e5ff4f55281d204a67969d0266a11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_ADDITIONAL_FUNC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaba02ab0719acd2de88bbf0a8c4ef3346</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DEVICE_SPECIFIC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga312bdad23ce37709362e9b8dfd8da3c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_CUR_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga768d388ba477f839a8eb57b367b79793</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_SHORTED</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad3f0ed100e5076d0c488024b0bdaa43a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_LOAD_DUMP</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad47d4205acd3f6cf36aeb31f86717c64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_IN_VOLT_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1b40083a323c33894a8e374d59c0a6c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_IN_VOLT_LOW</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga798dac8fcfb0c741fe79474b7440bb62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_INTERN_VOLT_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga3fa590def2b113eb1eb6b45c551011c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_INTERN_VOLT_LO</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga56c67d643e8871dfed1df4027d884226</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_VOLT_HIGH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga7b9b8a4328b74a0b61d85784c6cd262e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_VOLT_LOW</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga289fcb4a4dd2521ff1a88d5ed7903e7f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NO_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga945ebb7fbfdc0435b8d13359b366ec8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_BUS_WARNING</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga205ecae15d4c25703d801b0ce838368e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RXMSG_WRONG_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaee4a0d8abf48c798a496795056b5a0f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RXMSG_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaf526eded2b4e8090ff466a4bdb831398</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_WRONG_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga889a9b8a268dd912ad0498abef48dcb4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5c4d5b41c3dfb76e6e7daf5e8de89b51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_RX_BUS_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga73da49bef87b1c8e598ff089e9a82eb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_BUS_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaffb6ad6bf3ce5b20ef4e048755607751</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NMT_WRONG_COMMAND</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga7e32e80c1b7f7140544cb92e17ee3d71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_TIME_TIMEOUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga0a0b7674f7bcf4d78cdaa3fbf12e9345</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0A_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gab5b5b62e796597aeb4721814dd2536cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0B_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae97b532684351becda32984d5b765914</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0C_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5344b6c384ef91db4195ab97f8b35a74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0D_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga667ea64cc84911575736b71806a1f265</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0E_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gadc491fa57e620bc05c2821fe84b512a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0F_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga8ea8bf110b419b460ec07920230d1bf4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_10_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga4f106fcbf52daaa0b5753d6ac4e0fe4a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_11_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gab74ac530e13efb108bcb3f74ce9e28f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_BUS_OFF</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga0869e6139cedc6625b5d303ef374775f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_RXB_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaf177d3e0f47e5f8889159b0271d2f03d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaeca449c74383654e80103040f1659bf1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_TPDO_OUTSIDE_WINDOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga470e690ba227e4b367ad80f1d8fec2b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_16_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga8a43bc95fdbafabcf05a6f8db9b5713b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_TIME_OUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae7ee48eb443e61c33cb73ed2009ae306</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SYNC_TIME_OUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaa215f109369ef7420da43e2e28ee65dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SYNC_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gacdf0058e4d4556caf2b59e8215ec8a66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_PDO_WRONG_MAPPING</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga9e345736c503a9b3c82ee5fc833a77b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_HEARTBEAT_CONSUMER</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad812fc39d9f24a739bf3108ee789f35a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_HB_CONSUMER_REMOTE_RESET</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga12061d396e53c6ebaa22f083e8cd0bc3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SRDO_CONFIGURATION</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5351a2599afae5b741b62e8c26e59b4d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_1E_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga40444e6d1a104d4b15f0132507e09027</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_1F_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gafe3ede749aeddb7c8e2764bf9baa2d46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_EMERGENCY_BUFFER_FULL</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae75d033d942123463fbfdfb81d3a85bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_21_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad2f0cd1b245b2aae6804d79425a51fa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MICROCONTROLLER_RESET</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga28be6681c8b44b3e3538a379260aa526</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_23_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga97eb797930163e410e9476c00e6eaf57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_24_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5134548c33cd5a30f0ad597e428b4262</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_25_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga46ca1d8283857949f68b58ac1243f332</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_26_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gabfc08ab1b0814c515c18ac92208fa849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NON_VOLATILE_AUTO_SAVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae5c0f2cbf35474ef5404d15e9dfecc72</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_WRONG_ERROR_REPORT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga155f43c9f40045ca12646334b18cab4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_ISR_TIMER_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad7d99813b453873deaa8a19dc0d95a05</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MEMORY_ALLOCATION_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gacbb82492ebe0cfa0db9462dfb8a94e57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_GENERIC_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae9122f80116da63762ad1a51b0cba61f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_GENERIC_SOFTWARE_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga09d9f5bd09f54ec806c6d9f6908e9aa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_INCONSISTENT_OBJECT_DICT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga7805a3c62f63a7a8bafda3e131fb9909</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CALCULATION_OF_PARAMETERS</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga2a8b9787cb4a4983eb167e61e359001a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NON_VOLATILE_MEMORY</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga1a26463d4de41064a4bf49992de8cfde</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MANUFACTURER_START</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga643499974d43b6f758f8cd67718305e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MANUFACTURER_END</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gadf273028f8a34935d32df9905448f9d6</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_errorReport</name>
@@ -961,639 +1703,6 @@
       <anchorfile>group__CO__Emergency.html</anchorfile>
       <anchor>ga24e2a9311cf704ec6ed43b0ea730c4a3</anchor>
       <arglist>(em, errorBit, infoCode)</arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_errorRegister_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga2cfc261cce03577083ee3f1a31d5e03c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_GENERIC_ERR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca92a7e121ae04a022fc2fe604eb1c148e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_CURRENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca61eded29fb0fcd95b2f66c2682de0f2b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_VOLTAGE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca360c75e04303d1c55e2bc8528407cb87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_TEMPERATURE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03cab12f2b419af0aeb8aae83a13d5c8b7bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_COMMUNICATION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca2f3b7aeac7282281c1d17895406c006a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_DEV_PROFILE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03cab137d1705e9ab20e2caeb22f57dd4716</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_RESERVED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03caffdf7f5d9f9ae52fa1bf97a3fb3d848b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_MANUFACTURER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca207eee1d9638f61166bc395ee71b84a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_EM_errorCode_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga0653c307fd6bc5238babf48e01c9fa02</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_NO_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa60e1333102cbe544eccbaad8e77f6f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_GENERIC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a2eaf45ca12b32b7bcc58df91becda767</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02abad9ca04a37cc43cacabfef9483699cf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_INPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab792c971a569d1175666b3fff9ffbe70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_INSIDE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a3ded1c05cbf37d2d7d286af97e833e65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_OUTPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad42e8ab666fd3da75d1fa3a7b8708efc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a84a8f0dfb97e0ec13be9a4cdb0d71233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_MAINS</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab4b095d1d9e7e7f5150bc2ecd83bc140</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_INSIDE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a78dfa1d496a010ae7ae2e8b6edc1362a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_OUTPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a9c5becd591c91bb3e255badf0a308c2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMPERATURE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa24dfa4c6948187f62d3e8182285d4a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMP_AMBIENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ae5256d8178374a48750537c3d04c0a30</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMP_DEVICE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a6c29a4b49fae39b45c5c0e553ef6668f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_HARDWARE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a33344d49b9667151d86aef28a73e6f66</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_DEVICE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a6d0b3c0c31228e0bc57fc080c754fefa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_INTERNAL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a62e0949639733e85c2b6d4c8b099d467</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_USER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a7b6ae38c015688128890bfe42b0271e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DATA_SET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad22329fc3e44867a365401458e691ddc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_ADDITIONAL_MODUL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ae210dc1069c7b046527f7d7903ef82cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_MONITORING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a8ecd7e45af52d83d986e3de8e957a986</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_COMMUNICATION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aab2946bf800f551bcae55dd299ff315b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_OVERRUN</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a1f04b4ffe9cc1d8f2b294261909dec4e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa024c00c21f705474355b9ca7d7ce948</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_HEARTBEAT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aff47b500e2e760355ca653b247e4b93f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_BUS_OFF_RECOVERED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a2fd717ed311007b4dd6fe92443f134b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_ID_COLLISION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a683bff5350b0cbab24aef2fc8eac363a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PROTOCOL_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab884b23b23af9671d99cca5865549e5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PDO_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a80fedd7bbb98ddf1ec26d4b31ed6d749</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PDO_LENGTH_EXC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a88bac871b7539a579fba73825a2e240a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DAM_MPDO</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab58df03302ab06710f7455d37039dea3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SYNC_DATA_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a81aa2a66727d1fe29720067dc4e20879</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_RPDO_TIMEOUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a4ca48c8d1be6a42ac0c13e551e12b230</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_EXTERNAL_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a1d76eff88ebd6050377c393533aebc8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_ADDITIONAL_FUNC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02af5f9446049023ceae559562998172278</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DEVICE_SPECIFIC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad7b895b5e7d0f3fa7ff422157ac36c70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_CUR_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa432d9c66bb0f6eecc38d720cae6c32e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_SHORTED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a182a0c7afc0cb1c30af42a05430da353</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_LOAD_DUMP</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a21cd31a1455c9dc379796798f0eecd32</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_IN_VOLT_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aacdc3517e800b037b46c1b54f454b562</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_IN_VOLT_LOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a867eb16fce01ade3c728df7c7527e311</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_INTERN_VOLT_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a9cd0f1a897f40a3a43198ba05de4a11b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_INTERN_VOLT_LO</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ac122203ed5c6a71749ace599b13ac594</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_VOLT_HIGH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02abf5b6a68120351c2fa52146b45798ed2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_VOLT_LOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a5f262e622db7482b7230055e5b27c902</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_EM_errorStatusBits_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga587034df9d350c8e121c253f1d4eeacc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NO_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccafb7b06b4b1d4fb2f9fa8661fdbaf8b01</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_BUS_WARNING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca27ebb7f155d4b72618c34dd6aa496aac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RXMSG_WRONG_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccae1e45de61059459a6f1f6e500962f287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RXMSG_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0b17027ee0097065d92e6c0981e3face</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_WRONG_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2a36480d4dd6a24f1f8bb66d79441a8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca73426de91d49273d023b5084a0cea8e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_RX_BUS_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaab5efa11cefb2cd6125cec3ec1c570e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_BUS_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadb8502da626d80a8c423e94e1c76d0cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NMT_WRONG_COMMAND</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac5f82aeeda52c83eee0025c8b387ac5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_TIME_TIMEOUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5c1a6209ebe6167bbf13f565b6fd994d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0A_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccada9099b90524a981bfb8b8ac4ce7b1d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0B_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca8bf6fb0db21e29e477b38304279bed5e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0C_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaa724f4fdeff7043b0d4f454613a96992</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0D_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca933c070fd08c1223462a3a331b016c99</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0E_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0cabb2e45202f938cfdafe8e7871f4f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0F_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac6469cc3e6176136f69e549c4a4f5b71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_10_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca274f46ac0760c4c340f48d1de884f2fe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_11_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca9d8abe2f426ed071febf85a932c1df98</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_BUS_OFF</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccae59f8e20795915a0929861809ed42e7c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_RXB_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaf9a86c6c3b87763593dd14be6b0bef29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2dbceee7b6deae231bb40a96f8f748a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_TPDO_OUTSIDE_WINDOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaea141284cd85126a9b3e7b0605a26a94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_16_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca865160ae9fdac8fcba1e5335b31c2f9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_TIME_OUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5bdfd6ead4537a83025732198aa96869</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_SYNC_TIME_OUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccafd760392f4d4d6358896486c5b5d7d82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_SYNC_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca09a521bfc9ea08ed340cfa29952a471c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_PDO_WRONG_MAPPING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca7308b487766b8feca60ef0c1b873f167</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_HEARTBEAT_CONSUMER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6478d414ea45f6a9129e68a9d57e11b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_HB_CONSUMER_REMOTE_RESET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0b6698662476cc622661fb5a5a75ec31</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1D_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6d0bf9c926241ec8f67c477928300761</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1E_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccab2f3562c4e1f8e25a7837627dc1721db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1F_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadba4afb9dac78f8eb0c5f494926568b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_EMERGENCY_BUFFER_FULL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccabd1935c51679f70f509ffd60e28c02b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_21_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbce7bd9d5a0ee681104914092b21d8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MICROCONTROLLER_RESET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccacb69eecc08e72c56aec215fa55e27e16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_23_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaa0c8857afdd8455b30fd0179e98599fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_24_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca9cf88b48355b3cc43fe9a8360b8470df</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_25_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0a8abc6fcd7b0d5469b469c2cf370a82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_26_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0398195eafec5f8d60a76f677ce2a714</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NON_VOLATILE_AUTO_SAVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbf662e7040cff63554bbf10651a519a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_WRONG_ERROR_REPORT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2d7776243205bc75e6c448e13e697480</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_ISR_TIMER_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbf7382f537c9f59f965ce38be464e46</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MEMORY_ALLOCATION_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2575dac21ff9ac9c4c4e5ca63d34fdbc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_GENERIC_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca21648a2863590d3cccb469f8ef759267</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_GENERIC_SOFTWARE_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6c3e7fff310443f05815ea2b7ac6b289</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_INCONSISTENT_OBJECT_DICT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2c6a108cabca6f03b1400065f2ad4887</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CALCULATION_OF_PARAMETERS</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5544a90d3047bc08186ea7412528dc93</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NON_VOLATILE_MEMORY</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac019532cacaa8310f9ca413a2f599af3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MANUFACTURER_START</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaf850a661aadde65b10b22715cf24942c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MANUFACTURER_END</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5d3c6fdb77551b3f4aaf993ae1dfb414</anchor>
-      <arglist></arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -1647,57 +1756,57 @@
   </compound>
   <compound kind="file">
     <name>CO_fifo.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__fifo_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
     <class kind="struct">CO_fifo_t</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_fifo_st</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga2c7db7d527e4055a5dde62b74dfc2818</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_closed</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a1f111c3f5a9396da6ced33132a2341f9</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaa2075fdf2f1db656f00165af2a8b553a</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_partial</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a7bf88ff5b78ef6a25a4391bc6423c1f7</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaa3e1372984d5f063af9bd73ac692db46</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_errTok</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a70060b411fcbfa0696ca453d7f4348d4</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>ga0356be8dde0b07d8df6beb35cbba9ca6</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_errVal</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a9c41b295a487450017cc3b1ce0bcedfb</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>ga890218baad6c833925e3e441f7abe8a7</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_errBuf</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a51c064e77b0e2bf3741719b57de65141</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gac831497a9391e0d06bfab7cfea8ddf29</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_errInt</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a07a7d8d483365e3afdcf9dc5b2dd2143</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gace0448f44fff61fa2840e9a27916c42a</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
+    <member kind="define">
+      <type>#define</type>
       <name>CO_fifo_st_errMask</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a9e587fa1d802fbe939f6da9d44aba389</anchor>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaf64e89842c40331c5d7152eb5f739faf</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1816,8 +1925,8 @@
       <type>size_t</type>
       <name>CO_fifo_readToken</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga6b41afdc92d07e645352b6a1a65d1f2e</anchor>
-      <arglist>(CO_fifo_t *fifo, char *buf, size_t count, int8_t *closed, bool_t *err)</arglist>
+      <anchor>ga4d6c6a47d9355ec8bb818b3cc77950b8</anchor>
+      <arglist>(CO_fifo_t *fifo, char *buf, size_t count, uint8_t *closed, bool_t *err)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -1942,102 +2051,102 @@
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U8</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga1788f69639bcc6bfa59bf85e57e5e13a</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga2c3444f5a9793ecb3faf742ed8b0161f</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U16</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gaf19bdbd45626578afc8a19de43698e0b</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga117ba120aff3c7c93267663771c951fd</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gae2816b287cc2091d2382aaa6ac56e422</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga8d44b007736379586b257f79abead20e</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gacfd3fdfda66e1feb6982f68377a8b7e2</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gac35d83e966f5cef38ecb731bc3898611</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I8</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gae038564001c68ab242a6f33756668ac5</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga251f34c24425b5b63c9ab0b8db1b2593</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I16</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga306913df146db90f7209b89080d51640</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gab1db1bdc201a2c66f3a190c4fe1ec3ff</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga4f5b25af39c5a78faf04e54cb3cc90f7</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gaac650722205e404fc746a1f571e4aa1d</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga6a9bd6e8d07d20ded9aeca531f412d50</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gaeba95173568c3f88dca5a41d4af34eda</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2R32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga853847c375425a55fc2007880d94c484</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gafb1ec0f8c32cd30f614672d463a672d7</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2R64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga8b17d4f3c0d272bb73d82a79cd51cd3d</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gac9c49dca1908a6ec9843f9bb55dd196f</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2Hex</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gab3c4acf458a13bd6c4e5b0bc2adca10b</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga84ec8b3989034873c6f357eaa0a9dbe5</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2Vs</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga8cb3d7032cd46dfeb3b6c0bbd5ed1575</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga9cf44d36aef6dec2936fe5c0a4504d5a</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2B64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gaf11cf0cccc01e86f341e2b31607e90c7</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga34e7bc21a13aa030de2358890377df84</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>CO_HBconsumer.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__HBconsumer_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
     <class kind="struct">CO_HBconsNode_t</class>
     <class kind="struct">CO_HBconsumer_t</class>
     <member kind="enumeration">
@@ -2144,12 +2253,54 @@
   </compound>
   <compound kind="file">
     <name>CO_NMT_Heartbeat.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__NMT__Heartbeat_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
     <class kind="struct">CO_NMT_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_REG_MASK</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga4d75cf9cd65261a95095fc0571960ab2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_STARTUP_TO_OPERATIONAL</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga612e8859dfdb2a93aad044ce1b1cccd0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_ON_BUSOFF_HB</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>gae8d718f2cf6bfe92f475508f0838fbc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_ON_ERR_REG</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga239cfb329727f05aa577e5a86874af2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_TO_STOPPED</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga2270c3304735c2306279395aaa1d24a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_FREE_TO_OPERATIONAL</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga40d44e926b70aab061921634f395904e</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>CO_NMT_internalState_t</name>
@@ -2261,55 +2412,12 @@
       <anchor>ggaf42f056a571b8e17a2d74428d1a49674ae2c7805e42ce9b7c893018922b24a102</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_NMT_control_t</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>gaf92cf5943801e5dda84654345cc3d67f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_REG_MASK</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faaa5ab06e2047e51ac7d2767e8a821d80</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_STARTUP_TO_OPERATIONAL</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faf4da9fa5d805e0f535abf95a175312e8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_ON_BUSOFF_HB</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faf151918ecf07fc43ba30489d31ca275a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_ON_ERR_REG</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faab1cd82001a087114a5361910e206c74</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_TO_STOPPED</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67fa9498a5af4e0557a2c0284c04b26b3eb5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_FREE_TO_OPERATIONAL</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67fa6e79d137c725417786035982cd0e2687</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_NMT_init</name>
       <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ga2d1ef9f65f7d22035dee913dc3fb7a7a</anchor>
-      <arglist>(CO_NMT_t *NMT, OD_entry_t *OD_1017_ProducerHbTime, CO_EM_t *em, uint8_t nodeId, CO_NMT_control_t NMTcontrol, uint16_t firstHBTime_ms, CO_CANmodule_t *NMT_CANdevRx, uint16_t NMT_rxIdx, uint16_t CANidRxNMT, CO_CANmodule_t *NMT_CANdevTx, uint16_t NMT_txIdx, uint16_t CANidTxNMT, CO_CANmodule_t *HB_CANdevTx, uint16_t HB_txIdx, uint16_t CANidTxHB, uint32_t *errInfo)</arglist>
+      <anchor>ga70a96a3f68878228fc1bf788208ee8a6</anchor>
+      <arglist>(CO_NMT_t *NMT, OD_entry_t *OD_1017_ProducerHbTime, CO_EM_t *em, uint8_t nodeId, uint16_t NMTcontrol, uint16_t firstHBTime_ms, CO_CANmodule_t *NMT_CANdevRx, uint16_t NMT_rxIdx, uint16_t CANidRxNMT, CO_CANmodule_t *NMT_CANdevTx, uint16_t NMT_txIdx, uint16_t CANidTxNMT, CO_CANmodule_t *HB_CANdevTx, uint16_t HB_txIdx, uint16_t CANidTxHB, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2355,10 +2463,64 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>CO_Node_Guarding.h</name>
+    <path>301/</path>
+    <filename>CO__Node__Guarding_8h.html</filename>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
+    <class kind="struct">CO_nodeGuardingSlave_t</class>
+    <class kind="struct">CO_nodeGuardingMasterNode_t</class>
+    <class kind="struct">CO_nodeGuardingMaster_t</class>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingSlave_init</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gad7a00807dd7ba272357a69cfbe8d85fc</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs, OD_entry_t *OD_100C_GuardTime, OD_entry_t *OD_100D_LifeTimeFactor, CO_EM_t *em, uint16_t CANidNodeGuarding, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdx, uint32_t *errInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CO_nodeGuardingSlave_process</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga31c48ea1fac4c43cc7c4de167b9222f1</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs, CO_NMT_internalState_t NMTstate, bool_t slaveDisable, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool_t</type>
+      <name>CO_nodeGuardingSlave_isTimeout</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga1917c432c2c0fbf66f5ed818b9568f4c</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingMaster_init</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gac02e8cc43c1113cb96462a2f1ec7f9bd</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, CO_EM_t *em, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdx)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingMaster_initNode</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gaf7ad06151d630c832bcca3d1cd434ce8</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, uint8_t index, uint8_t nodeId, uint16_t guardTime_ms)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CO_nodeGuardingMaster_process</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga31bd50f6b2f919aa3dc5237376f1690f</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>CO_ODinterface.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__ODinterface_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
     <class kind="struct">OD_stream_t</class>
     <class kind="struct">OD_IO_t</class>
     <class kind="struct">OD_extension_t</class>
@@ -2981,7 +3143,7 @@
       <type>OD_entry_t *</type>
       <name>OD_find</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gae2d815788a1afbf69f74bf36329ed622</anchor>
+      <anchor>ga0a7d847e21fb3bf69a378f366f58974e</anchor>
       <arglist>(OD_t *od, uint16_t index)</arglist>
     </member>
     <member kind="function">
@@ -3016,7 +3178,7 @@
       <type>static uint8_t *</type>
       <name>OD_getFlagsPDO</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gaaf861cd1e2b39d1f1212a9f41c84f792</anchor>
+      <anchor>ga6201bef4595d40b2ead780d9f7ff0fbc</anchor>
       <arglist>(OD_entry_t *entry)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -3205,17 +3367,17 @@
       <type>void *</type>
       <name>OD_getPtr</name>
       <anchorfile>group__CO__ODgetSetters.html</anchorfile>
-      <anchor>ga6bd104239aeba778f4d538e14511f1cc</anchor>
+      <anchor>gad38550927466dfa9c7a774db8e6a3798</anchor>
       <arglist>(const OD_entry_t *entry, uint8_t subIndex, OD_size_t len, ODR_t *err)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>CO_PDO.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__PDO_8h.html</filename>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
-    <includes id="CO__SYNC_8h" name="CO_SYNC.h" local="yes" imported="no">301/CO_SYNC.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
+    <includes id="CO__SYNC_8h" name="CO_SYNC.h" local="yes" import="no" module="no" objc="no">301/CO_SYNC.h</includes>
     <class kind="struct">CO_PDO_common_t</class>
     <class kind="struct">CO_RPDO_t</class>
     <class kind="struct">CO_TPDO_t</class>
@@ -3343,12 +3505,12 @@
   </compound>
   <compound kind="file">
     <name>CO_SDOclient.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__SDOclient_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" imported="no">301/CO_SDOserver.h</includes>
-    <includes id="CO__fifo_8h" name="CO_fifo.h" local="yes" imported="no">301/CO_fifo.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" import="no" module="no" objc="no">301/CO_SDOserver.h</includes>
+    <includes id="CO__fifo_8h" name="CO_fifo.h" local="yes" import="no" module="no" objc="no">301/CO_fifo.h</includes>
     <class kind="struct">CO_SDOclient_t</class>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -3380,9 +3542,9 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_SDOclientDownloadInitiateSize</name>
+      <name>CO_SDOclientDownloadInitSize</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gaf58b7731b4285538c26a0c7c49ab24b6</anchor>
+      <anchor>gab78f23cdbdb2f320ff8746a5d8a30cd0</anchor>
       <arglist>(CO_SDOclient_t *SDO_C, size_t sizeIndicated)</arglist>
     </member>
     <member kind="function">
@@ -3396,8 +3558,8 @@
       <type>CO_SDO_return_t</type>
       <name>CO_SDOclientDownload</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gaab262f0a8d08ba023639a2c197d0943a</anchor>
-      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, bool_t bufferPartial, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
+      <anchor>ga2913a015acc0023bce8282fa2853e63b</anchor>
+      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t send_abort, bool_t bufferPartial, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
       <type>CO_SDO_return_t</type>
@@ -3410,8 +3572,8 @@
       <type>CO_SDO_return_t</type>
       <name>CO_SDOclientUpload</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gabd3a3be7e3d1649adfdd253c979ec21f</anchor>
-      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeIndicated, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
+      <anchor>gadcbfc0744978ce325ce79ced8a6604f8</anchor>
+      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t send_abort, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeIndicated, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -3430,10 +3592,10 @@
   </compound>
   <compound kind="file">
     <name>CO_SDOserver.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__SDOserver_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
     <class kind="struct">CO_SDOserver_t</class>
     <member kind="define">
       <type>#define</type>
@@ -3889,11 +4051,11 @@
   </compound>
   <compound kind="file">
     <name>CO_SYNC.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__SYNC_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
     <class kind="struct">CO_SYNC_t</class>
     <member kind="enumeration">
       <type></type>
@@ -3951,11 +4113,11 @@
   </compound>
   <compound kind="file">
     <name>CO_TIME.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>CO__TIME_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
     <class kind="struct">CO_TIME_t</class>
     <member kind="define">
       <type>#define</type>
@@ -3995,9 +4157,9 @@
   </compound>
   <compound kind="file">
     <name>crc16-ccitt.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/301/</path>
+    <path>301/</path>
     <filename>crc16-ccitt_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
     <member kind="function">
       <type>void</type>
       <name>crc16_ccitt_single</name>
@@ -4015,73 +4177,73 @@
   </compound>
   <compound kind="file">
     <name>CO_LEDs.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/303/</path>
+    <path>303/</path>
     <filename>CO__LEDs_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
     <class kind="struct">CO_LEDs_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flicker</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga95f77de2fe83f91157a081d92edef154</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_blink</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>gab10cf0a943223061252f084076c01231</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_1</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga89c40dcefdacee57822042b9298a8a65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_2</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga04aefc10f104a383090a7cea41cfdc99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_3</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga850c4c5f0bbde3bc4102375837df2b49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_4</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>gabf3fd04f5cf3af63c6783e7602c5b40b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_CANopen</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga936d1d698cccbd3d7acb4c7631bbbd6e</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_LED_RED</name>
       <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga38a415372f20b9444f254a205aa511e8</anchor>
-      <arglist>(LEDs, BITFIELD)</arglist>
+      <anchor>gae5e669c82c38cb6b5a995a065f071b8d</anchor>
+      <arglist>(LEDs, BITMASK)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_LED_GREEN</name>
       <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga3e01e6ec590d6d5c7b887b48557498f4</anchor>
-      <arglist>(LEDs, BITFIELD)</arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LED_BITFIELD_t</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga366de3822a3da8478e97b248bed641fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flicker</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba9838518b974c263a401a089901cdcf54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_blink</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbaa24d4647d37adc17e1d3c242a42f6b68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_1</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba88e905d94927b3c626b50a48537c7b73</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_2</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbae751e14d72d829b2b7f9a9c1e98e0612</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_3</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba250a08a71c4bbca9761f0dfa54d37938</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_4</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbadd3ec0da4d999e5ffc107d7891c26667</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_CANopen</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbaea338dad48dda75ef1ebac0948093148</anchor>
-      <arglist></arglist>
+      <anchor>gafeb9bec42176272367c09abc72d98a0f</anchor>
+      <arglist>(LEDs, BITMASK)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -4099,23 +4261,18 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>CO_GFC.c</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/304/</path>
-    <filename>CO__GFC_8c.html</filename>
-    <includes id="CO__GFC_8h" name="CO_GFC.h" local="yes" imported="no">304/CO_GFC.h</includes>
-  </compound>
-  <compound kind="file">
     <name>CO_GFC.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/304/</path>
+    <path>304/</path>
     <filename>CO__GFC_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
     <class kind="struct">CO_GFC_t</class>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_GFC_init</name>
       <anchorfile>group__CO__GFC.html</anchorfile>
-      <anchor>ga23d83d03ef1b9ad5ffe68103a627026c</anchor>
-      <arglist>(CO_GFC_t *GFC, uint8_t *valid, CO_CANmodule_t *GFC_CANdevRx, uint16_t GFC_rxIdx, uint16_t CANidRxGFC, CO_CANmodule_t *GFC_CANdevTx, uint16_t GFC_txIdx, uint16_t CANidTxGFC)</arglist>
+      <anchor>ga754d1e422febf6c0c4d2a13298b01802</anchor>
+      <arglist>(CO_GFC_t *GFC, OD_entry_t *OD_1300_gfcParameter, CO_CANmodule_t *GFC_CANdevRx, uint16_t GFC_rxIdx, uint16_t CANidRxGFC, CO_CANmodule_t *GFC_CANdevTx, uint16_t GFC_txIdx, uint16_t CANidTxGFC)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -4133,42 +4290,132 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>CO_SRDO.c</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/304/</path>
-    <filename>CO__SRDO_8c.html</filename>
-    <includes id="CO__SRDO_8h" name="CO_SRDO.h" local="yes" imported="no">304/CO_SRDO.h</includes>
-  </compound>
-  <compound kind="file">
     <name>CO_SRDO.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/304/</path>
+    <path>304/</path>
     <filename>CO__SRDO_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" imported="no">301/CO_SDOserver.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
-    <class kind="struct">CO_SRDOCommPar_t</class>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
     <class kind="struct">CO_SRDOGuard_t</class>
     <class kind="struct">CO_SRDO_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_SRDO_MAX_SIZE</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ga00864226001f24268e093edd3add8953</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_SRDO_MAX_MAPPED_ENTRIES</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ga87729c267630a6515f5fbdf6c29ba4d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>uint8_t</type>
+      <name>CO_SRDO_size_t</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>gab04e5f30613827033ebcec6ffdb7433c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>CO_SRDO_state_t</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>gab215d5a10161ff9728dc4feb89374bad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_internal</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badadb0905fe91cdce1256a3ba08f21988db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_configuration</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badab4d12fb0ceb6cb4d1caa5db7885740fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_txNotInverted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada1991d39187d694287cbc5cee93f73c56</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_txFail</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada8cc716df827c84d23ed45db8785525ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxTimeoutSRVT</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada6422f0da52f8520b5a9bca58f49749e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxTimeoutSCT</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badaa49c1f7cd28bbccf9d028317c8c02c65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxNotInverted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada17c8497b53d4171600a8e1f186298cac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxShort</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada2d8135c54b9d7ef52d0019c560899bb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_unknown</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada7b90183dabb52f52c97504a1eb5833ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_nmtNotOperational</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada30116864745974722f535aa1116013a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_initializing</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada40cadd6f00f3a26938beea94c359a317</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_communicationEstablished</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badad514cae8c0662f3c8ecac5a45dc4d830</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_deleted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada3a40ed57397ce9de5deb8139005c1c59</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_SRDOGuard_init</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>gacd578e8a5a4af024f8e6f8aef87cbd14</anchor>
-      <arglist>(CO_SRDOGuard_t *SRDOGuard, CO_SDO_t *SDO, CO_NMT_internalState_t *operatingState, uint8_t *configurationValid, uint16_t idx_SRDOvalid, uint16_t idx_SRDOcrc)</arglist>
-    </member>
-    <member kind="function">
-      <type>uint8_t</type>
-      <name>CO_SRDOGuard_process</name>
-      <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga0201fa4da8b37a18f864a9fd7c826a6c</anchor>
-      <arglist>(CO_SRDOGuard_t *SRDOGuard)</arglist>
+      <anchor>gae9ec8e025607d6ffb3e5881a245ec85e</anchor>
+      <arglist>(CO_SRDOGuard_t *SRDOGuard, OD_entry_t *OD_13FE_configurationValid, OD_entry_t *OD_13FF_safetyConfigurationSignature, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_SRDO_init</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga608e6d48e97f1b4da316b36f10e389c6</anchor>
-      <arglist>(CO_SRDO_t *SRDO, CO_SRDOGuard_t *SRDOGuard, CO_EM_t *em, CO_SDO_t *SDO, uint8_t nodeId, uint16_t defaultCOB_ID, const CO_SRDOCommPar_t *SRDOCommPar, const CO_SRDOMapPar_t *SRDOMapPar, const uint16_t *checksum, uint16_t idx_SRDOCommPar, uint16_t idx_SRDOMapPar, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxNormal, uint16_t CANdevRxIdxInverted, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdxNormal, uint16_t CANdevTxIdxInverted)</arglist>
+      <anchor>gad3d536b2638382ad4e08e913f629d852</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint8_t SRDO_Index, CO_SRDOGuard_t *SRDOGuard, OD_t *OD, CO_EM_t *em, uint8_t nodeId, uint16_t defaultCOB_ID, OD_entry_t *OD_130x_SRDOCommPar, OD_entry_t *OD_138x_SRDOMapPar, CO_CANmodule_t *CANdevRxNormal, CO_CANmodule_t *CANdevRxInverted, uint16_t CANdevRxIdxNormal, uint16_t CANdevRxIdxInverted, CO_CANmodule_t *CANdevTxNormal, CO_CANmodule_t *CANdevTxInverted, uint16_t CANdevTxIdxNormal, uint16_t CANdevTxIdxInverted, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -4178,11 +4425,11 @@
       <arglist>(CO_SRDO_t *SRDO, void *object, void(*pFunctSignalPre)(void *object))</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>CO_SRDO_initCallbackEnterSafeState</name>
+      <type>CO_ReturnError_t</type>
+      <name>CO_SRDO_config</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga5303601f6f94c83530b5e165f54b54bb</anchor>
-      <arglist>(CO_SRDO_t *SRDO, void *object, void(*pFunctSignalSafe)(void *object))</arglist>
+      <anchor>gafe5ebf3c3bff1072c63166617d2c0215</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint8_t SRDO_Index, CO_SRDOGuard_t *SRDOGuard, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -4192,19 +4439,334 @@
       <arglist>(CO_SRDO_t *SRDO)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>CO_SRDO_state_t</type>
       <name>CO_SRDO_process</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>gacb94aa4f279a4476c193ee50c408dfbb</anchor>
-      <arglist>(CO_SRDO_t *SRDO, uint8_t commands, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
+      <anchor>ga88d868d6a5592820534371db6021e2c8</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint32_t timeDifference_us, uint32_t *timerNext_us, bool_t NMTisOperational)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>CO_LSS.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/305/</path>
+    <path>305/</path>
     <filename>CO__LSS_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
     <class kind="union">CO_LSS_address_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_GLOBAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gab567d2ce007a0c1f3d4f75dbd13df49c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_VENDOR</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga15c3f7b0e7edf578d3cf303e444e1985</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_PRODUCT</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga3db710a3d7dbfd41550538e5ae4cb6a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_REV</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga5d8e1d4f74f50386438f79c7183cbe2e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_SERIAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga9c31b33e44c66750b9eb417f66000c9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga1e7a29931d0beb5d2aae63ef42462e86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gabb49f79ea3f15f48412b98bc4ef06adf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gafc675bfb6a1e6fefef9c7aec0c0fe849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_ACTIVATE_BIT_TIMING</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gaa3261c8b3029cc6114e95f6b43ea2a5a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga8bfa4b115106afe1bb3424722105c062</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_IDENT_SLAVE</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga6cd0e8c53abcbe4825093f17032b5c81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_IDENT_FASTSCAN</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gaa9d991fcc13d2c90c12364e5e3957dca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_VENDOR</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga6e95edeb411eb1bb21608eacdb2d1acd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_PRODUCT</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gae1e41835d8dfe6b5f155e98ef363ef38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_REV</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga83c7ff9e9cfa47731cbdc49e00850bd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_SERIAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga0119234af44445f158beff2fa415a3fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_NODE_ID</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga394e2ac8ecd5c8298f4b3a96a4ffd8b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_OK</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga7cf13a616ca85bc341b4932671b5a22c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_OUT_OF_RANGE</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga396ffc682ed4ab412516fdd7925f5986</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga84444dba0a6ca2686e97c351b0d381c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_OK</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>ga08bb01bb767885c5a7ad2f0e1fc6a81c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_OUT_OF_RANGE</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>gad00e94454c96c7c8f845b7d343bc5fd8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>gaaaa5e85127a6518cb19cd145e08abe58</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_OK</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga57827553bae30795337ebc1cd755c6e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_NOT_SUPPORTED</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga610e24f8857d7f9d19fb1b2ab71d6e9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_FAILED</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga7b74e54d16acbefbc52d75a836a799ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>gac0fa94a53993c2db0d93b88e004b24e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_BIT0</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>gaccf21befc8de66023e61f686f963f648</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_BIT31</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>ga35d0858534a061d1b040999778068f3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_CONFIRM</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>ga267b5f4f13b1941c6cdd9e60d1e0fa06</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_VENDOR_ID</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gaf0d23bd4558fc52ea56b4597276ba894</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_PRODUCT</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gad77efc79b9cc4987b52e15819359495a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_REV</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>ga3221c4f9d11dbea59231a01e055482c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_SERIAL</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gaf5b841cadc941f89e6eebaeda3c5a23f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_STATE_WAITING</name>
+      <anchorfile>group__CO__LSS__STATE__state.html</anchorfile>
+      <anchor>gab818ea1e408b8423094839ec78768357</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_STATE_CONFIGURATION</name>
+      <anchorfile>group__CO__LSS__STATE__state.html</anchorfile>
+      <anchor>gaddff310b53100b7513f64cf77b989a53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_1000</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga2067605e4121809abcebfa205d1c5a5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_800</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga79817642673f433786cee27a98a87f55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_500</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaaeb143f598440bfab79291dee0e17466</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_250</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga45f17b780ed991eabfa55cd01e06c0fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_125</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gac2dc4432f19032bef6c2e5a4830c79ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_50</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaac60a218d0dc887d3f999142624ce9d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_20</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaeb7dc109d27eb0741a7dca6045b21d2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_10</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga52db857eaf456578a03752ec43e272e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_AUTO</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaebc493e91101974b0205a2abd7e0c0b8</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_LSS_NODE_ID_ASSIGNMENT</name>
@@ -4226,332 +4788,6 @@
       <anchor>ga341d156c334f2a3c2523f03eb24f4710</anchor>
       <arglist>(a1, a2)</arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cs_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gacc7cba1fb1f1f595506751d6af385964</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_GLOBAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a6c9f8aaef024d11e50c007b881208113</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_VENDOR</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a620895a76069780eb5df8188b6c8a2de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a9caf25d2d4a28e279b1bc364d303ee7d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ae02d526a2c1170babeccffd00d477db5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964add363bec1d5ff239c847425f8b94718d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a97495fe55645d498550e0c05417e2c22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a777432f5b616a250a9db8bf7328b0a59</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964afd4b839204b66547e5ebb0e4ff9c4481</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_ACTIVATE_BIT_TIMING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a1046863405c6de85d0d86088d9c034cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ab0a136e255e8c2c32984881487b414d9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_IDENT_SLAVE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ad0ddd8e3d472f4d85de8613e7f35902a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_IDENT_FASTSCAN</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a9e4bd7f4a726aee66157ac9aac446ddc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_VENDOR</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ae28351cd1b60bbdd045a9f79cb506023</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a5fba5f8bd0f6a91b45fda117556b994c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a6f412845cd8cd4ab62a54a988ccc384c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a55f0698aa15abf17c41cd344df055184</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_NODE_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964af5d369fc4d3d860dc43de041b9fd59f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgNodeId_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaf8a13f567f8f405e4aae68268ba5d0a5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5abe91f1d0e99fa890fe69a3e60aab6c2b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_OUT_OF_RANGE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5a79c95a7e63e6ff09fcbe5494ef59eed5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5aa23e0ca77dfb47ff4a1d48ddfaebc98e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgBitTiming_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga28b8651550d1719c38cd307f4ef0a8ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8aca028ded96599022c4416e3d8c0798456a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_OUT_OF_RANGE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8acac089dd862b289dfc3f6bae0f30409625</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8aca3f5cbbebba617a9c12a7ed919a541255</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgStore_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga1e4e8c43143125ebe8912de81464bd9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fa0f0407dee97a1e5e5d26cc4c717103cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_NOT_SUPPORTED</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9faf78b03384da05bedcc45016d10dc0c3b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_FAILED</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fad7f12cd5d1125e97d7b9bacac4b80d69</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fa7ece37a5aabe812068efe6a2780f31cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_fastscan_bitcheck</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga65751e78ae5f2674cc7205e13967f7c0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_BIT0</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a2db8b358b4954e5989a347e1e308eb20</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_BIT31</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a48f5e26f67114198d945f37f8f713979</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_CONFIRM</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a72f67194903c03b688373ef859b66a0f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_fastscan_lss_sub_next</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga1ce707d287b285e7d148f37f93e0f02a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_VENDOR_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa4eb5786c488953cdb2d5ffbb25c15298</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa6514ca82752d5496904388a0589da209</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa0e153eebb470156f5d0a27caac2bc71f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aabe98c25d444fa5971bc81f775cd6bb35</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_state_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaaa9a270e40ea09850e1661e5aeb080ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_STATE_WAITING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaaa9a270e40ea09850e1661e5aeb080adac688ea4e90b7dfac437a44536f2af8db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_STATE_CONFIGURATION</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaaa9a270e40ea09850e1661e5aeb080ada69cc3fe20e50dcd6f7bad8c0b887ff89</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_bitTimingTable_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gacb4c13e75306153eafd535e55ba0ca2c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_1000</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca4cc0aa1f074ddaa5db4fdc0ed437a0b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_800</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca51413e9c20e1eb60f5cc160a4d30cffa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_500</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2caaa4d4f1a766516c6d97a81483001e8ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_250</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca3fadf15163c4f45300045e3645bba3ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_125</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca1d93a0699e4269d809404c40565133cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_50</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2caf0e90aeacc6461bd2ace73be51fd5383</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_20</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca08fb8c70b5d185521959415ef731de82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_10</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca7a3c4e05623e7f75fe3b622a9b0185c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_AUTO</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca12ca7fd4a3604cb8281fa7d58d1137e2</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="variable" static="yes">
       <type>static const uint16_t</type>
       <name>CO_LSS_bitTimingTableLookup</name>
@@ -4562,9 +4798,9 @@
   </compound>
   <compound kind="file">
     <name>CO_LSSmaster.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/305/</path>
+    <path>305/</path>
     <filename>CO__LSSmaster_8h.html</filename>
-    <includes id="CO__LSS_8h" name="CO_LSS.h" local="yes" imported="no">305/CO_LSS.h</includes>
+    <includes id="CO__LSS_8h" name="CO_LSS.h" local="yes" import="no" module="no" objc="no">305/CO_LSS.h</includes>
     <class kind="struct">CO_LSSmaster_t</class>
     <class kind="struct">CO_LSSmaster_fastscan_t</class>
     <member kind="define">
@@ -4689,16 +4925,16 @@
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
-      <name>CO_LSSmaster_switchStateSelect</name>
+      <name>CO_LSSmaster_swStateSelect</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>ga41b4288c03af394261541b9a8395e8f3</anchor>
+      <anchor>gae39001f9e0553f2cd8c83924bd0d0a7d</anchor>
       <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, CO_LSS_address_t *lssAddress)</arglist>
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
-      <name>CO_LSSmaster_switchStateDeselect</name>
+      <name>CO_LSSmaster_swStateDeselect</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>gac0e13ec42e1fd85da5ddef6f654ef1a4</anchor>
+      <anchor>gadf5fc6601766a0a12d067e90b048c8af</anchor>
       <arglist>(CO_LSSmaster_t *LSSmaster)</arglist>
     </member>
     <member kind="function">
@@ -4740,8 +4976,8 @@
       <type>CO_LSSmaster_return_t</type>
       <name>CO_LSSmaster_Inquire</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>ga22414a7184ca0c9d371dd67e9990d820</anchor>
-      <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, CO_LSS_cs_t lssInquireCs, uint32_t *value)</arglist>
+      <anchor>ga156a0b7571b50a97098a66867b173435</anchor>
+      <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, uint8_t lssInquireCs, uint32_t *value)</arglist>
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
@@ -4753,9 +4989,9 @@
   </compound>
   <compound kind="file">
     <name>CO_LSSslave.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/305/</path>
+    <path>305/</path>
     <filename>CO__LSSslave_8h.html</filename>
-    <includes id="CO__LSS_8h" name="CO_LSS.h" local="yes" imported="no">305/CO_LSS.h</includes>
+    <includes id="CO__LSS_8h" name="CO_LSS.h" local="yes" import="no" module="no" objc="no">305/CO_LSS.h</includes>
     <class kind="struct">CO_LSSslave_t</class>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -4772,10 +5008,10 @@
       <arglist>(CO_LSSslave_t *LSSslave)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static CO_LSS_state_t</type>
+      <type>static uint8_t</type>
       <name>CO_LSSslave_getState</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga2692ff0d6837db494c029a3bef735ee7</anchor>
+      <anchor>ga5dbbd0c6aca32d633728296115de710e</anchor>
       <arglist>(CO_LSSslave_t *LSSslave)</arglist>
     </member>
     <member kind="function">
@@ -4787,36 +5023,36 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initCheckBitRateCallback</name>
+      <name>CO_LSSslave_initCkBitRateCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga665f147d6fae6db71173c4a8d602495c</anchor>
+      <anchor>ga4bb7479dad7c3dc7094965b615912f2f</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, bool_t(*pFunctLSScheckBitRate)(void *object, uint16_t bitRate))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initActivateBitRateCallback</name>
+      <name>CO_LSSslave_initActBitRateCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga0253fffcb36ab6b850563328784a8a5a</anchor>
+      <anchor>gab827ffe560453506fb3c33d25eadc88d</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, void(*pFunctLSSactivateBitRate)(void *object, uint16_t delay))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initCfgStoreCallback</name>
+      <name>CO_LSSslave_initCfgStoreCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>gadc6187357904293da0a35317f15d0666</anchor>
+      <anchor>gada95bef94922adcadd328c6c1d3cad40</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, bool_t(*pFunctLSScfgStore)(void *object, uint8_t id, uint16_t bitRate))</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>CO_gateway_ascii.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/309/</path>
+    <path>309/</path>
     <filename>CO__gateway__ascii_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__fifo_8h" name="CO_fifo.h" local="yes" imported="no">301/CO_fifo.h</includes>
-    <includes id="CO__SDOclient_8h" name="CO_SDOclient.h" local="yes" imported="no">301/CO_SDOclient.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
-    <includes id="CO__LSSmaster_8h" name="CO_LSSmaster.h" local="yes" imported="no">305/CO_LSSmaster.h</includes>
-    <includes id="CO__LEDs_8h" name="CO_LEDs.h" local="yes" imported="no">303/CO_LEDs.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__fifo_8h" name="CO_fifo.h" local="yes" import="no" module="no" objc="no">301/CO_fifo.h</includes>
+    <includes id="CO__SDOclient_8h" name="CO_SDOclient.h" local="yes" import="no" module="no" objc="no">301/CO_SDOclient.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
+    <includes id="CO__LSSmaster_8h" name="CO_LSSmaster.h" local="yes" import="no" module="no" objc="no">305/CO_LSSmaster.h</includes>
+    <includes id="CO__LEDs_8h" name="CO_LEDs.h" local="yes" import="no" module="no" objc="no">303/CO_LEDs.h</includes>
     <class kind="struct">CO_GTWA_t</class>
     <member kind="define">
       <type>#define</type>
@@ -5155,25 +5391,26 @@
   </compound>
   <compound kind="file">
     <name>CANopen.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/</path>
+    <path></path>
     <filename>CANopen_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
-    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" imported="no">301/CO_NMT_Heartbeat.h</includes>
-    <includes id="CO__HBconsumer_8h" name="CO_HBconsumer.h" local="yes" imported="no">301/CO_HBconsumer.h</includes>
-    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" imported="no">301/CO_Emergency.h</includes>
-    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" imported="no">301/CO_SDOserver.h</includes>
-    <includes id="CO__SDOclient_8h" name="CO_SDOclient.h" local="yes" imported="no">301/CO_SDOclient.h</includes>
-    <includes id="CO__SYNC_8h" name="CO_SYNC.h" local="yes" imported="no">301/CO_SYNC.h</includes>
-    <includes id="CO__PDO_8h" name="CO_PDO.h" local="yes" imported="no">301/CO_PDO.h</includes>
-    <includes id="CO__TIME_8h" name="CO_TIME.h" local="yes" imported="no">301/CO_TIME.h</includes>
-    <includes id="CO__LEDs_8h" name="CO_LEDs.h" local="yes" imported="no">303/CO_LEDs.h</includes>
-    <includes id="CO__GFC_8h" name="CO_GFC.h" local="yes" imported="no">304/CO_GFC.h</includes>
-    <includes id="CO__SRDO_8h" name="CO_SRDO.h" local="yes" imported="no">304/CO_SRDO.h</includes>
-    <includes id="CO__LSSslave_8h" name="CO_LSSslave.h" local="yes" imported="no">305/CO_LSSslave.h</includes>
-    <includes id="CO__LSSmaster_8h" name="CO_LSSmaster.h" local="yes" imported="no">305/CO_LSSmaster.h</includes>
-    <includes id="CO__gateway__ascii_8h" name="CO_gateway_ascii.h" local="yes" imported="no">309/CO_gateway_ascii.h</includes>
-    <includes id="CO__trace_8h" name="CO_trace.h" local="yes" imported="no">extra/CO_trace.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__NMT__Heartbeat_8h" name="CO_NMT_Heartbeat.h" local="yes" import="no" module="no" objc="no">301/CO_NMT_Heartbeat.h</includes>
+    <includes id="CO__HBconsumer_8h" name="CO_HBconsumer.h" local="yes" import="no" module="no" objc="no">301/CO_HBconsumer.h</includes>
+    <includes id="CO__Node__Guarding_8h" name="CO_Node_Guarding.h" local="yes" import="no" module="no" objc="no">301/CO_Node_Guarding.h</includes>
+    <includes id="CO__Emergency_8h" name="CO_Emergency.h" local="yes" import="no" module="no" objc="no">301/CO_Emergency.h</includes>
+    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" import="no" module="no" objc="no">301/CO_SDOserver.h</includes>
+    <includes id="CO__SDOclient_8h" name="CO_SDOclient.h" local="yes" import="no" module="no" objc="no">301/CO_SDOclient.h</includes>
+    <includes id="CO__SYNC_8h" name="CO_SYNC.h" local="yes" import="no" module="no" objc="no">301/CO_SYNC.h</includes>
+    <includes id="CO__PDO_8h" name="CO_PDO.h" local="yes" import="no" module="no" objc="no">301/CO_PDO.h</includes>
+    <includes id="CO__TIME_8h" name="CO_TIME.h" local="yes" import="no" module="no" objc="no">301/CO_TIME.h</includes>
+    <includes id="CO__LEDs_8h" name="CO_LEDs.h" local="yes" import="no" module="no" objc="no">303/CO_LEDs.h</includes>
+    <includes id="CO__GFC_8h" name="CO_GFC.h" local="yes" import="no" module="no" objc="no">304/CO_GFC.h</includes>
+    <includes id="CO__SRDO_8h" name="CO_SRDO.h" local="yes" import="no" module="no" objc="no">304/CO_SRDO.h</includes>
+    <includes id="CO__LSSslave_8h" name="CO_LSSslave.h" local="yes" import="no" module="no" objc="no">305/CO_LSSslave.h</includes>
+    <includes id="CO__LSSmaster_8h" name="CO_LSSmaster.h" local="yes" import="no" module="no" objc="no">305/CO_LSSmaster.h</includes>
+    <includes id="CO__gateway__ascii_8h" name="CO_gateway_ascii.h" local="yes" import="no" module="no" objc="no">309/CO_gateway_ascii.h</includes>
+    <includes id="CO__trace_8h" name="CO_trace.h" local="yes" import="no" module="no" objc="no">extra/CO_trace.h</includes>
     <class kind="struct">CO_config_t</class>
     <class kind="struct">CO_t</class>
     <member kind="define">
@@ -5194,7 +5431,7 @@
       <type>CO_t *</type>
       <name>CO_new</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gaf6ef29daa2063de90b4799ae795c7027</anchor>
+      <anchor>gadc333c00f46acf4ec447756ae9fa6db8</anchor>
       <arglist>(CO_config_t *config, uint32_t *heapMemoryUsed)</arglist>
     </member>
     <member kind="function">
@@ -5229,14 +5466,21 @@
       <type>CO_ReturnError_t</type>
       <name>CO_CANopenInit</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gac7184266b6880ae68dcb5e96b3c3f089</anchor>
-      <arglist>(CO_t *co, CO_NMT_t *NMT, CO_EM_t *em, OD_t *od, OD_entry_t *OD_statusBits, CO_NMT_control_t NMTcontrol, uint16_t firstHBTime_ms, uint16_t SDOserverTimeoutTime_ms, uint16_t SDOclientTimeoutTime_ms, bool_t SDOclientBlockTransfer, uint8_t nodeId, uint32_t *errInfo)</arglist>
+      <anchor>gaa311ad557dcb878a23b972b96ced33af</anchor>
+      <arglist>(CO_t *co, CO_NMT_t *NMT, CO_EM_t *em, OD_t *od, OD_entry_t *OD_statusBits, uint16_t NMTcontrol, uint16_t firstHBTime_ms, uint16_t SDOserverTimeoutTime_ms, uint16_t SDOclientTimeoutTime_ms, bool_t SDOclientBlockTransfer, uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_CANopenInitPDO</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
       <anchor>gacc12d0f9b2fe8c7acd10a353d28c4489</anchor>
+      <arglist>(CO_t *co, CO_EM_t *em, OD_t *od, uint8_t nodeId, uint32_t *errInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_CANopenInitSRDO</name>
+      <anchorfile>group__CO__CANopen.html</anchorfile>
+      <anchor>ga488213ed5dd8779faf7c3264724b9e3e</anchor>
       <arglist>(CO_t *co, CO_EM_t *em, OD_t *od, uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
@@ -5268,19 +5512,19 @@
       <arglist>(CO_t *co, bool_t syncWas, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>CO_SRDO_state_t</type>
       <name>CO_process_SRDO</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gab76d7283fe5190d3a0009b423a9ba8b1</anchor>
+      <anchor>ga1a20221d6769dcab6e5d17d56d74d24d</anchor>
       <arglist>(CO_t *co, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>CO_trace.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/extra/</path>
+    <path>extra/</path>
     <filename>CO__trace_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" imported="no">301/CO_SDOserver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__SDOserver_8h" name="CO_SDOserver.h" local="yes" import="no" module="no" objc="no">301/CO_SDOserver.h</includes>
     <class kind="struct">CO_trace_dataType_t</class>
     <class kind="struct">CO_trace_t</class>
     <member kind="define">
@@ -5307,9 +5551,9 @@
   </compound>
   <compound kind="file">
     <name>CO_eeprom.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/storage/</path>
+    <path>storage/</path>
     <filename>CO__eeprom_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
     <member kind="function">
       <type>bool_t</type>
       <name>CO_eeprom_init</name>
@@ -5355,10 +5599,10 @@
   </compound>
   <compound kind="file">
     <name>CO_storage.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/storage/</path>
+    <path>storage/</path>
     <filename>CO__storage_8h.html</filename>
-    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" imported="no">301/CO_driver.h</includes>
-    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" imported="no">301/CO_ODinterface.h</includes>
+    <includes id="CO__driver_8h" name="CO_driver.h" local="yes" import="no" module="no" objc="no">301/CO_driver.h</includes>
+    <includes id="CO__ODinterface_8h" name="CO_ODinterface.h" local="yes" import="no" module="no" objc="no">301/CO_ODinterface.h</includes>
     <class kind="struct">CO_storage_t</class>
     <member kind="enumeration">
       <type></type>
@@ -5395,9 +5639,9 @@
   </compound>
   <compound kind="file">
     <name>CO_storageEeprom.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/storage/</path>
+    <path>storage/</path>
     <filename>CO__storageEeprom_8h.html</filename>
-    <includes id="CO__storage_8h" name="CO_storage.h" local="yes" imported="no">storage/CO_storage.h</includes>
+    <includes id="CO__storage_8h" name="CO_storage.h" local="yes" import="no" module="no" objc="no">storage/CO_storage.h</includes>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_storageEeprom_init</name>
@@ -5608,6 +5852,20 @@
       <name>ENTRY_H1016</name>
       <anchorfile>structCO__config__t.html</anchorfile>
       <anchor>a197a44ec1cc2cafff814709b12e02b2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_entry_t *</type>
+      <name>ENTRY_H100C</name>
+      <anchorfile>structCO__config__t.html</anchorfile>
+      <anchor>ad64843efd0614b162380996efc37cfea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_entry_t *</type>
+      <name>ENTRY_H100D</name>
+      <anchorfile>structCO__config__t.html</anchorfile>
+      <anchor>af151c840dbc3be2d4295d32709c1aa16</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -5867,8 +6125,8 @@
       <type>uint8_t</type>
       <name>errorStatusBits</name>
       <anchorfile>structCO__EM__t.html</anchorfile>
-      <anchor>a377eb478f0af20e6e1e23bd77186dcfd</anchor>
-      <arglist>[CO_CONFIG_EM_ERR_STATUS_BITS_COUNT/8]</arglist>
+      <anchor>a18ac996b12ce6df4bc8f4edea0a7dda7</anchor>
+      <arglist>[CO_CONFIG_EM_ERR_STATUS_BITS_COUNT/8U]</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
@@ -5983,6 +6241,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>uint32_t</type>
+      <name>inhibitEmTimer</name>
+      <anchorfile>structCO__EM__t.html</anchorfile>
+      <anchor>a7a8e4f0bf9de7e73dcc6ad30d1806c40</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>OD_extension_t</type>
       <name>OD_1015_extension</name>
       <anchorfile>structCO__EM__t.html</anchorfile>
@@ -6082,10 +6347,17 @@
     <name>CO_GFC_t</name>
     <filename>structCO__GFC__t.html</filename>
     <member kind="variable">
-      <type>uint8_t *</type>
+      <type>bool_t</type>
       <name>valid</name>
       <anchorfile>structCO__GFC__t.html</anchorfile>
-      <anchor>a775fa3a4f1afda4a4be200f56d6e2b54</anchor>
+      <anchor>aa293e0114f458922503926bc652c1fb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_gfcParam_ext</name>
+      <anchorfile>structCO__GFC__t.html</anchorfile>
+      <anchor>a5a434b37c7d8c8dda95bfbd6d09ab95e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -6303,10 +6575,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_LSS_cs_t</type>
+      <type>uint8_t</type>
       <name>lssInquireCs</name>
       <anchorfile>structCO__GTWA__t.html</anchorfile>
-      <anchor>a74892b830cb6064d31190ff6bac6a3c9</anchor>
+      <anchor>ae0408fe35a30fca53fdd1d92ca1935e5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -6779,10 +7051,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_LSS_state_t</type>
+      <type>uint8_t</type>
       <name>lssState</name>
       <anchorfile>structCO__LSSslave__t.html</anchorfile>
-      <anchor>a514565a5cda1630165c3640ef223aa28</anchor>
+      <anchor>a5a55d2e4c2128a0cbf0fe513761b32ae</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -6835,10 +7107,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_LSS_cs_t</type>
+      <type>uint8_t</type>
       <name>service</name>
       <anchorfile>structCO__LSSslave__t.html</anchorfile>
-      <anchor>acdffe4100d9031c885ba5b5b995e471c</anchor>
+      <anchor>ab63e58a075c4eb9a9e761dd6d5a6df57</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -6930,10 +7202,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_NMT_control_t</type>
+      <type>uint16_t</type>
       <name>NMTcontrol</name>
       <anchorfile>structCO__NMT__t.html</anchorfile>
-      <anchor>a0c28cae6c3c7319c8fdfe694a3b4d9a7</anchor>
+      <anchor>a0a41707358150d7f7db77b606ceb1b98</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7012,6 +7284,207 @@
       <anchorfile>structCO__NMT__t.html</anchorfile>
       <anchor>a64bc9d74c871bf560d8b5db85e4d051e</anchor>
       <arglist>)(CO_NMT_internalState_t state)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CO_nodeGuardingMaster_t</name>
+    <filename>structCO__nodeGuardingMaster__t.html</filename>
+    <member kind="variable">
+      <type>CO_EM_t *</type>
+      <name>em</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a6677bda069ed99ce1800db32a3ab5ecf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_CANmodule_t *</type>
+      <name>CANdevTx</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a8a1ea1b58bdc623de3d986ba2e1bbcd7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>CANdevTxIdx</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a2b3bc752a61d92ba55bc3fc163aa2224</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_CANtx_t *</type>
+      <name>CANtxBuff</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a9aa937c0316a81e68943721e0ad12304</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>allMonitoredActive</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a7ec764141ee63b6db76a76f223c6845d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>allMonitoredOperational</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>a59445b6fa91b95acd7265df5884d356c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_nodeGuardingMasterNode_t</type>
+      <name>nodes</name>
+      <anchorfile>structCO__nodeGuardingMaster__t.html</anchorfile>
+      <anchor>af076609686eafe9353748a83a8f3d8b3</anchor>
+      <arglist>[CO_CONFIG_NODE_GUARDING_MASTER_COUNT]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CO_nodeGuardingMasterNode_t</name>
+    <filename>structCO__nodeGuardingMasterNode__t.html</filename>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>guardTime_us</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>afc84f37cbcfcf26339c85d806d1c4257</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>guardTimer</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a42250252b4357f215a1154d2f71dfc39</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>ident</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a1faf56163102fd4a5250a1ceb415d2cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_NMT_internalState_t</type>
+      <name>NMTstate</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a993b4cdf3a31590282f1e5f1a20fdfe0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>toggle</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a004003dab61c6377e694ba2d352fc6b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>responseRecived</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>aa11942074f0001cf871b58dcf78b8b53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>CANtxWasBusy</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a13ddb5c35d672b7f57dc676a5f9e857c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>monitoringActive</name>
+      <anchorfile>structCO__nodeGuardingMasterNode__t.html</anchorfile>
+      <anchor>a25b9ac75bbb23de48335a96f09dc7fd8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CO_nodeGuardingSlave_t</name>
+    <filename>structCO__nodeGuardingSlave__t.html</filename>
+    <member kind="variable">
+      <type>CO_EM_t *</type>
+      <name>em</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a74367014659f4b5a9bf06e6b1ca3d15c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>volatile void *</type>
+      <name>CANrxNew</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a48c6c0bd7267c6d3267ee1fe8c4bb4ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>guardTime_us</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>aefc0cc032fb8c94219e0db519e18b33b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>lifeTime_us</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a15857cfa9c7538c6bbcbc19344e6571b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>lifeTimer</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>abf1aa616a7624056102f08f22c8da80e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>lifeTimeFactor</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>acea6bbf9d1611df45946264e902bf806</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>toggle</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a37230f7ddd1ecb759a7e5df2a81c82a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>lifeTimeTimeout</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a1354ee14f863b827ea9f23fdc3a66299</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_100C_extension</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>afc47241df644bcf95b26bf89a979de68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_100D_extension</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a148f6d418e910a1cf9a38e2ff2b9cd38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_CANmodule_t *</type>
+      <name>CANdevTx</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a5554883b0957a6b7d60ca79ec027baf8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_CANtx_t *</type>
+      <name>CANtxBuff</name>
+      <anchorfile>structCO__nodeGuardingSlave__t.html</anchorfile>
+      <anchor>a9e91416708180dc4c1ea8c31497ad0fa</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -7271,6 +7744,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>bool_t</type>
+      <name>valid</name>
+      <anchorfile>structCO__SDOclient__t.html</anchorfile>
+      <anchor>a21e0054c3dd1866a49317775c6a3eefd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>uint16_t</type>
       <name>index</name>
       <anchorfile>structCO__SDOclient__t.html</anchorfile>
@@ -7282,6 +7762,13 @@
       <name>subIndex</name>
       <anchorfile>structCO__SDOclient__t.html</anchorfile>
       <anchor>a7f36981af65dc318dd69213c408b1b62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>finished</name>
+      <anchorfile>structCO__SDOclient__t.html</anchorfile>
+      <anchor>a9cd77ab876584e47087c40131c4d0054</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7330,8 +7817,8 @@
       <type>uint8_t</type>
       <name>buf</name>
       <anchorfile>structCO__SDOclient__t.html</anchorfile>
-      <anchor>ae03c2cfaf2ff8c717a0be46b54ea3c26</anchor>
-      <arglist>[CO_CONFIG_SDO_CLI_BUFFER_SIZE+1]</arglist>
+      <anchor>a20614663e6ea84289c684f20638a5788</anchor>
+      <arglist>[CO_CONFIG_SDO_CLI_BUFFER_SIZE+1U]</arglist>
     </member>
     <member kind="variable">
       <type>volatile void *</type>
@@ -7454,6 +7941,13 @@
       <name>nodeId</name>
       <anchorfile>structCO__SDOserver__t.html</anchorfile>
       <anchor>a38d0b70cb37d6be927208e3662105c6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>valid</name>
+      <anchorfile>structCO__SDOserver__t.html</anchorfile>
+      <anchor>af0123eec52d5c1e9ab9eae941026f6e8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7586,8 +8080,8 @@
       <type>uint8_t</type>
       <name>buf</name>
       <anchorfile>structCO__SDOserver__t.html</anchorfile>
-      <anchor>a11661c171dd168fccef5a3ed54572752</anchor>
-      <arglist>[CO_CONFIG_SDO_SRV_BUFFER_SIZE+1]</arglist>
+      <anchor>a2f17c1b7c7cf6842ef0fecc898a8e65e</anchor>
+      <arglist>[CO_CONFIG_SDO_SRV_BUFFER_SIZE+1U]</arglist>
     </member>
     <member kind="variable">
       <type>OD_size_t</type>
@@ -7671,20 +8165,6 @@
     <name>CO_SRDO_t</name>
     <filename>structCO__SRDO__t.html</filename>
     <member kind="variable">
-      <type>CO_EM_t *</type>
-      <name>em</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a1779ab0170d7b604948a9396681212c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CO_SDO_t *</type>
-      <name>SDO</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>af8121f4d1f0879eba793afaee5c6c804</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>CO_SRDOGuard_t *</type>
       <name>SRDOGuard</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
@@ -7692,17 +8172,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t *</type>
-      <name>mapPointer</name>
+      <type>OD_t *</type>
+      <name>OD</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a3e7570a1aeef89502702175eccb93500</anchor>
-      <arglist>[2][8]</arglist>
+      <anchor>a81ebe34c808c9abde3ede3aef751da20</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>dataLength</name>
+      <type>CO_EM_t *</type>
+      <name>em</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>ae994e87a71e85342f3a5b3c046d8a47f</anchor>
+      <anchor>a1779ab0170d7b604948a9396681212c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>defaultCOB_ID</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a57270bfcb7541378323332b4d5b0a560</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7713,66 +8200,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint16_t</type>
-      <name>defaultCOB_ID</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a14da12ca5af61cd6cc6e442a0baa5c26</anchor>
-      <arglist>[2]</arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>valid</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a6eef41749d7862ef2a29108f4f08185a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const CO_SRDOCommPar_t *</type>
-      <name>SRDOCommPar</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>aba2d09de18da68fb01ab23696de452ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const CO_SRDOMapPar_t *</type>
-      <name>SRDOMapPar</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a876184e5c0b2809fc4b412cc2accb43e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const uint16_t *</type>
-      <name>checksum</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>adffd373a96a9570b0cbd4487c50d5359</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CO_CANmodule_t *</type>
-      <name>CANdevRx</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>ad5c0cea22d56cef74f42728107748b38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>CO_CANmodule_t *</type>
       <name>CANdevTx</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a2fe71edd01cb39629fe42753e84df1fc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CO_CANtx_t *</type>
-      <name>CANtxBuff</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a693cc1ce40b882e85359291744d68b99</anchor>
-      <arglist>[2]</arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>CANdevRxIdx</name>
-      <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>aa1d8ca455950557652636bc8021928a4</anchor>
+      <anchor>a31588b7ac75aafb0231c0fee616f82ed</anchor>
       <arglist>[2]</arglist>
     </member>
     <member kind="variable">
@@ -7783,18 +8214,102 @@
       <arglist>[2]</arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>toogle</name>
+      <type>CO_CANmodule_t *</type>
+      <name>CANdevRx</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a79114736807f3aa8ab19e6e88df93050</anchor>
+      <anchor>a82972aaf7c2cd41f39f82c96d74d1356</anchor>
+      <arglist>[2]</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>CANdevRxIdx</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>aa1d8ca455950557652636bc8021928a4</anchor>
+      <arglist>[2]</arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_SRDO_state_t</type>
+      <name>internalState</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a26258ca7f221820c85b28ea9ba60f292</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool_t</type>
+      <name>NMTisOperationalPrevious</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a987d46ea703a7aafc194764d08cc0ca8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>informationDirection</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a2e37b7b18ed2f9d6a91f793a361c86c3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
-      <name>timer</name>
+      <name>cycleTime_us</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a1d3553daf7179b3389023ac78287dfbc</anchor>
+      <anchor>affb3173f82ad6f796f03fc0a46db6fd2</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>validationTime_us</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a3b3ee2706a1d105cab2a788e55110364</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>cycleTimer</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>aa0d6daf963b83bb577976205c390627f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>invertedDelay</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>aeb68df808af0541ab15b7a93ff159725</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>validationTimer</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a6fbd4ea26d2ba5031d49404d87ffe727</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_SRDO_size_t</type>
+      <name>dataLength</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a362de15528a08f123ce8ee9ece3eeaa9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>mappedObjectsCount</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>ad65e5222801c17762e2ef215b15ced54</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_IO_t</type>
+      <name>OD_IO</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a440ba4eeb11fe1e4debeaefe6e225e25</anchor>
+      <arglist>[CO_SRDO_MAX_MAPPED_ENTRIES]</arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_CANtx_t *</type>
+      <name>CANtxBuff</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a693cc1ce40b882e85359291744d68b99</anchor>
+      <arglist>[2]</arglist>
     </member>
     <member kind="variable">
       <type>volatile void *</type>
@@ -7804,24 +8319,52 @@
       <arglist>[2]</arglist>
     </member>
     <member kind="variable">
+      <type>bool_t</type>
+      <name>rxSrdoShort</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a6802458e552503dc73dc9f2bd64b2cb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>uint8_t</type>
       <name>CANrxData</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>ae6edba4f0446c10b971a90bde01c8a0b</anchor>
-      <arglist>[2][8]</arglist>
+      <anchor>a8d6fdba3d0dd9e2c4cf7344f621602bd</anchor>
+      <arglist>[2][CO_SRDO_MAX_SIZE]</arglist>
     </member>
     <member kind="variable">
-      <type>void(*</type>
-      <name>pFunctSignalSafe</name>
+      <type>bool_t</type>
+      <name>nextIsNormal</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>ab000fd951d5b72615a3b3086335a6add</anchor>
-      <arglist>)(void *object)</arglist>
+      <anchor>ad723726a9155860ec91f84b8bb2f2b3b</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>void *</type>
-      <name>functSignalObjectSafe</name>
+      <type>OD_entry_t *</type>
+      <name>OD_communicationParam_entry</name>
       <anchorfile>structCO__SRDO__t.html</anchorfile>
-      <anchor>a037ba4d3ca1e33c6187219ba4766b2a8</anchor>
+      <anchor>aee389a07a7c0b61aea59e4efd9f0e42b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_entry_t *</type>
+      <name>OD_mappingParam_entry</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a97768272c0a60d04fab2372daf73fbc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_communicationParam_ext</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>a842d0e6237208e18f0cbd3324a2a1a32</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_mappingParam_extension</name>
+      <anchorfile>structCO__SRDO__t.html</anchorfile>
+      <anchor>ac4b795379773c867a324a22bcd62b0a8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7840,87 +8383,55 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CO_SRDOCommPar_t</name>
-    <filename>structCO__SRDOCommPar__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>maxSubIndex</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>af156b61e6d278b014466e860f073cf05</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>informationDirection</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>ac8f865699090f666910e66dabf53b339</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>safetyCycleTime</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>a257a5534889060efc7477be7fc0adbad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>safetyRelatedValidationTime</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>a5c02007d0e4f1b1cfd8a07da93b954cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>transmissionType</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>a8716aa43cf70db8af86c4125b14cd538</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>COB_ID1_normal</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>a89d3762612ef971aecaae43ce94141cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>COB_ID2_inverted</name>
-      <anchorfile>structCO__SRDOCommPar__t.html</anchorfile>
-      <anchor>a574ade8ff753ae742f6a3b51b32a11fe</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CO_SRDOGuard_t</name>
     <filename>structCO__SRDOGuard__t.html</filename>
     <member kind="variable">
-      <type>CO_NMT_internalState_t *</type>
-      <name>operatingState</name>
+      <type>bool_t</type>
+      <name>NMTisOperational</name>
       <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
-      <anchor>a5e80afb9ddd0debd94eaafa9c6f4ad36</anchor>
+      <anchor>a6e9cb88d4051f8aedb5938d172493a78</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CO_NMT_internalState_t</type>
-      <name>operatingStatePrev</name>
-      <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
-      <anchor>ac6f6a3b1465360e035656933470d6b4d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t *</type>
+      <type>bool_t</type>
       <name>configurationValid</name>
       <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
-      <anchor>aa4c8b5e7d9d8fa54d91ad0797ea9b39b</anchor>
+      <anchor>a6bb2a1d7b7179d3a8488db39f02495f5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>checkCRC</name>
+      <type>OD_IO_t</type>
+      <name>OD_IO_configurationValid</name>
       <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
-      <anchor>ad8cd90a85e6e6d551fb04e8fa94feffd</anchor>
+      <anchor>a02b1794c76c7c8efcdd2c1e330fb8baf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_entry_t *</type>
+      <name>OD_13FE_entry</name>
+      <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
+      <anchor>a0e615e3cdd9dd7e9a2e125974f24e1d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_entry_t *</type>
+      <name>OD_13FF_entry</name>
+      <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
+      <anchor>aad147b9be89ae4065ff9df379cbce950</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_13FE_extension</name>
+      <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
+      <anchor>a9d26b7a86990e945134f16c51525f2e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>OD_extension_t</type>
+      <name>OD_13FF_extension</name>
+      <anchorfile>structCO__SRDOGuard__t.html</anchorfile>
+      <anchor>a8bf19d361395c976c1589448d80976f0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8146,6 +8657,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>CO_CANmodule_t *</type>
+      <name>CANdevTx</name>
+      <anchorfile>structCO__SYNC__t.html</anchorfile>
+      <anchor>a3b89fbc55cce155f500bbda463b61d8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>CO_CANtx_t *</type>
       <name>CANtxBuff</name>
       <anchorfile>structCO__SYNC__t.html</anchorfile>
@@ -8178,13 +8696,6 @@
       <name>CAN_ID</name>
       <anchorfile>structCO__SYNC__t.html</anchorfile>
       <anchor>a8c7b98f9ece9fb71c642900462165f13</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CO_CANmodule_t *</type>
-      <name>CANdevTx</name>
-      <anchorfile>structCO__SYNC__t.html</anchorfile>
-      <anchor>a3b89fbc55cce155f500bbda463b61d8a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -8315,6 +8826,48 @@
       <name>RX_IDX_HB_CONS</name>
       <anchorfile>structCO__t.html</anchorfile>
       <anchor>a788f815f4d31a4aa11d171114173573e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_nodeGuardingSlave_t *</type>
+      <name>NGslave</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>acd73fa8ed9e6a82d335dbbf4f42c033a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>RX_IDX_NG_SLV</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>a45c91819d8d46250943b76faf635ba2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>TX_IDX_NG_SLV</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>a2ea0b0cd51d9413f2b4f5a31380f0b81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CO_nodeGuardingMaster_t *</type>
+      <name>NGmaster</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>afd06266b7ac74e368b8a28d570e435c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>RX_IDX_NG_MST</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>a8cfa8b15b9022fd760ef8d516a352f9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>TX_IDX_NG_MST</name>
+      <anchorfile>structCO__t.html</anchorfile>
+      <anchor>afe86b2f2c9e85437c866a29bed7a97b4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -9160,6 +9713,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>uint16_t</type>
+      <name>index</name>
+      <anchorfile>structOD__stream__t.html</anchorfile>
+      <anchor>a2c219a8c501e285bb6504526d297172b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>uint8_t</type>
       <name>subIndex</name>
       <anchorfile>structOD__stream__t.html</anchorfile>
@@ -9210,7 +9770,7 @@
       <type>CO_t *</type>
       <name>CO_new</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gaf6ef29daa2063de90b4799ae795c7027</anchor>
+      <anchor>gadc333c00f46acf4ec447756ae9fa6db8</anchor>
       <arglist>(CO_config_t *config, uint32_t *heapMemoryUsed)</arglist>
     </member>
     <member kind="function">
@@ -9245,14 +9805,21 @@
       <type>CO_ReturnError_t</type>
       <name>CO_CANopenInit</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gac7184266b6880ae68dcb5e96b3c3f089</anchor>
-      <arglist>(CO_t *co, CO_NMT_t *NMT, CO_EM_t *em, OD_t *od, OD_entry_t *OD_statusBits, CO_NMT_control_t NMTcontrol, uint16_t firstHBTime_ms, uint16_t SDOserverTimeoutTime_ms, uint16_t SDOclientTimeoutTime_ms, bool_t SDOclientBlockTransfer, uint8_t nodeId, uint32_t *errInfo)</arglist>
+      <anchor>gaa311ad557dcb878a23b972b96ced33af</anchor>
+      <arglist>(CO_t *co, CO_NMT_t *NMT, CO_EM_t *em, OD_t *od, OD_entry_t *OD_statusBits, uint16_t NMTcontrol, uint16_t firstHBTime_ms, uint16_t SDOserverTimeoutTime_ms, uint16_t SDOclientTimeoutTime_ms, bool_t SDOclientBlockTransfer, uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_CANopenInitPDO</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
       <anchor>gacc12d0f9b2fe8c7acd10a353d28c4489</anchor>
+      <arglist>(CO_t *co, CO_EM_t *em, OD_t *od, uint8_t nodeId, uint32_t *errInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_CANopenInitSRDO</name>
+      <anchorfile>group__CO__CANopen.html</anchorfile>
+      <anchor>ga488213ed5dd8779faf7c3264724b9e3e</anchor>
       <arglist>(CO_t *co, CO_EM_t *em, OD_t *od, uint8_t nodeId, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
@@ -9284,10 +9851,10 @@
       <arglist>(CO_t *co, bool_t syncWas, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>CO_SRDO_state_t</type>
       <name>CO_process_SRDO</name>
       <anchorfile>group__CO__CANopen.html</anchorfile>
-      <anchor>gab76d7283fe5190d3a0009b423a9ba8b1</anchor>
+      <anchor>ga1a20221d6769dcab6e5d17d56d74d24d</anchor>
       <arglist>(CO_t *co, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
     </member>
   </compound>
@@ -9300,6 +9867,7 @@
     <subgroup>CO_CANopen_301_fifo</subgroup>
     <subgroup>CO_HBconsumer</subgroup>
     <subgroup>CO_NMT_Heartbeat</subgroup>
+    <subgroup>CO_Node_Guarding</subgroup>
     <subgroup>CO_ODinterface</subgroup>
     <subgroup>CO_PDO</subgroup>
     <subgroup>CO_SDOclient</subgroup>
@@ -9354,6 +9922,7 @@
     <filename>group__CO__STACK__CONFIG.html</filename>
     <subgroup>CO_STACK_CONFIG_COMMON</subgroup>
     <subgroup>CO_STACK_CONFIG_NMT_HB</subgroup>
+    <subgroup>CO_STACK_CONFIG_NODE_GUARDING</subgroup>
     <subgroup>CO_STACK_CONFIG_EMERGENCY</subgroup>
     <subgroup>CO_STACK_CONFIG_SDO</subgroup>
     <subgroup>CO_STACK_CONFIG_TIME</subgroup>
@@ -9439,6 +10008,25 @@
       <name>CO_CONFIG_HB_CONS</name>
       <anchorfile>group__CO__STACK__CONFIG__NMT__HB.html</anchorfile>
       <anchor>ga7368d68cb039983bc8cc164410877098</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_STACK_CONFIG_NODE_GUARDING</name>
+    <title>CANopen Node Guarding slave and master objects.</title>
+    <filename>group__CO__STACK__CONFIG__NODE__GUARDING.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CONFIG_NODE_GUARDING</name>
+      <anchorfile>group__CO__STACK__CONFIG__NODE__GUARDING.html</anchorfile>
+      <anchor>ga41167ab88193b5ce7c589a05bc8b0bb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CONFIG_NODE_GUARDING_MASTER_COUNT</name>
+      <anchorfile>group__CO__STACK__CONFIG__NODE__GUARDING.html</anchorfile>
+      <anchor>gade4cc89cb4cb67b242f1f51becd495a8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9726,6 +10314,8 @@
     <subgroup>CO_CAN_Message_reception</subgroup>
     <subgroup>CO_CAN_Message_transmission</subgroup>
     <subgroup>CO_critical_sections</subgroup>
+    <subgroup>CO_Default_CAN_ID_t</subgroup>
+    <subgroup>CO_CAN_ERR_status_t</subgroup>
     <file>CO_driver.h</file>
     <class kind="struct">CO_CANmodule_t</class>
     <class kind="struct">CO_storage_entry_t</class>
@@ -9749,188 +10339,6 @@
       <anchorfile>group__CO__driver.html</anchorfile>
       <anchor>ga0ba23070b812ad4dcc369c0b5130e39b</anchor>
       <arglist>(CAN_ID)</arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_Default_CAN_ID_t</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga01dd35ae53fd2209ceccabdc8bf8dd06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_NMT_SERVICE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a335d0f6204819d267ba396b715f66ead</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_GFC</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0ba8a628aa1a873a21820070261c2783</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SYNC</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a7a8486aaf2f35eb83c6ca690d0cdce06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_EMERGENCY</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a94ffef8babcef5b807c5f8c865ef7666</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TIME</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ab2e20e54189f5cb565e80b05eb8c4931</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SRDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06aefe4dd6630902d36173b81c106a813bc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a848f2bdb085bc3a342400a6b43c37f82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_1</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0ab4be02961987ad817a99a4ef379517</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_2</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06acb90f0dab2e31982df1bebae6dd02e4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_2</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a60081a7b09921c6bfce3762a3dd4e49f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_3</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a83b73730655607582d1dabc8f78f7ca4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_3</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ad634b89f227db86bc8c633dda327e5fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_TPDO_4</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06abe92c9f7938ad6566e8aa010ab6f5cae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_RPDO_4</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06afec9dfa33a34beef50c434e5cde68c6b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SDO_SRV</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a3c84d92ad004cfc04e398193b742d30c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_SDO_CLI</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06acfe8640033d9668fafc63aa81d68ede5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_HEARTBEAT</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a0cfd21623475a1a8522b30b8b16d9874</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_LSS_SLV</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06a4a62af7fb0b8768e57945a558a0ceee4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ID_LSS_MST</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga01dd35ae53fd2209ceccabdc8bf8dd06ad7d16ed89e513b035104e4b2634ce287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_CAN_ERR_status_t</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga6c5539afb3a95af43f5477d904607426</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_WARNING</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a725e4fe057c2f9d222850686a76c724d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a85d05e861dc03e256dccf977ae16ad6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_BUS_OFF</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ae58aa7d0eb5d13630f858a3869f0ee7d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_OVERFLOW</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ad6fba8a27d82774f53812d3a49655d12</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRTX_PDO_LATE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426ac0b993c7786f41a8c73ad0339124881b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_WARNING</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a6df88a8a296eb4addc12d9136c0566b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a51494ad0df1e2de6d9395f1803c4b233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERRRX_OVERFLOW</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a714a0b9c0978ffde5f138a81880a1fdd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_CAN_ERR_WARN_PASSIVE</name>
-      <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>gga6c5539afb3a95af43f5477d904607426a5ad44f86d5691f2bc809f722364516e0</anchor>
-      <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -10098,7 +10506,7 @@
       <type>CO_CANtx_t *</type>
       <name>CO_CANtxBufferInit</name>
       <anchorfile>group__CO__driver.html</anchorfile>
-      <anchor>ga01e2ee79e7e3a8b321dac831e7e00976</anchor>
+      <anchor>ga8be0e9c60676aaf1f7da6403cff959bb</anchor>
       <arglist>(CO_CANmodule_t *CANmodule, uint16_t index, uint16_t ident, bool_t rtr, uint8_t noOfBytes, bool_t syncFlag)</arglist>
     </member>
     <member kind="function">
@@ -10324,10 +10732,10 @@
       <arglist>(void *rxMsg)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static uint8_t *</type>
+      <type>static const uint8_t *</type>
       <name>CO_CANrxMsg_readData</name>
       <anchorfile>group__CO__CAN__Message__reception.html</anchorfile>
-      <anchor>gab02a5fe910acf9aa5021f97e523697f9</anchor>
+      <anchor>ga8cc8ae24ac32bef54a76b978f67688ff</anchor>
       <arglist>(void *rxMsg)</arglist>
     </member>
   </compound>
@@ -10406,9 +10814,218 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>CO_Default_CAN_ID_t</name>
+    <title>Default CANopen identifiers</title>
+    <filename>group__CO__Default__CAN__ID__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_NMT_SERVICE</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga0850a5011fa073c47ba259ba6703ab2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_GFC</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga17a72193ece5a068f28a66c0529a4f9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SYNC</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gae30fc9a310a91984eb1915f958f203c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_EMERGENCY</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga7be71b3eb12452f9ccc1f870bcb21bc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TIME</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga68e5051711ead7ed58fef6f317e9965a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SRDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gafa5f121bb42b6173438759f6c145f67e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gabc975c2aab010bb1877a9eef3223baee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_1</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gac2dca2ba6e63409670e27393e52bee36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_2</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gaf8315e002b220873db0b49a3cb8888cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_2</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gae669bd43cb5cd8e806372a95ecf2f7ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_3</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga75491fa9c3fbedb14420c0c419f09294</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_3</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga4f783ecabc06aa9a5077a38d4e7ea9c0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_TPDO_4</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga2f356883659a1dc29b889b8e75967b41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_RPDO_4</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gab202baf55198034ba727a82e39280705</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SDO_SRV</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gacf9289aaf96b2ceb8b42a8b235f5daad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_SDO_CLI</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga65d9f203b3ce90bb2a5640e0f85138aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_HEARTBEAT</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>ga8c0913c942068cf2cab564d180ded6f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_LSS_SLV</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gaa91b4bd69b3dde0b081748fc4ce0f33e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ID_LSS_MST</name>
+      <anchorfile>group__CO__Default__CAN__ID__t.html</anchorfile>
+      <anchor>gabe5d7577839b28cc9e79a8f8c0c7e394</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_CAN_ERR_status_t</name>
+    <title>CAN error status bitmasks</title>
+    <filename>group__CO__CAN__ERR__status__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_WARNING</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gacb2f40ccb12a3d514c89bc000d37a9b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gae411efd4d5d268c28e1614de863b7bd4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_BUS_OFF</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga98acbfe6d02f24e53aba5e2efbb2dd52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_OVERFLOW</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga3ed2ff6355221d0931e35bcfc36cd9c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRTX_PDO_LATE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga97dccdebbfff8103eac358493dac7a2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_WARNING</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga9420ef79560520ff7268e2420ac4901d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga23ab70a0b1c524da7cc28c5c3698f4ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERRRX_OVERFLOW</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>gacb9a838c58685606559aa6df7b9acc3c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_CAN_ERR_WARN_PASSIVE</name>
+      <anchorfile>group__CO__CAN__ERR__status__t.html</anchorfile>
+      <anchor>ga7a7d9b134be9b4a5e5fe4e8c62003b76</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>CO_Emergency</name>
     <title>Emergency</title>
     <filename>group__CO__Emergency.html</filename>
+    <subgroup>CO_errorRegister_t</subgroup>
+    <subgroup>CO_EM_errorCode_t</subgroup>
+    <subgroup>CO_EM_errorStatusBits_t</subgroup>
     <file>CO_Emergency.h</file>
     <class kind="struct">CO_EM_fifo_t</class>
     <class kind="struct">CO_EM_t</class>
@@ -10425,639 +11042,6 @@
       <anchorfile>group__CO__Emergency.html</anchorfile>
       <anchor>ga24e2a9311cf704ec6ed43b0ea730c4a3</anchor>
       <arglist>(em, errorBit, infoCode)</arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_errorRegister_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga2cfc261cce03577083ee3f1a31d5e03c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_GENERIC_ERR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca92a7e121ae04a022fc2fe604eb1c148e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_CURRENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca61eded29fb0fcd95b2f66c2682de0f2b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_VOLTAGE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca360c75e04303d1c55e2bc8528407cb87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_TEMPERATURE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03cab12f2b419af0aeb8aae83a13d5c8b7bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_COMMUNICATION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca2f3b7aeac7282281c1d17895406c006a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_DEV_PROFILE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03cab137d1705e9ab20e2caeb22f57dd4716</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_RESERVED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03caffdf7f5d9f9ae52fa1bf97a3fb3d848b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_ERR_REG_MANUFACTURER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga2cfc261cce03577083ee3f1a31d5e03ca207eee1d9638f61166bc395ee71b84a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_EM_errorCode_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga0653c307fd6bc5238babf48e01c9fa02</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_NO_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa60e1333102cbe544eccbaad8e77f6f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_GENERIC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a2eaf45ca12b32b7bcc58df91becda767</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02abad9ca04a37cc43cacabfef9483699cf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_INPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab792c971a569d1175666b3fff9ffbe70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_INSIDE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a3ded1c05cbf37d2d7d286af97e833e65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CURRENT_OUTPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad42e8ab666fd3da75d1fa3a7b8708efc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a84a8f0dfb97e0ec13be9a4cdb0d71233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_MAINS</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab4b095d1d9e7e7f5150bc2ecd83bc140</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_INSIDE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a78dfa1d496a010ae7ae2e8b6edc1362a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_VOLTAGE_OUTPUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a9c5becd591c91bb3e255badf0a308c2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMPERATURE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa24dfa4c6948187f62d3e8182285d4a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMP_AMBIENT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ae5256d8178374a48750537c3d04c0a30</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_TEMP_DEVICE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a6c29a4b49fae39b45c5c0e553ef6668f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_HARDWARE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a33344d49b9667151d86aef28a73e6f66</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_DEVICE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a6d0b3c0c31228e0bc57fc080c754fefa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_INTERNAL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a62e0949639733e85c2b6d4c8b099d467</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SOFTWARE_USER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a7b6ae38c015688128890bfe42b0271e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DATA_SET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad22329fc3e44867a365401458e691ddc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_ADDITIONAL_MODUL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ae210dc1069c7b046527f7d7903ef82cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_MONITORING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a8ecd7e45af52d83d986e3de8e957a986</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_COMMUNICATION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aab2946bf800f551bcae55dd299ff315b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_OVERRUN</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a1f04b4ffe9cc1d8f2b294261909dec4e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa024c00c21f705474355b9ca7d7ce948</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_HEARTBEAT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aff47b500e2e760355ca653b247e4b93f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_BUS_OFF_RECOVERED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a2fd717ed311007b4dd6fe92443f134b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_CAN_ID_COLLISION</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a683bff5350b0cbab24aef2fc8eac363a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PROTOCOL_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab884b23b23af9671d99cca5865549e5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PDO_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a80fedd7bbb98ddf1ec26d4b31ed6d749</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_PDO_LENGTH_EXC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a88bac871b7539a579fba73825a2e240a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DAM_MPDO</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ab58df03302ab06710f7455d37039dea3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_SYNC_DATA_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a81aa2a66727d1fe29720067dc4e20879</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_RPDO_TIMEOUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a4ca48c8d1be6a42ac0c13e551e12b230</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_EXTERNAL_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a1d76eff88ebd6050377c393533aebc8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_ADDITIONAL_FUNC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02af5f9446049023ceae559562998172278</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC_DEVICE_SPECIFIC</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ad7b895b5e7d0f3fa7ff422157ac36c70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_CUR_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aa432d9c66bb0f6eecc38d720cae6c32e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_SHORTED</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a182a0c7afc0cb1c30af42a05430da353</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_LOAD_DUMP</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a21cd31a1455c9dc379796798f0eecd32</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_IN_VOLT_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02aacdc3517e800b037b46c1b54f454b562</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_IN_VOLT_LOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a867eb16fce01ade3c728df7c7527e311</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_INTERN_VOLT_HI</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a9cd0f1a897f40a3a43198ba05de4a11b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_INTERN_VOLT_LO</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02ac122203ed5c6a71749ace599b13ac594</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_VOLT_HIGH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02abf5b6a68120351c2fa52146b45798ed2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EMC401_OUT_VOLT_LOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga0653c307fd6bc5238babf48e01c9fa02a5f262e622db7482b7230055e5b27c902</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_EM_errorStatusBits_t</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>ga587034df9d350c8e121c253f1d4eeacc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NO_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccafb7b06b4b1d4fb2f9fa8661fdbaf8b01</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_BUS_WARNING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca27ebb7f155d4b72618c34dd6aa496aac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RXMSG_WRONG_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccae1e45de61059459a6f1f6e500962f287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RXMSG_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0b17027ee0097065d92e6c0981e3face</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_WRONG_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2a36480d4dd6a24f1f8bb66d79441a8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca73426de91d49273d023b5084a0cea8e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_RX_BUS_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaab5efa11cefb2cd6125cec3ec1c570e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_BUS_PASSIVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadb8502da626d80a8c423e94e1c76d0cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NMT_WRONG_COMMAND</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac5f82aeeda52c83eee0025c8b387ac5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_TIME_TIMEOUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5c1a6209ebe6167bbf13f565b6fd994d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0A_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccada9099b90524a981bfb8b8ac4ce7b1d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0B_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca8bf6fb0db21e29e477b38304279bed5e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0C_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaa724f4fdeff7043b0d4f454613a96992</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0D_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca933c070fd08c1223462a3a331b016c99</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0E_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0cabb2e45202f938cfdafe8e7871f4f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_0F_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac6469cc3e6176136f69e549c4a4f5b71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_10_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca274f46ac0760c4c340f48d1de884f2fe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_11_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca9d8abe2f426ed071febf85a932c1df98</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_BUS_OFF</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccae59f8e20795915a0929861809ed42e7c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_RXB_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaf9a86c6c3b87763593dd14be6b0bef29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CAN_TX_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2dbceee7b6deae231bb40a96f8f748a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_TPDO_OUTSIDE_WINDOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaea141284cd85126a9b3e7b0605a26a94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_16_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca865160ae9fdac8fcba1e5335b31c2f9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_RPDO_TIME_OUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5bdfd6ead4537a83025732198aa96869</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_SYNC_TIME_OUT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccafd760392f4d4d6358896486c5b5d7d82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_SYNC_LENGTH</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca09a521bfc9ea08ed340cfa29952a471c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_PDO_WRONG_MAPPING</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca7308b487766b8feca60ef0c1b873f167</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_HEARTBEAT_CONSUMER</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6478d414ea45f6a9129e68a9d57e11b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_HB_CONSUMER_REMOTE_RESET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0b6698662476cc622661fb5a5a75ec31</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1D_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6d0bf9c926241ec8f67c477928300761</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1E_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccab2f3562c4e1f8e25a7837627dc1721db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_1F_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadba4afb9dac78f8eb0c5f494926568b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_EMERGENCY_BUFFER_FULL</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccabd1935c51679f70f509ffd60e28c02b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_21_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbce7bd9d5a0ee681104914092b21d8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MICROCONTROLLER_RESET</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccacb69eecc08e72c56aec215fa55e27e16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_23_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaa0c8857afdd8455b30fd0179e98599fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_24_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca9cf88b48355b3cc43fe9a8360b8470df</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_25_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0a8abc6fcd7b0d5469b469c2cf370a82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_26_unused</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca0398195eafec5f8d60a76f677ce2a714</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NON_VOLATILE_AUTO_SAVE</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbf662e7040cff63554bbf10651a519a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_WRONG_ERROR_REPORT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2d7776243205bc75e6c448e13e697480</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_ISR_TIMER_OVERFLOW</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccadbf7382f537c9f59f965ce38be464e46</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MEMORY_ALLOCATION_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2575dac21ff9ac9c4c4e5ca63d34fdbc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_GENERIC_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca21648a2863590d3cccb469f8ef759267</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_GENERIC_SOFTWARE_ERROR</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca6c3e7fff310443f05815ea2b7ac6b289</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_INCONSISTENT_OBJECT_DICT</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca2c6a108cabca6f03b1400065f2ad4887</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_CALCULATION_OF_PARAMETERS</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5544a90d3047bc08186ea7412528dc93</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_NON_VOLATILE_MEMORY</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccac019532cacaa8310f9ca413a2f599af3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MANUFACTURER_START</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeaccaf850a661aadde65b10b22715cf24942c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_EM_MANUFACTURER_END</name>
-      <anchorfile>group__CO__Emergency.html</anchorfile>
-      <anchor>gga587034df9d350c8e121c253f1d4eeacca5d3c6fdb77551b3f4aaf993ae1dfb414</anchor>
-      <arglist></arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -11110,60 +11094,741 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>CO_errorRegister_t</name>
+    <title>CANopen Error register</title>
+    <filename>group__CO__errorRegister__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_GENERIC_ERR</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gaec84003941c9b04ff4f3ee3ecc0e1e91</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_CURRENT</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga28fdeb82ea095d784269f6989769b591</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_VOLTAGE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gaf2a8caafa84ae8347e08c8c9ae435d69</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_TEMPERATURE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga0657293752253ecfda8cc87dab4b15f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_COMMUNICATION</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga867530f202e49973e69ec8af7f48fb78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_DEV_PROFILE</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga7257de865c100c9d6fc46cedce793897</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_RESERVED</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>gace13d84abb2d2475f56cb3980ac2b761</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_ERR_REG_MANUFACTURER</name>
+      <anchorfile>group__CO__errorRegister__t.html</anchorfile>
+      <anchor>ga1e30d784aba346bb8e13976f541d8270</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_EM_errorCode_t</name>
+    <title>CANopen Error code</title>
+    <filename>group__CO__EM__errorCode__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_NO_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga529e20206c177d9fff20fe1d5579feb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_GENERIC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gab5fb864f66783cc31d46bff9cf742946</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga55b68e3e488382903a10b5a040f4bb4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_INPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga831834f6843fec4b9ec4705a8d4cdf0c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_INSIDE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga00f7933dee94a2d52b92b8fa9364e924</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CURRENT_OUTPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga40c4eb878eaed394c4603d18701e993d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gab6c4cdc640bb484484dec0cab07e22fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_MAINS</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga6ac56fffd1a8e402b44ad646ef0cbcbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_INSIDE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga40ea6cc68f8f6ff7f748ff75e43e5348</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_VOLTAGE_OUTPUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga4b3ffa597344469b96cccbd84670cdc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMPERATURE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga57d62995eebfcdea388b13f748560413</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMP_AMBIENT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga71900e0c60080e029943231d76a59016</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_TEMP_DEVICE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga4048ceda12bd820facf23c0d8a7bab0d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_HARDWARE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad4fa09c69969be0e24c157e3282a5727</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_DEVICE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1d4f5b78034e0b1f12d7aacd12466289</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_INTERNAL</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga386ee56db45214285947191e7021e441</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SOFTWARE_USER</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga6b557158c6f78b58d6e5d1eda5f11af1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DATA_SET</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga44689248039b7e7f29818e19d1c98132</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_ADDITIONAL_MODUL</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga5c6e8336ffb7561406d174bb5b6caf4b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_MONITORING</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaf6ad557d07c257baa0da6ac79044c258</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_COMMUNICATION</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gabcdeeb7597bbfae650ba0bc51fbab039</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_OVERRUN</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gade3366f2e7d4dd89be39e00150c8d0c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaeead0c18f063e5134d62d9a1677cef32</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_HEARTBEAT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga09d2b0be9b533084abafc824e5424b57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_BUS_OFF_RECOVERED</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gadc85ed14e906a94823828b6c4a1d6111</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_CAN_ID_COLLISION</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga35db6f30376552ff5fc4e7a959d428d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PROTOCOL_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga8196093f0267634a862a40ca52a33086</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PDO_LENGTH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaf48139606b8856fda331003611af32fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_PDO_LENGTH_EXC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga38dcd6241d98617d18a2999352a8d97f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DAM_MPDO</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1f211f1a7e1201f5e8f5f241a322469d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_SYNC_DATA_LENGTH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga2ddf1c5af83dd82e002aa6b66a2d2eb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_RPDO_TIMEOUT</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga28f3e9c8c510ccc035765c2338fa94bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_EXTERNAL_ERROR</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad92e5ff4f55281d204a67969d0266a11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_ADDITIONAL_FUNC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gaba02ab0719acd2de88bbf0a8c4ef3346</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC_DEVICE_SPECIFIC</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga312bdad23ce37709362e9b8dfd8da3c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_CUR_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga768d388ba477f839a8eb57b367b79793</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_SHORTED</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad3f0ed100e5076d0c488024b0bdaa43a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_LOAD_DUMP</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>gad47d4205acd3f6cf36aeb31f86717c64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_IN_VOLT_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga1b40083a323c33894a8e374d59c0a6c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_IN_VOLT_LOW</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga798dac8fcfb0c741fe79474b7440bb62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_INTERN_VOLT_HI</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga3fa590def2b113eb1eb6b45c551011c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_INTERN_VOLT_LO</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga56c67d643e8871dfed1df4027d884226</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_VOLT_HIGH</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga7b9b8a4328b74a0b61d85784c6cd262e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EMC401_OUT_VOLT_LOW</name>
+      <anchorfile>group__CO__EM__errorCode__t.html</anchorfile>
+      <anchor>ga289fcb4a4dd2521ff1a88d5ed7903e7f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_EM_errorStatusBits_t</name>
+    <title>Error status bits</title>
+    <filename>group__CO__EM__errorStatusBits__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NO_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga945ebb7fbfdc0435b8d13359b366ec8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_BUS_WARNING</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga205ecae15d4c25703d801b0ce838368e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RXMSG_WRONG_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaee4a0d8abf48c798a496795056b5a0f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RXMSG_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaf526eded2b4e8090ff466a4bdb831398</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_WRONG_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga889a9b8a268dd912ad0498abef48dcb4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5c4d5b41c3dfb76e6e7daf5e8de89b51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_RX_BUS_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga73da49bef87b1c8e598ff089e9a82eb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_BUS_PASSIVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaffb6ad6bf3ce5b20ef4e048755607751</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NMT_WRONG_COMMAND</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga7e32e80c1b7f7140544cb92e17ee3d71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_TIME_TIMEOUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga0a0b7674f7bcf4d78cdaa3fbf12e9345</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0A_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gab5b5b62e796597aeb4721814dd2536cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0B_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae97b532684351becda32984d5b765914</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0C_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5344b6c384ef91db4195ab97f8b35a74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0D_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga667ea64cc84911575736b71806a1f265</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0E_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gadc491fa57e620bc05c2821fe84b512a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_0F_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga8ea8bf110b419b460ec07920230d1bf4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_10_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga4f106fcbf52daaa0b5753d6ac4e0fe4a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_11_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gab74ac530e13efb108bcb3f74ce9e28f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_BUS_OFF</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga0869e6139cedc6625b5d303ef374775f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_RXB_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaf177d3e0f47e5f8889159b0271d2f03d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CAN_TX_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaeca449c74383654e80103040f1659bf1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_TPDO_OUTSIDE_WINDOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga470e690ba227e4b367ad80f1d8fec2b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_16_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga8a43bc95fdbafabcf05a6f8db9b5713b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_RPDO_TIME_OUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae7ee48eb443e61c33cb73ed2009ae306</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SYNC_TIME_OUT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gaa215f109369ef7420da43e2e28ee65dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SYNC_LENGTH</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gacdf0058e4d4556caf2b59e8215ec8a66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_PDO_WRONG_MAPPING</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga9e345736c503a9b3c82ee5fc833a77b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_HEARTBEAT_CONSUMER</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad812fc39d9f24a739bf3108ee789f35a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_HB_CONSUMER_REMOTE_RESET</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga12061d396e53c6ebaa22f083e8cd0bc3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_SRDO_CONFIGURATION</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5351a2599afae5b741b62e8c26e59b4d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_1E_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga40444e6d1a104d4b15f0132507e09027</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_1F_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gafe3ede749aeddb7c8e2764bf9baa2d46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_EMERGENCY_BUFFER_FULL</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae75d033d942123463fbfdfb81d3a85bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_21_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad2f0cd1b245b2aae6804d79425a51fa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MICROCONTROLLER_RESET</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga28be6681c8b44b3e3538a379260aa526</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_23_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga97eb797930163e410e9476c00e6eaf57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_24_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga5134548c33cd5a30f0ad597e428b4262</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_25_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga46ca1d8283857949f68b58ac1243f332</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_26_unused</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gabfc08ab1b0814c515c18ac92208fa849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NON_VOLATILE_AUTO_SAVE</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae5c0f2cbf35474ef5404d15e9dfecc72</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_WRONG_ERROR_REPORT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga155f43c9f40045ca12646334b18cab4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_ISR_TIMER_OVERFLOW</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gad7d99813b453873deaa8a19dc0d95a05</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MEMORY_ALLOCATION_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gacbb82492ebe0cfa0db9462dfb8a94e57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_GENERIC_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gae9122f80116da63762ad1a51b0cba61f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_GENERIC_SOFTWARE_ERROR</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga09d9f5bd09f54ec806c6d9f6908e9aa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_INCONSISTENT_OBJECT_DICT</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga7805a3c62f63a7a8bafda3e131fb9909</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_CALCULATION_OF_PARAMETERS</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga2a8b9787cb4a4983eb167e61e359001a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_NON_VOLATILE_MEMORY</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga1a26463d4de41064a4bf49992de8cfde</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MANUFACTURER_START</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>ga643499974d43b6f758f8cd67718305e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_EM_MANUFACTURER_END</name>
+      <anchorfile>group__CO__EM__errorStatusBits__t.html</anchorfile>
+      <anchor>gadf273028f8a34935d32df9905448f9d6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>CO_CANopen_301_fifo</name>
-    <title>FIFO circular buffer</title>
+    <title>FIFO circular buffer FIFO circular buffer for continuous data flow.</title>
     <filename>group__CO__CANopen__301__fifo.html</filename>
+    <subgroup>uint8_t</subgroup>
     <file>CO_fifo.h</file>
     <class kind="struct">CO_fifo_t</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_fifo_st</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga2c7db7d527e4055a5dde62b74dfc2818</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_closed</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a1f111c3f5a9396da6ced33132a2341f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_partial</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a7bf88ff5b78ef6a25a4391bc6423c1f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_errTok</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a70060b411fcbfa0696ca453d7f4348d4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_errVal</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a9c41b295a487450017cc3b1ce0bcedfb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_errBuf</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a51c064e77b0e2bf3741719b57de65141</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_errInt</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a07a7d8d483365e3afdcf9dc5b2dd2143</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_fifo_st_errMask</name>
-      <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gga2c7db7d527e4055a5dde62b74dfc2818a9e587fa1d802fbe939f6da9d44aba389</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>CO_fifo_init</name>
@@ -11280,8 +11945,8 @@
       <type>size_t</type>
       <name>CO_fifo_readToken</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga6b41afdc92d07e645352b6a1a65d1f2e</anchor>
-      <arglist>(CO_fifo_t *fifo, char *buf, size_t count, int8_t *closed, bool_t *err)</arglist>
+      <anchor>ga4d6c6a47d9355ec8bb818b3cc77950b8</anchor>
+      <arglist>(CO_fifo_t *fifo, char *buf, size_t count, uint8_t *closed, bool_t *err)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -11406,92 +12071,146 @@
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U8</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga1788f69639bcc6bfa59bf85e57e5e13a</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga2c3444f5a9793ecb3faf742ed8b0161f</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U16</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gaf19bdbd45626578afc8a19de43698e0b</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga117ba120aff3c7c93267663771c951fd</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gae2816b287cc2091d2382aaa6ac56e422</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga8d44b007736379586b257f79abead20e</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2U64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gacfd3fdfda66e1feb6982f68377a8b7e2</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gac35d83e966f5cef38ecb731bc3898611</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I8</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gae038564001c68ab242a6f33756668ac5</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga251f34c24425b5b63c9ab0b8db1b2593</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I16</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga306913df146db90f7209b89080d51640</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gab1db1bdc201a2c66f3a190c4fe1ec3ff</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga4f5b25af39c5a78faf04e54cb3cc90f7</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gaac650722205e404fc746a1f571e4aa1d</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2I64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga6a9bd6e8d07d20ded9aeca531f412d50</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gaeba95173568c3f88dca5a41d4af34eda</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2R32</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga853847c375425a55fc2007880d94c484</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gafb1ec0f8c32cd30f614672d463a672d7</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2R64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga8b17d4f3c0d272bb73d82a79cd51cd3d</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>gac9c49dca1908a6ec9843f9bb55dd196f</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2Hex</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gab3c4acf458a13bd6c4e5b0bc2adca10b</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga84ec8b3989034873c6f357eaa0a9dbe5</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2Vs</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>ga8cb3d7032cd46dfeb3b6c0bbd5ed1575</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga9cf44d36aef6dec2936fe5c0a4504d5a</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>CO_fifo_cpyTok2B64</name>
       <anchorfile>group__CO__CANopen__301__fifo.html</anchorfile>
-      <anchor>gaf11cf0cccc01e86f341e2b31607e90c7</anchor>
-      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, CO_fifo_st *status)</arglist>
+      <anchor>ga34e7bc21a13aa030de2358890377df84</anchor>
+      <arglist>(CO_fifo_t *dest, CO_fifo_t *src, uint8_t *status)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>uint8_t</name>
+    <title>Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar</title>
+    <filename>group__uint8__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_closed</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaa2075fdf2f1db656f00165af2a8b553a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_partial</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaa3e1372984d5f063af9bd73ac692db46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_errTok</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>ga0356be8dde0b07d8df6beb35cbba9ca6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_errVal</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>ga890218baad6c833925e3e441f7abe8a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_errBuf</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gac831497a9391e0d06bfab7cfea8ddf29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_errInt</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gace0448f44fff61fa2840e9a27916c42a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_fifo_st_errMask</name>
+      <anchorfile>group__uint8__t.html</anchorfile>
+      <anchor>gaf64e89842c40331c5d7152eb5f739faf</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -11607,6 +12326,7 @@
     <name>CO_NMT_Heartbeat</name>
     <title>NMT and Heartbeat</title>
     <filename>group__CO__NMT__Heartbeat.html</filename>
+    <subgroup>CO_NMT_control_t</subgroup>
     <file>CO_NMT_Heartbeat.h</file>
     <class kind="struct">CO_NMT_t</class>
     <member kind="enumeration">
@@ -11720,55 +12440,12 @@
       <anchor>ggaf42f056a571b8e17a2d74428d1a49674ae2c7805e42ce9b7c893018922b24a102</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_NMT_control_t</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>gaf92cf5943801e5dda84654345cc3d67f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_REG_MASK</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faaa5ab06e2047e51ac7d2767e8a821d80</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_STARTUP_TO_OPERATIONAL</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faf4da9fa5d805e0f535abf95a175312e8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_ON_BUSOFF_HB</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faf151918ecf07fc43ba30489d31ca275a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_ON_ERR_REG</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67faab1cd82001a087114a5361910e206c74</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_TO_STOPPED</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67fa9498a5af4e0557a2c0284c04b26b3eb5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_NMT_ERR_FREE_TO_OPERATIONAL</name>
-      <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ggaf92cf5943801e5dda84654345cc3d67fa6e79d137c725417786035982cd0e2687</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_NMT_init</name>
       <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
-      <anchor>ga2d1ef9f65f7d22035dee913dc3fb7a7a</anchor>
-      <arglist>(CO_NMT_t *NMT, OD_entry_t *OD_1017_ProducerHbTime, CO_EM_t *em, uint8_t nodeId, CO_NMT_control_t NMTcontrol, uint16_t firstHBTime_ms, CO_CANmodule_t *NMT_CANdevRx, uint16_t NMT_rxIdx, uint16_t CANidRxNMT, CO_CANmodule_t *NMT_CANdevTx, uint16_t NMT_txIdx, uint16_t CANidTxNMT, CO_CANmodule_t *HB_CANdevTx, uint16_t HB_txIdx, uint16_t CANidTxHB, uint32_t *errInfo)</arglist>
+      <anchor>ga70a96a3f68878228fc1bf788208ee8a6</anchor>
+      <arglist>(CO_NMT_t *NMT, OD_entry_t *OD_1017_ProducerHbTime, CO_EM_t *em, uint8_t nodeId, uint16_t NMTcontrol, uint16_t firstHBTime_ms, CO_CANmodule_t *NMT_CANdevRx, uint16_t NMT_rxIdx, uint16_t CANidRxNMT, CO_CANmodule_t *NMT_CANdevTx, uint16_t NMT_txIdx, uint16_t CANidTxNMT, CO_CANmodule_t *HB_CANdevTx, uint16_t HB_txIdx, uint16_t CANidTxHB, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11811,6 +12488,104 @@
       <anchorfile>group__CO__NMT__Heartbeat.html</anchorfile>
       <anchor>ga9d557708be1bfb9b169718abea90b663</anchor>
       <arglist>(CO_NMT_t *NMT, CO_NMT_command_t command, uint8_t nodeID)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_NMT_control_t</name>
+    <title>NMT control bitfield for NMT internal state.</title>
+    <filename>group__CO__NMT__control__t.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_REG_MASK</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga4d75cf9cd65261a95095fc0571960ab2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_STARTUP_TO_OPERATIONAL</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga612e8859dfdb2a93aad044ce1b1cccd0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_ON_BUSOFF_HB</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>gae8d718f2cf6bfe92f475508f0838fbc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_ON_ERR_REG</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga239cfb329727f05aa577e5a86874af2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_TO_STOPPED</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga2270c3304735c2306279395aaa1d24a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_NMT_ERR_FREE_TO_OPERATIONAL</name>
+      <anchorfile>group__CO__NMT__control__t.html</anchorfile>
+      <anchor>ga40d44e926b70aab061921634f395904e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_Node_Guarding</name>
+    <title>Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.</title>
+    <filename>group__CO__Node__Guarding.html</filename>
+    <file>CO_Node_Guarding.h</file>
+    <class kind="struct">CO_nodeGuardingSlave_t</class>
+    <class kind="struct">CO_nodeGuardingMasterNode_t</class>
+    <class kind="struct">CO_nodeGuardingMaster_t</class>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingSlave_init</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gad7a00807dd7ba272357a69cfbe8d85fc</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs, OD_entry_t *OD_100C_GuardTime, OD_entry_t *OD_100D_LifeTimeFactor, CO_EM_t *em, uint16_t CANidNodeGuarding, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdx, uint32_t *errInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CO_nodeGuardingSlave_process</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga31c48ea1fac4c43cc7c4de167b9222f1</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs, CO_NMT_internalState_t NMTstate, bool_t slaveDisable, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool_t</type>
+      <name>CO_nodeGuardingSlave_isTimeout</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga1917c432c2c0fbf66f5ed818b9568f4c</anchor>
+      <arglist>(CO_nodeGuardingSlave_t *ngs)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingMaster_init</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gac02e8cc43c1113cb96462a2f1ec7f9bd</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, CO_EM_t *em, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdx, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdx)</arglist>
+    </member>
+    <member kind="function">
+      <type>CO_ReturnError_t</type>
+      <name>CO_nodeGuardingMaster_initNode</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>gaf7ad06151d630c832bcca3d1cd434ce8</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, uint8_t index, uint8_t nodeId, uint16_t guardTime_ms)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CO_nodeGuardingMaster_process</name>
+      <anchorfile>group__CO__Node__Guarding.html</anchorfile>
+      <anchor>ga31bd50f6b2f919aa3dc5237376f1690f</anchor>
+      <arglist>(CO_nodeGuardingMaster_t *ngm, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -12408,7 +13183,7 @@
       <type>OD_entry_t *</type>
       <name>OD_find</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gae2d815788a1afbf69f74bf36329ed622</anchor>
+      <anchor>ga0a7d847e21fb3bf69a378f366f58974e</anchor>
       <arglist>(OD_t *od, uint16_t index)</arglist>
     </member>
     <member kind="function">
@@ -12443,7 +13218,7 @@
       <type>static uint8_t *</type>
       <name>OD_getFlagsPDO</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gaaf861cd1e2b39d1f1212a9f41c84f792</anchor>
+      <anchor>ga6201bef4595d40b2ead780d9f7ff0fbc</anchor>
       <arglist>(OD_entry_t *entry)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -12637,7 +13412,7 @@
       <type>void *</type>
       <name>OD_getPtr</name>
       <anchorfile>group__CO__ODgetSetters.html</anchorfile>
-      <anchor>ga6bd104239aeba778f4d538e14511f1cc</anchor>
+      <anchor>gad38550927466dfa9c7a774db8e6a3798</anchor>
       <arglist>(const OD_entry_t *entry, uint8_t subIndex, OD_size_t len, ODR_t *err)</arglist>
     </member>
   </compound>
@@ -12847,9 +13622,9 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_SDOclientDownloadInitiateSize</name>
+      <name>CO_SDOclientDownloadInitSize</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gaf58b7731b4285538c26a0c7c49ab24b6</anchor>
+      <anchor>gab78f23cdbdb2f320ff8746a5d8a30cd0</anchor>
       <arglist>(CO_SDOclient_t *SDO_C, size_t sizeIndicated)</arglist>
     </member>
     <member kind="function">
@@ -12863,8 +13638,8 @@
       <type>CO_SDO_return_t</type>
       <name>CO_SDOclientDownload</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gaab262f0a8d08ba023639a2c197d0943a</anchor>
-      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, bool_t bufferPartial, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
+      <anchor>ga2913a015acc0023bce8282fa2853e63b</anchor>
+      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t send_abort, bool_t bufferPartial, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
       <type>CO_SDO_return_t</type>
@@ -12877,8 +13652,8 @@
       <type>CO_SDO_return_t</type>
       <name>CO_SDOclientUpload</name>
       <anchorfile>group__CO__SDOclient.html</anchorfile>
-      <anchor>gabd3a3be7e3d1649adfdd253c979ec21f</anchor>
-      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t abort, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeIndicated, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
+      <anchor>gadcbfc0744978ce325ce79ced8a6604f8</anchor>
+      <arglist>(CO_SDOclient_t *SDO_C, uint32_t timeDifference_us, bool_t send_abort, CO_SDO_abortCode_t *SDOabortCode, size_t *sizeIndicated, size_t *sizeTransferred, uint32_t *timerNext_us)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -13479,70 +14254,22 @@
     <name>CO_LEDs</name>
     <title>LED indicators</title>
     <filename>group__CO__LEDs.html</filename>
+    <subgroup>CO_LED_bitmasks</subgroup>
     <file>CO_LEDs.h</file>
     <class kind="struct">CO_LEDs_t</class>
     <member kind="define">
       <type>#define</type>
       <name>CO_LED_RED</name>
       <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga38a415372f20b9444f254a205aa511e8</anchor>
-      <arglist>(LEDs, BITFIELD)</arglist>
+      <anchor>gae5e669c82c38cb6b5a995a065f071b8d</anchor>
+      <arglist>(LEDs, BITMASK)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
       <name>CO_LED_GREEN</name>
       <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga3e01e6ec590d6d5c7b887b48557498f4</anchor>
-      <arglist>(LEDs, BITFIELD)</arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LED_BITFIELD_t</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>ga366de3822a3da8478e97b248bed641fb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flicker</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba9838518b974c263a401a089901cdcf54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_blink</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbaa24d4647d37adc17e1d3c242a42f6b68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_1</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba88e905d94927b3c626b50a48537c7b73</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_2</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbae751e14d72d829b2b7f9a9c1e98e0612</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_3</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fba250a08a71c4bbca9761f0dfa54d37938</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_flash_4</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbadd3ec0da4d999e5ffc107d7891c26667</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LED_CANopen</name>
-      <anchorfile>group__CO__LEDs.html</anchorfile>
-      <anchor>gga366de3822a3da8478e97b248bed641fbaea338dad48dda75ef1ebac0948093148</anchor>
-      <arglist></arglist>
+      <anchor>gafeb9bec42176272367c09abc72d98a0f</anchor>
+      <arglist>(LEDs, BITMASK)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -13560,18 +14287,71 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>CO_LED_bitmasks</name>
+    <title>CO_LED bitmasks</title>
+    <filename>group__CO__LED__bitmasks.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flicker</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga95f77de2fe83f91157a081d92edef154</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_blink</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>gab10cf0a943223061252f084076c01231</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_1</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga89c40dcefdacee57822042b9298a8a65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_2</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga04aefc10f104a383090a7cea41cfdc99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_3</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga850c4c5f0bbde3bc4102375837df2b49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_flash_4</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>gabf3fd04f5cf3af63c6783e7602c5b40b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LED_CANopen</name>
+      <anchorfile>group__CO__LED__bitmasks.html</anchorfile>
+      <anchor>ga936d1d698cccbd3d7acb4c7631bbbd6e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>CO_GFC</name>
     <title>GFC</title>
     <filename>group__CO__GFC.html</filename>
-    <file>CO_GFC.c</file>
     <file>CO_GFC.h</file>
     <class kind="struct">CO_GFC_t</class>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_GFC_init</name>
       <anchorfile>group__CO__GFC.html</anchorfile>
-      <anchor>ga23d83d03ef1b9ad5ffe68103a627026c</anchor>
-      <arglist>(CO_GFC_t *GFC, uint8_t *valid, CO_CANmodule_t *GFC_CANdevRx, uint16_t GFC_rxIdx, uint16_t CANidRxGFC, CO_CANmodule_t *GFC_CANdevTx, uint16_t GFC_txIdx, uint16_t CANidTxGFC)</arglist>
+      <anchor>ga754d1e422febf6c0c4d2a13298b01802</anchor>
+      <arglist>(CO_GFC_t *GFC, OD_entry_t *OD_1300_gfcParameter, CO_CANmodule_t *GFC_CANdevRx, uint16_t GFC_rxIdx, uint16_t CANidRxGFC, CO_CANmodule_t *GFC_CANdevTx, uint16_t GFC_txIdx, uint16_t CANidTxGFC)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13592,31 +14372,128 @@
     <name>CO_SRDO</name>
     <title>SRDO</title>
     <filename>group__CO__SRDO.html</filename>
-    <file>CO_SRDO.c</file>
     <file>CO_SRDO.h</file>
-    <class kind="struct">CO_SRDOCommPar_t</class>
     <class kind="struct">CO_SRDOGuard_t</class>
     <class kind="struct">CO_SRDO_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_SRDO_MAX_SIZE</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ga00864226001f24268e093edd3add8953</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_SRDO_MAX_MAPPED_ENTRIES</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ga87729c267630a6515f5fbdf6c29ba4d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>uint8_t</type>
+      <name>CO_SRDO_size_t</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>gab04e5f30613827033ebcec6ffdb7433c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>CO_SRDO_state_t</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>gab215d5a10161ff9728dc4feb89374bad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_internal</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badadb0905fe91cdce1256a3ba08f21988db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_configuration</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badab4d12fb0ceb6cb4d1caa5db7885740fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_txNotInverted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada1991d39187d694287cbc5cee93f73c56</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_txFail</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada8cc716df827c84d23ed45db8785525ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxTimeoutSRVT</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada6422f0da52f8520b5a9bca58f49749e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxTimeoutSCT</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badaa49c1f7cd28bbccf9d028317c8c02c65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxNotInverted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada17c8497b53d4171600a8e1f186298cac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_error_rxShort</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada2d8135c54b9d7ef52d0019c560899bb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_unknown</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada7b90183dabb52f52c97504a1eb5833ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_nmtNotOperational</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada30116864745974722f535aa1116013a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_initializing</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada40cadd6f00f3a26938beea94c359a317</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_communicationEstablished</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374badad514cae8c0662f3c8ecac5a45dc4d830</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CO_SRDO_state_deleted</name>
+      <anchorfile>group__CO__SRDO.html</anchorfile>
+      <anchor>ggab215d5a10161ff9728dc4feb89374bada3a40ed57397ce9de5deb8139005c1c59</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_SRDOGuard_init</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>gacd578e8a5a4af024f8e6f8aef87cbd14</anchor>
-      <arglist>(CO_SRDOGuard_t *SRDOGuard, CO_SDO_t *SDO, CO_NMT_internalState_t *operatingState, uint8_t *configurationValid, uint16_t idx_SRDOvalid, uint16_t idx_SRDOcrc)</arglist>
-    </member>
-    <member kind="function">
-      <type>uint8_t</type>
-      <name>CO_SRDOGuard_process</name>
-      <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga0201fa4da8b37a18f864a9fd7c826a6c</anchor>
-      <arglist>(CO_SRDOGuard_t *SRDOGuard)</arglist>
+      <anchor>gae9ec8e025607d6ffb3e5881a245ec85e</anchor>
+      <arglist>(CO_SRDOGuard_t *SRDOGuard, OD_entry_t *OD_13FE_configurationValid, OD_entry_t *OD_13FF_safetyConfigurationSignature, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
       <name>CO_SRDO_init</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga608e6d48e97f1b4da316b36f10e389c6</anchor>
-      <arglist>(CO_SRDO_t *SRDO, CO_SRDOGuard_t *SRDOGuard, CO_EM_t *em, CO_SDO_t *SDO, uint8_t nodeId, uint16_t defaultCOB_ID, const CO_SRDOCommPar_t *SRDOCommPar, const CO_SRDOMapPar_t *SRDOMapPar, const uint16_t *checksum, uint16_t idx_SRDOCommPar, uint16_t idx_SRDOMapPar, CO_CANmodule_t *CANdevRx, uint16_t CANdevRxIdxNormal, uint16_t CANdevRxIdxInverted, CO_CANmodule_t *CANdevTx, uint16_t CANdevTxIdxNormal, uint16_t CANdevTxIdxInverted)</arglist>
+      <anchor>gad3d536b2638382ad4e08e913f629d852</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint8_t SRDO_Index, CO_SRDOGuard_t *SRDOGuard, OD_t *OD, CO_EM_t *em, uint8_t nodeId, uint16_t defaultCOB_ID, OD_entry_t *OD_130x_SRDOCommPar, OD_entry_t *OD_138x_SRDOMapPar, CO_CANmodule_t *CANdevRxNormal, CO_CANmodule_t *CANdevRxInverted, uint16_t CANdevRxIdxNormal, uint16_t CANdevRxIdxInverted, CO_CANmodule_t *CANdevTxNormal, CO_CANmodule_t *CANdevTxInverted, uint16_t CANdevTxIdxNormal, uint16_t CANdevTxIdxInverted, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13626,11 +14503,11 @@
       <arglist>(CO_SRDO_t *SRDO, void *object, void(*pFunctSignalPre)(void *object))</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>CO_SRDO_initCallbackEnterSafeState</name>
+      <type>CO_ReturnError_t</type>
+      <name>CO_SRDO_config</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>ga5303601f6f94c83530b5e165f54b54bb</anchor>
-      <arglist>(CO_SRDO_t *SRDO, void *object, void(*pFunctSignalSafe)(void *object))</arglist>
+      <anchor>gafe5ebf3c3bff1072c63166617d2c0215</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint8_t SRDO_Index, CO_SRDOGuard_t *SRDOGuard, uint32_t *errInfo)</arglist>
     </member>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -13640,17 +14517,25 @@
       <arglist>(CO_SRDO_t *SRDO)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>CO_SRDO_state_t</type>
       <name>CO_SRDO_process</name>
       <anchorfile>group__CO__SRDO.html</anchorfile>
-      <anchor>gacb94aa4f279a4476c193ee50c408dfbb</anchor>
-      <arglist>(CO_SRDO_t *SRDO, uint8_t commands, uint32_t timeDifference_us, uint32_t *timerNext_us)</arglist>
+      <anchor>ga88d868d6a5592820534371db6021e2c8</anchor>
+      <arglist>(CO_SRDO_t *SRDO, uint32_t timeDifference_us, uint32_t *timerNext_us, bool_t NMTisOperational)</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>CO_LSS</name>
     <title>LSS</title>
     <filename>group__CO__LSS.html</filename>
+    <subgroup>CO_LSS_command_specifiers</subgroup>
+    <subgroup>CO_LSS_CFG_NODE_ID_status</subgroup>
+    <subgroup>CO_LSS_CFG_BIT_TIMING_status</subgroup>
+    <subgroup>CO_LSS_CFG_STORE_status</subgroup>
+    <subgroup>CO_LSS_FASTSCAN_bitcheck</subgroup>
+    <subgroup>CO_LSS_FASTSCAN_lssSub_lssNext</subgroup>
+    <subgroup>CO_LSS_STATE_state</subgroup>
+    <subgroup>CO_LSS_BIT_TIMING_table</subgroup>
     <file>CO_LSS.h</file>
     <file>CO_LSSmaster.h</file>
     <file>CO_LSSslave.h</file>
@@ -13676,338 +14561,367 @@
       <anchor>ga341d156c334f2a3c2523f03eb24f4710</anchor>
       <arglist>(a1, a2)</arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cs_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gacc7cba1fb1f1f595506751d6af385964</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_GLOBAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a6c9f8aaef024d11e50c007b881208113</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_VENDOR</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a620895a76069780eb5df8188b6c8a2de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a9caf25d2d4a28e279b1bc364d303ee7d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ae02d526a2c1170babeccffd00d477db5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964add363bec1d5ff239c847425f8b94718d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_SWITCH_STATE_SEL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a97495fe55645d498550e0c05417e2c22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a777432f5b616a250a9db8bf7328b0a59</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964afd4b839204b66547e5ebb0e4ff9c4481</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_ACTIVATE_BIT_TIMING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a1046863405c6de85d0d86088d9c034cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ab0a136e255e8c2c32984881487b414d9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_IDENT_SLAVE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ad0ddd8e3d472f4d85de8613e7f35902a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_IDENT_FASTSCAN</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a9e4bd7f4a726aee66157ac9aac446ddc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_VENDOR</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964ae28351cd1b60bbdd045a9f79cb506023</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a5fba5f8bd0f6a91b45fda117556b994c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a6f412845cd8cd4ab62a54a988ccc384c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964a55f0698aa15abf17c41cd344df055184</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_INQUIRE_NODE_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacc7cba1fb1f1f595506751d6af385964af5d369fc4d3d860dc43de041b9fd59f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgNodeId_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaf8a13f567f8f405e4aae68268ba5d0a5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5abe91f1d0e99fa890fe69a3e60aab6c2b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_OUT_OF_RANGE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5a79c95a7e63e6ff09fcbe5494ef59eed5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_NODE_ID_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaf8a13f567f8f405e4aae68268ba5d0a5aa23e0ca77dfb47ff4a1d48ddfaebc98e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgBitTiming_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga28b8651550d1719c38cd307f4ef0a8ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8aca028ded96599022c4416e3d8c0798456a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_OUT_OF_RANGE</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8acac089dd862b289dfc3f6bae0f30409625</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_BIT_TIMING_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga28b8651550d1719c38cd307f4ef0a8aca3f5cbbebba617a9c12a7ed919a541255</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_cfgStore_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga1e4e8c43143125ebe8912de81464bd9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_OK</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fa0f0407dee97a1e5e5d26cc4c717103cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_NOT_SUPPORTED</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9faf78b03384da05bedcc45016d10dc0c3b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_FAILED</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fad7f12cd5d1125e97d7b9bacac4b80d69</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_CFG_STORE_MANUFACTURER</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1e4e8c43143125ebe8912de81464bd9fa7ece37a5aabe812068efe6a2780f31cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_fastscan_bitcheck</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga65751e78ae5f2674cc7205e13967f7c0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_BIT0</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a2db8b358b4954e5989a347e1e308eb20</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_BIT31</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a48f5e26f67114198d945f37f8f713979</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_CONFIRM</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga65751e78ae5f2674cc7205e13967f7c0a72f67194903c03b688373ef859b66a0f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_fastscan_lss_sub_next</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ga1ce707d287b285e7d148f37f93e0f02a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_VENDOR_ID</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa4eb5786c488953cdb2d5ffbb25c15298</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_PRODUCT</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa6514ca82752d5496904388a0589da209</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_REV</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aa0e153eebb470156f5d0a27caac2bc71f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_FASTSCAN_SERIAL</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gga1ce707d287b285e7d148f37f93e0f02aabe98c25d444fa5971bc81f775cd6bb35</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_state_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gaaa9a270e40ea09850e1661e5aeb080ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_STATE_WAITING</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaaa9a270e40ea09850e1661e5aeb080adac688ea4e90b7dfac437a44536f2af8db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_STATE_CONFIGURATION</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggaaa9a270e40ea09850e1661e5aeb080ada69cc3fe20e50dcd6f7bad8c0b887ff89</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>CO_LSS_bitTimingTable_t</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>gacb4c13e75306153eafd535e55ba0ca2c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_1000</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca4cc0aa1f074ddaa5db4fdc0ed437a0b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_800</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca51413e9c20e1eb60f5cc160a4d30cffa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_500</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2caaa4d4f1a766516c6d97a81483001e8ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_250</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca3fadf15163c4f45300045e3645bba3ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_125</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca1d93a0699e4269d809404c40565133cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_50</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2caf0e90aeacc6461bd2ace73be51fd5383</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_20</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca08fb8c70b5d185521959415ef731de82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_10</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca7a3c4e05623e7f75fe3b622a9b0185c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CO_LSS_BIT_TIMING_AUTO</name>
-      <anchorfile>group__CO__LSS.html</anchorfile>
-      <anchor>ggacb4c13e75306153eafd535e55ba0ca2ca12ca7fd4a3604cb8281fa7d58d1137e2</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="variable" static="yes">
       <type>static const uint16_t</type>
       <name>CO_LSS_bitTimingTableLookup</name>
       <anchorfile>group__CO__LSS.html</anchorfile>
       <anchor>ga61bf679482f7d425ceb521ea80a0cc18</anchor>
       <arglist>[]</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_command_specifiers</name>
+    <title>CO_LSS command specifiers</title>
+    <filename>group__CO__LSS__command__specifiers.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_GLOBAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gab567d2ce007a0c1f3d4f75dbd13df49c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_VENDOR</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga15c3f7b0e7edf578d3cf303e444e1985</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_PRODUCT</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga3db710a3d7dbfd41550538e5ae4cb6a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_REV</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga5d8e1d4f74f50386438f79c7183cbe2e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL_SERIAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga9c31b33e44c66750b9eb417f66000c9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_SWITCH_STATE_SEL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga1e7a29931d0beb5d2aae63ef42462e86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gabb49f79ea3f15f48412b98bc4ef06adf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gafc675bfb6a1e6fefef9c7aec0c0fe849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_ACTIVATE_BIT_TIMING</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gaa3261c8b3029cc6114e95f6b43ea2a5a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga8bfa4b115106afe1bb3424722105c062</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_IDENT_SLAVE</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga6cd0e8c53abcbe4825093f17032b5c81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_IDENT_FASTSCAN</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gaa9d991fcc13d2c90c12364e5e3957dca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_VENDOR</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga6e95edeb411eb1bb21608eacdb2d1acd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_PRODUCT</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>gae1e41835d8dfe6b5f155e98ef363ef38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_REV</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga83c7ff9e9cfa47731cbdc49e00850bd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_SERIAL</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga0119234af44445f158beff2fa415a3fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_INQUIRE_NODE_ID</name>
+      <anchorfile>group__CO__LSS__command__specifiers.html</anchorfile>
+      <anchor>ga394e2ac8ecd5c8298f4b3a96a4ffd8b4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_CFG_NODE_ID_status</name>
+    <title>CO_LSS_CFG_NODE_ID status</title>
+    <filename>group__CO__LSS__CFG__NODE__ID__status.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_OK</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga7cf13a616ca85bc341b4932671b5a22c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_OUT_OF_RANGE</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga396ffc682ed4ab412516fdd7925f5986</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_NODE_ID_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__NODE__ID__status.html</anchorfile>
+      <anchor>ga84444dba0a6ca2686e97c351b0d381c4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_CFG_BIT_TIMING_status</name>
+    <title>CO_LSS_CFG_BIT_TIMING status</title>
+    <filename>group__CO__LSS__CFG__BIT__TIMING__status.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_OK</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>ga08bb01bb767885c5a7ad2f0e1fc6a81c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_OUT_OF_RANGE</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>gad00e94454c96c7c8f845b7d343bc5fd8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_BIT_TIMING_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__BIT__TIMING__status.html</anchorfile>
+      <anchor>gaaaa5e85127a6518cb19cd145e08abe58</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_CFG_STORE_status</name>
+    <title>CO_LSS_CFG_STORE status</title>
+    <filename>group__CO__LSS__CFG__STORE__status.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_OK</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga57827553bae30795337ebc1cd755c6e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_NOT_SUPPORTED</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga610e24f8857d7f9d19fb1b2ab71d6e9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_FAILED</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>ga7b74e54d16acbefbc52d75a836a799ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_CFG_STORE_MANUFACTURER</name>
+      <anchorfile>group__CO__LSS__CFG__STORE__status.html</anchorfile>
+      <anchor>gac0fa94a53993c2db0d93b88e004b24e3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_FASTSCAN_bitcheck</name>
+    <title>CO_LSS_FASTSCAN bitcheck</title>
+    <filename>group__CO__LSS__FASTSCAN__bitcheck.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_BIT0</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>gaccf21befc8de66023e61f686f963f648</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_BIT31</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>ga35d0858534a061d1b040999778068f3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_CONFIRM</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__bitcheck.html</anchorfile>
+      <anchor>ga267b5f4f13b1941c6cdd9e60d1e0fa06</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_FASTSCAN_lssSub_lssNext</name>
+    <title>CO_LSS_FASTSCAN lssSub lssNext</title>
+    <filename>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_VENDOR_ID</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gaf0d23bd4558fc52ea56b4597276ba894</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_PRODUCT</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gad77efc79b9cc4987b52e15819359495a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_REV</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>ga3221c4f9d11dbea59231a01e055482c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_FASTSCAN_SERIAL</name>
+      <anchorfile>group__CO__LSS__FASTSCAN__lssSub__lssNext.html</anchorfile>
+      <anchor>gaf5b841cadc941f89e6eebaeda3c5a23f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_STATE_state</name>
+    <title>CO_LSS_STATE state</title>
+    <filename>group__CO__LSS__STATE__state.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_STATE_WAITING</name>
+      <anchorfile>group__CO__LSS__STATE__state.html</anchorfile>
+      <anchor>gab818ea1e408b8423094839ec78768357</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_STATE_CONFIGURATION</name>
+      <anchorfile>group__CO__LSS__STATE__state.html</anchorfile>
+      <anchor>gaddff310b53100b7513f64cf77b989a53</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>CO_LSS_BIT_TIMING_table</name>
+    <title>CO_LSS_BIT_TIMING table</title>
+    <filename>group__CO__LSS__BIT__TIMING__table.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_1000</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga2067605e4121809abcebfa205d1c5a5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_800</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga79817642673f433786cee27a98a87f55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_500</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaaeb143f598440bfab79291dee0e17466</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_250</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga45f17b780ed991eabfa55cd01e06c0fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_125</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gac2dc4432f19032bef6c2e5a4830c79ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_50</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaac60a218d0dc887d3f999142624ce9d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_20</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaeb7dc109d27eb0741a7dca6045b21d2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_10</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>ga52db857eaf456578a03752ec43e272e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CO_LSS_BIT_TIMING_AUTO</name>
+      <anchorfile>group__CO__LSS__BIT__TIMING__table.html</anchorfile>
+      <anchor>gaebc493e91101974b0205a2abd7e0c0b8</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -14138,16 +15052,16 @@
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
-      <name>CO_LSSmaster_switchStateSelect</name>
+      <name>CO_LSSmaster_swStateSelect</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>ga41b4288c03af394261541b9a8395e8f3</anchor>
+      <anchor>gae39001f9e0553f2cd8c83924bd0d0a7d</anchor>
       <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, CO_LSS_address_t *lssAddress)</arglist>
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
-      <name>CO_LSSmaster_switchStateDeselect</name>
+      <name>CO_LSSmaster_swStateDeselect</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>gac0e13ec42e1fd85da5ddef6f654ef1a4</anchor>
+      <anchor>gadf5fc6601766a0a12d067e90b048c8af</anchor>
       <arglist>(CO_LSSmaster_t *LSSmaster)</arglist>
     </member>
     <member kind="function">
@@ -14189,8 +15103,8 @@
       <type>CO_LSSmaster_return_t</type>
       <name>CO_LSSmaster_Inquire</name>
       <anchorfile>group__CO__LSSmaster.html</anchorfile>
-      <anchor>ga22414a7184ca0c9d371dd67e9990d820</anchor>
-      <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, CO_LSS_cs_t lssInquireCs, uint32_t *value)</arglist>
+      <anchor>ga156a0b7571b50a97098a66867b173435</anchor>
+      <arglist>(CO_LSSmaster_t *LSSmaster, uint32_t timeDifference_us, uint8_t lssInquireCs, uint32_t *value)</arglist>
     </member>
     <member kind="function">
       <type>CO_LSSmaster_return_t</type>
@@ -14220,10 +15134,10 @@
       <arglist>(CO_LSSslave_t *LSSslave)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static CO_LSS_state_t</type>
+      <type>static uint8_t</type>
       <name>CO_LSSslave_getState</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga2692ff0d6837db494c029a3bef735ee7</anchor>
+      <anchor>ga5dbbd0c6aca32d633728296115de710e</anchor>
       <arglist>(CO_LSSslave_t *LSSslave)</arglist>
     </member>
     <member kind="function">
@@ -14235,23 +15149,23 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initCheckBitRateCallback</name>
+      <name>CO_LSSslave_initCkBitRateCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga665f147d6fae6db71173c4a8d602495c</anchor>
+      <anchor>ga4bb7479dad7c3dc7094965b615912f2f</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, bool_t(*pFunctLSScheckBitRate)(void *object, uint16_t bitRate))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initActivateBitRateCallback</name>
+      <name>CO_LSSslave_initActBitRateCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>ga0253fffcb36ab6b850563328784a8a5a</anchor>
+      <anchor>gab827ffe560453506fb3c33d25eadc88d</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, void(*pFunctLSSactivateBitRate)(void *object, uint16_t delay))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>CO_LSSslave_initCfgStoreCallback</name>
+      <name>CO_LSSslave_initCfgStoreCall</name>
       <anchorfile>group__CO__LSSslave.html</anchorfile>
-      <anchor>gadc6187357904293da0a35317f15d0666</anchor>
+      <anchor>gada95bef94922adcadd328c6c1d3cad40</anchor>
       <arglist>(CO_LSSslave_t *LSSslave, void *object, bool_t(*pFunctLSScfgStore)(void *object, uint8_t id, uint16_t bitRate))</arglist>
     </member>
   </compound>
@@ -14734,39 +15648,39 @@
     </member>
   </compound>
   <compound kind="page">
-    <name>md_doc_CHANGELOG</name>
+    <name>md_MISRA</name>
+    <title>MISRA Compliance</title>
+    <filename>md_MISRA.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md_doc_2CHANGELOG</name>
     <title>Change Log</title>
-    <filename>md_doc_CHANGELOG.html</filename>
+    <filename>md_doc_2CHANGELOG.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_doc_deviceSupport</name>
+    <name>md_doc_2deviceSupport</name>
     <title>Device Support</title>
-    <filename>md_doc_deviceSupport.html</filename>
+    <filename>md_doc_2deviceSupport.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_doc_objectDictionary</name>
+    <name>md_doc_2objectDictionary</name>
     <title>Object Dictionary</title>
-    <filename>md_doc_objectDictionary.html</filename>
-    <docanchor file="md_doc_objectDictionary.html" title="Definitions from CiA 301">definitions-from-cia-301</docanchor>
-    <docanchor file="md_doc_objectDictionary.html" title="Operation">operation</docanchor>
-    <docanchor file="md_doc_objectDictionary.html" title="Object Dictionary Example">object-dictionary-example</docanchor>
-    <docanchor file="md_doc_objectDictionary.html" title="XML Device Description">xml-device-description</docanchor>
-    <docanchor file="md_doc_objectDictionary.html" title="Object Dictionary Requirements By CANopenNode">object-dictionary-requirements-by-canopennode</docanchor>
+    <filename>md_doc_2objectDictionary.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_doc_traceUsage</name>
+    <name>md_doc_2traceUsage</name>
     <title>Trace usage</title>
-    <filename>md_doc_traceUsage.html</filename>
+    <filename>md_doc_2traceUsage.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_example_DS301_profile</name>
+    <name>md_example_2DS301__profile</name>
     <title>CANopen device documentation</title>
-    <filename>md_example_DS301_profile.html</filename>
+    <filename>md_example_2DS301__profile.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>
     <title>CANopenNode</title>
     <filename>index.html</filename>
-    <docanchor file="index.html">md_README</docanchor>
+    <docanchor file="index.html" title="CANopenNode">md_README</docanchor>
   </compound>
 </tagfile>

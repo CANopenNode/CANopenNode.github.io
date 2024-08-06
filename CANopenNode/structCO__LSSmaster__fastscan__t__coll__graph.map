@@ -1,4 +1,5 @@
 <map id="CO_LSSmaster_fastscan_t" name="CO_LSSmaster_fastscan_t">
-<area shape="rect" id="node1" title="Parameters for LSS fastscan CO_LSSmaster_IdentifyFastscan." alt="" coords="5,109,196,136"/>
-<area shape="rect" id="node2" href="$unionCO__LSS__address__t.html" title="The LSS address is a 128 bit number, uniquely identifying each node." alt="" coords="30,5,171,32"/>
+<area shape="rect" id="Node000001" title="Parameters for LSS fastscan CO_LSSmaster_IdentifyFastscan." alt="" coords="5,108,196,133"/>
+<area shape="rect" id="Node000002" href="$unionCO__LSS__address__t.html" title="The LSS address is a 128 bit number, uniquely identifying each node." alt="" coords="30,5,171,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,45,103,108,98,108,98,45"/>
 </map>

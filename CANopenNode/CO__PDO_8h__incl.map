@@ -1,10 +1,22 @@
 <map id="301/CO_PDO.h" name="301/CO_PDO.h">
-<area shape="rect" id="node1" title="CANopen Process Data Object protocol." alt="" coords="144,5,260,32"/>
-<area shape="rect" id="node2" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="119,229,285,256"/>
-<area shape="rect" id="node7" href="$CO__Emergency_8h.html" title="CANopen Emergency protocol." alt="" coords="5,155,164,181"/>
-<area shape="rect" id="node8" href="$CO__SYNC_8h.html" title="CANopen Synchronisation protocol." alt="" coords="239,80,362,107"/>
-<area shape="rect" id="node3" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="139,304,265,331"/>
-<area shape="rect" id="node4" title=" " alt="" coords="57,379,128,405"/>
-<area shape="rect" id="node5" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="152,379,252,405"/>
-<area shape="rect" id="node6" title=" " alt="" coords="277,379,421,405"/>
+<area shape="rect" id="Node000001" title="CANopen Process Data Object protocol." alt="" coords="144,5,260,31"/>
+<area shape="rect" id="Node000002" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="119,225,285,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,31,205,211,199,211,199,31"/>
+<area shape="rect" id="Node000007" href="$CO__Emergency_8h.html" title="CANopen Emergency protocol." alt="" coords="5,152,164,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="194,33,105,143,101,140,190,29"/>
+<area shape="rect" id="Node000008" href="$CO__SYNC_8h.html" title="CANopen Synchronisation protocol." alt="" coords="239,79,362,104"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="219,29,275,68,272,73,216,33"/>
+<area shape="rect" id="Node000003" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="139,299,265,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,251,205,285,199,285,199,251"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="57,372,128,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,326,124,367,121,362,183,322"/>
+<area shape="rect" id="Node000005" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="152,372,252,397"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="205,324,205,358,199,358,199,324"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,372,421,397"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="227,322,314,364,311,368,224,326"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="105,175,172,216,170,220,102,180"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="88,177,92,212,98,231,108,249,132,273,161,290,158,295,129,277,104,252,93,233,87,213,82,178"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="295,106,220,215,216,212,290,103"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="306,104,312,132,316,170,313,212,299,252,277,277,249,295,246,291,273,273,294,249,308,211,310,170,307,132,301,105"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="267,107,133,150,132,145,265,101"/>
 </map>

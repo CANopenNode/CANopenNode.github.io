@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['v0_201_202004_2006_2029_0',['v0.1 - 2004-06-29',['../md_doc_2CHANGELOG.html#autotoc_md60',1,'']]],
+  ['v0_204_202012_2002_2026_1',['v0.4 - 2012-02-26',['../md_doc_2CHANGELOG.html#autotoc_md59',1,'']]],
+  ['v0_205_202015_2010_2020_2',['v0.5 - 2015-10-20',['../md_doc_2CHANGELOG.html#autotoc_md58',1,'']]],
+  ['v1_200_202017_2008_2001_3',['v1.0 - 2017-08-01',['../md_doc_2CHANGELOG.html#autotoc_md57',1,'']]],
+  ['v1_201_202019_2010_2008_4',['v1.1 - 2019-10-08',['../md_doc_2CHANGELOG.html#autotoc_md56',1,'']]],
+  ['v1_202_202019_2010_2008_5',['v1.2 - 2019-10-08',['../md_doc_2CHANGELOG.html#autotoc_md53',1,'']]],
+  ['v1_203_202020_2004_2027_6',['v1.3 - 2020-04-27',['../md_doc_2CHANGELOG.html#autotoc_md49',1,'']]],
+  ['v2_200_202020_2002_2025_7',['v2.0 - 2020-02-25',['../md_doc_2CHANGELOG.html#autotoc_md43',1,'']]],
+  ['v4_200_20current_8',['v4.0 - current',['../md_doc_2CHANGELOG.html#autotoc_md39',1,'']]],
+  ['valid_9',['valid',['../structCO__PDO__common__t.html#ab61fbc79a1c7879cda4ea1cdc45aed7e',1,'CO_PDO_common_t::valid'],['../structCO__SDOclient__t.html#a21e0054c3dd1866a49317775c6a3eefd',1,'CO_SDOclient_t::valid'],['../structCO__SDOserver__t.html#af0123eec52d5c1e9ab9eae941026f6e8',1,'CO_SDOserver_t::valid'],['../structCO__GFC__t.html#aa293e0114f458922503926bc652c1fb2',1,'CO_GFC_t::valid']]],
+  ['validationtime_5fus_10',['validationTime_us',['../structCO__SRDO__t.html#a3b3ee2706a1d105cab2a788e55110364',1,'CO_SRDO_t']]],
+  ['validationtimer_11',['validationTimer',['../structCO__SRDO__t.html#a6fbd4ea26d2ba5031d49404d87ffe727',1,'CO_SRDO_t']]],
+  ['value_12',['value',['../md_example_2DS301__profile.html#autotoc_md110',1,'0x1019 - Synchronous counter overflow value'],['../structCO__trace__t.html#a24fa467aeeb1581c6a3272bd397a2f10',1,'CO_trace_t::value']]],
+  ['value_20assigned_20to_20symbol_20not_20used_13',['Inhibits: previous value assigned to symbol not used',['../md_MISRA.html#autotoc_md32',1,'']]],
+  ['value_20to_20essential_20type_20type_14',['Inhibits: cannot cast essential-type value to essential-type type',['../md_MISRA.html#autotoc_md25',1,'']]],
+  ['value_20used_20in_20boolean_20context_20string_15',['Inhibits: constant value used in Boolean context (string)',['../md_MISRA.html#autotoc_md38',1,'']]],
+  ['valuebuffer_16',['valueBuffer',['../structCO__trace__t.html#abc2f00a5f99453c77dd8515f3526e428',1,'CO_trace_t']]],
+  ['valueprev_17',['valuePrev',['../structCO__trace__t.html#abe713136228c54327c1540b99a1a2fd1',1,'CO_trace_t']]],
+  ['variable_20symbol_20could_20be_20pointer_20to_20const_18',['Inhibits: local variable symbol could be pointer to const',['../md_MISRA.html#autotoc_md29',1,'']]],
+  ['variables_19',['Object Dictionary variables',['../group__CO__critical__sections.html#autotoc_md132',1,'']]],
+  ['versions_20',['Other old versions',['../md_doc_2deviceSupport.html#autotoc_md72',1,'']]],
+  ['via_20addition_20subtraction_21',['Inhibits: performing pointer arithmetic via addition/subtraction',['../md_MISRA.html#autotoc_md28',1,'']]],
+  ['via_20globals_22',['Simple access to OD via globals',['../md_doc_2objectDictionary.html#autotoc_md78',1,'']]],
+  ['void_20to_20other_20pointer_20type_20type_23',['Inhibits: conversion from pointer to void to other pointer type (type)',['../md_MISRA.html#autotoc_md21',1,'']]]
+];

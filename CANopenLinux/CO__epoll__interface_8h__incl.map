@@ -1,7 +1,11 @@
 <map id="CO_epoll_interface.h" name="CO_epoll_interface.h">
-<area shape="rect" id="node1" title="Helper functions for Linux epoll interface to CANopenNode." alt="" coords="154,5,311,32"/>
-<area shape="rect" id="node2" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CANopen_8h.html.html" title=" " alt="" coords="5,80,100,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="124,80,216,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="240,80,351,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="375,80,483,107"/>
+<area shape="rect" id="Node000001" title="Helper functions for Linux epoll interface to CANopenNode." alt="" coords="154,5,311,31"/>
+<area shape="rect" id="Node000002" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CANopen_8h.html" title=" " alt="" coords="5,79,100,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,33,96,76,94,71,203,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="124,79,216,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,33,191,70,187,66,220,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="240,79,351,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="245,29,278,66,274,70,241,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="375,79,483,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="265,28,385,71,383,76,263,33"/>
 </map>

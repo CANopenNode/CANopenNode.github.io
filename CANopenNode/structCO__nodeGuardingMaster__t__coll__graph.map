@@ -1,0 +1,20 @@
+<map id="CO_nodeGuardingMaster_t" name="CO_nodeGuardingMaster_t">
+<area shape="rect" id="Node000001" title="Node Guarding master object." alt="" coords="457,313,653,339"/>
+<area shape="rect" id="Node000002" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="366,225,446,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,255,536,311,534,315,437,260"/>
+<area shape="rect" id="Node000003" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="5,93,143,119"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="75,132,79,167,85,185,95,199,120,219,158,237,258,269,371,293,474,311,473,316,370,299,257,274,156,242,118,223,91,203,80,187,73,168,70,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,129,113,171,137,199,179,214,240,224,366,233,366,238,240,229,177,219,134,204,109,174,84,132"/>
+<area shape="rect" id="Node000004" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="23,5,125,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="77,45,77,93,71,93,71,45"/>
+<area shape="rect" id="Node000005" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="322,5,423,31"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="438,19,479,26,522,39,561,60,593,92,608,121,614,152,613,185,606,217,585,275,565,314,560,312,580,272,601,215,607,184,608,152,603,122,589,95,558,65,520,44,478,31,437,25"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="378,44,387,118,406,225,401,226,382,119,373,45"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="320,37,115,96,113,91,319,32"/>
+<area shape="rect" id="Node000006" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="470,93,579,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="507,130,419,227,415,223,503,127"/>
+<area shape="rect" id="Node000007" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="167,93,293,119"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="222,132,216,167,218,184,225,200,247,213,284,222,366,232,365,237,283,227,245,218,221,203,213,186,210,167,217,131"/>
+<area shape="rect" id="Node000008" href="$structCO__nodeGuardingMasterNode__t.html" title="Node Guarding master &#45; monitored node." alt="" coords="655,225,885,251"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="729,258,585,316,583,311,727,254"/>
+</map>

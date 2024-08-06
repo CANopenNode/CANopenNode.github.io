@@ -6,25 +6,34 @@
 <!-- Title: Emergency producer/consumer Pages: 1 -->
 <svg width="272pt" height="38pt"
  viewBox="0.00 0.00 272.00 38.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34)">
 <title>Emergency producer/consumer</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-34 268,-34 268,4 -4,4"/>
-<!-- Node1 -->
-<g id="node1" class="node">
-<title>Node1</title>
-<g id="a_node1"><a xlink:title="Specified in standard CiA 301.">
-<polygon fill="#bfbfbf" stroke="black" points="264,-30 147,-30 147,0 264,0 264,-30"/>
-<text text-anchor="start" x="155" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Emergency producer</text>
-<text text-anchor="middle" x="205.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/consumer</text>
+<!-- Node2 -->
+<g id="Node000002" class="node">
+<title>Node2</title>
+<g id="a_Node000002"><a xlink:href="group__CO__STACK__CONFIG.html" target="_top" xlink:title="Stack configuration and enabling macros.">
+<polygon fill="white" stroke="#666666" points="111,-24.5 0,-24.5 0,-5.5 111,-5.5 111,-24.5"/>
+<text text-anchor="middle" x="55.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stack configuration</text>
 </a>
 </g>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node">
-<title>Node2</title>
-<g id="a_node2"><a xlink:href="group__CO__STACK__CONFIG.html" target="_top" xlink:title="Stack configuration and enabling macros.">
-<polygon fill="white" stroke="black" points="111,-24.5 0,-24.5 0,-5.5 111,-5.5 111,-24.5"/>
-<text text-anchor="middle" x="55.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stack configuration</text>
+<!-- Node1 -->
+<g id="Node000001" class="node">
+<title>Node1</title>
+<g id="a_Node000001"><a xlink:title="Specified in standard CiA 301">
+<polygon fill="#999999" stroke="#666666" points="264,-30 147,-30 147,0 264,0 264,-30"/>
+<text text-anchor="start" x="155" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Emergency producer</text>
+<text text-anchor="middle" x="205.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/consumer</text>
 </a>
 </g>
 </g>
@@ -35,4 +44,19 @@
 <polygon fill="black" stroke="black" points="121.19,-11.5 111.19,-15 121.19,-18.5 121.19,-11.5"/>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

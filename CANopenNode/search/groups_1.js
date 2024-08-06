@@ -1,18 +1,13 @@
 var searchData=
 [
-  ['canopen_2474',['CANopen',['../group__CO__CANopen.html',1,'']]],
-  ['canopen_20gateway_2475',['CANopen gateway',['../group__CO__STACK__CONFIG__GATEWAY.html',1,'']]],
-  ['canopen_20led_20diodes_2476',['CANopen LED diodes',['../group__CO__STACK__CONFIG__LEDS.html',1,'']]],
-  ['canopen_5f301_2477',['CANopen_301',['../group__CO__CANopen__301.html',1,'']]],
-  ['canopen_5f303_2478',['CANopen_303',['../group__CO__CANopen__303.html',1,'']]],
-  ['canopen_5f304_2479',['CANopen_304',['../group__CO__CANopen__304.html',1,'']]],
-  ['canopen_5f305_2480',['CANopen_305',['../group__CO__CANopen__305.html',1,'']]],
-  ['canopen_5f309_2481',['CANopen_309',['../group__CO__CANopen__309.html',1,'']]],
-  ['canopen_5fextra_2482',['CANopen_extra',['../group__CO__CANopen__extra.html',1,'']]],
-  ['canopen_5fstorage_2483',['CANopen_storage',['../group__CO__CANopen__storage.html',1,'']]],
-  ['command_20syntax_2484',['Command syntax',['../group__CO__CANopen__309__3__Syntax.html',1,'']]],
-  ['common_20definitions_2485',['Common definitions',['../group__CO__STACK__CONFIG__COMMON.html',1,'']]],
-  ['crc_2016_20calculation_2486',['CRC 16 calculation',['../group__CO__STACK__CONFIG__CRC16.html',1,'']]],
-  ['crc_2016_20ccitt_2487',['CRC 16 CCITT',['../group__CO__crc16__ccitt.html',1,'']]],
-  ['critical_20sections_2488',['Critical sections',['../group__CO__critical__sections.html',1,'']]]
+  ['alternative_20to_20the_20heartbeat_20protocol_0',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../group__CO__Node__Guarding.html',1,'']]],
+  ['an_20older_20alternative_20to_20the_20heartbeat_20protocol_1',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../group__CO__Node__Guarding.html',1,'']]],
+  ['and_20hb_20producer_20consumer_2',['NMT master/slave and HB producer/consumer',['../group__CO__STACK__CONFIG__NMT__HB.html',1,'']]],
+  ['and_20heartbeat_3',['NMT and Heartbeat',['../group__CO__NMT__Heartbeat.html',1,'']]],
+  ['and_20master_20objects_4',['CANopen Node Guarding slave and master objects.',['../group__CO__STACK__CONFIG__NODE__GUARDING.html',1,'']]],
+  ['and_20pdo_20producer_20consumer_5',['SYNC and PDO producer/consumer',['../group__CO__STACK__CONFIG__SYNC__PDO.html',1,'']]],
+  ['and_20setters_6',['Getters and setters',['../group__CO__ODgetSetters.html',1,'']]],
+  ['and_20similar_7',['Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar',['../group__uint8__t.html',1,'']]],
+  ['argument_20from_20co_5ffifo_5fcpytok2u8_20function_20and_20similar_8',['Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar',['../group__uint8__t.html',1,'']]],
+  ['ascii_20mapping_9',['Gateway ASCII mapping',['../group__CO__CANopen__309__3.html',1,'']]]
 ];

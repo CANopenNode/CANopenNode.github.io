@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1">
+<tagfile doxygen_version="1.11.0" doxygen_gitid="9b424b03c9833626cd435af22a444888fbbb192d">
   <compound kind="file">
     <name>CO_application.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/</path>
+    <path></path>
     <filename>CO__application_8h.html</filename>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -42,9 +42,9 @@
   </compound>
   <compound kind="file">
     <name>CO_driver_target.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/</path>
+    <path></path>
     <filename>CO__driver__target_8h.html</filename>
-    <includes id="CO__error_8h" name="CO_error.h" local="yes" imported="no">CO_error.h</includes>
+    <includes id="CO__error_8h" name="CO_error.h" local="yes" import="no" module="no" objc="no">CO_error.h</includes>
     <member kind="define">
       <type>#define</type>
       <name>CO_DRIVER_MULTI_INTERFACE</name>
@@ -90,7 +90,7 @@
   </compound>
   <compound kind="file">
     <name>CO_epoll_interface.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/</path>
+    <path></path>
     <filename>CO__epoll__interface_8h.html</filename>
     <class kind="struct">CO_epoll_t</class>
     <class kind="struct">CO_epoll_gtw_t</class>
@@ -181,7 +181,7 @@
   </compound>
   <compound kind="file">
     <name>CO_error.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/</path>
+    <path></path>
     <filename>CO__error_8h.html</filename>
     <class kind="struct">CO_CANinterfaceErrorhandler_t</class>
     <member kind="define">
@@ -268,7 +268,7 @@
   </compound>
   <compound kind="file">
     <name>CO_storageLinux.h</name>
-    <path>/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/</path>
+    <path></path>
     <filename>CO__storageLinux_8h.html</filename>
     <member kind="function">
       <type>CO_ReturnError_t</type>
@@ -474,7 +474,7 @@
   </compound>
   <compound kind="group">
     <name>CO_applicationLinux</name>
-    <title>Application interface to CANopenNode</title>
+    <title>Application interface to CANopenNode Application interface, similar to Arduino,</title>
     <filename>group__CO__applicationLinux.html</filename>
     <file>CO_application.h</file>
     <member kind="function">
@@ -772,14 +772,14 @@
     </member>
   </compound>
   <compound kind="page">
-    <name>md_cocomm_README</name>
+    <name>md_cocomm_2README</name>
     <title>Client socket interface to CANopenNode ASCII command interface</title>
-    <filename>md_cocomm_README.html</filename>
+    <filename>md_cocomm_2README.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>
     <title>CANopenLinux</title>
     <filename>index.html</filename>
-    <docanchor file="index.html">readmeCANopenLinux</docanchor>
+    <docanchor file="index.html" title="CANopenLinux">readmeCANopenLinux</docanchor>
   </compound>
 </tagfile>

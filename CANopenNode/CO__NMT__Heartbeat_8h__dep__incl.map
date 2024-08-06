@@ -1,10 +1,21 @@
 <map id="301/CO_NMT_Heartbeat.h" name="301/CO_NMT_Heartbeat.h">
-<area shape="rect" id="node1" title="CANopen Network management and Heartbeat producer protocol." alt="" coords="185,5,376,32"/>
-<area shape="rect" id="node2" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="217,229,312,256"/>
-<area shape="rect" id="node3" href="$CO__HBconsumer_8h.html" title="CANopen Heartbeat consumer protocol." alt="" coords="31,155,202,181"/>
-<area shape="rect" id="node4" href="$CO__TIME_8h.html" title="CANopen Time&#45;stamp protocol." alt="" coords="149,80,269,107"/>
-<area shape="rect" id="node5" href="$CO__LEDs_8h.html" title="CANopen Indicator specification (CiA 303&#45;3 v1.4.0)" alt="" coords="293,80,413,107"/>
-<area shape="rect" id="node6" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="327,155,509,181"/>
-<area shape="rect" id="node7" href="$CO__SRDO_8h.html" title="CANopen Safety Related Data Object protocol." alt="" coords="487,80,613,107"/>
-<area shape="rect" id="node8" href="$CO__SRDO_8c.html" title="CANopen Safety Related Data Object protocol." alt="" coords="584,155,708,181"/>
+<area shape="rect" id="Node000001" title="CANopen Network management and Heartbeat producer protocol." alt="" coords="270,5,461,31"/>
+<area shape="rect" id="Node000002" href="$CO__HBconsumer_8h.html" title="CANopen Heartbeat consumer protocol." alt="" coords="5,152,176,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,37,252,55,196,81,143,119,104,154,100,150,139,114,193,76,250,50,305,32"/>
+<area shape="rect" id="Node000003" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="363,225,458,251"/>
+<area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="334,40,294,66,256,100,242,119,234,138,234,157,242,176,267,200,298,216,331,227,364,232,363,237,330,232,296,221,264,204,238,179,229,158,229,137,238,116,252,97,290,62,331,35"/>
+<area shape="rect" id="Node000004" href="$CO__Node__Guarding_8h.html" title="CANopen Node Guarding slave and master objects." alt="" coords="251,152,439,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="356,44,345,79,343,119,346,151,341,152,338,119,340,78,351,42"/>
+<area shape="rect" id="Node000005" href="$CO__TIME_8h.html" title="CANopen Time&#45;stamp protocol." alt="" coords="355,79,475,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="383,41,409,77,404,80,379,44"/>
+<area shape="rect" id="Node000006" href="$CO__LEDs_8h.html" title="CANopen Indicator specification (CiA 303&#45;3 v1.4.0)" alt="" coords="499,79,619,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="410,33,528,76,526,81,408,38"/>
+<area shape="rect" id="Node000007" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="565,152,747,177"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="474,30,568,49,606,61,632,77,646,94,653,115,659,151,653,152,648,116,641,97,629,81,604,66,567,54,473,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,178,364,224,362,229,155,183"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="367,186,402,223,398,227,363,189"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="437,114,453,144,457,161,455,178,441,205,424,227,420,223,436,203,449,177,451,161,448,145,432,117"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="539,116,424,227,421,223,535,112"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="587,110,642,150,639,154,584,114"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="604,184,451,228,450,223,603,179"/>
 </map>

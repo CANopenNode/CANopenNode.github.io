@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['led_20indicators_2565',['LED indicators',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LEDs.html',1,'']]],
-  ['lss_2566',['LSS',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LSS.html',1,'']]],
-  ['lss_20master_2567',['LSS Master',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LSSmaster.html',1,'']]],
-  ['lss_20master_2fslave_2568',['LSS master/slave',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__LSS.html',1,'']]],
-  ['lss_20slave_2569',['LSS Slave',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__LSSslave.html',1,'']]]
+  ['h_0',['CO_driver_target.h',['../group__CO__socketCAN__driver__target.html',1,'']]],
+  ['hb_20producer_20consumer_1',['NMT master/slave and HB producer/consumer',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__STACK__CONFIG__NMT__HB.html',1,'']]],
+  ['heartbeat_2',['NMT and Heartbeat',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__NMT__Heartbeat.html',1,'']]],
+  ['heartbeat_20consumer_3',['Heartbeat consumer',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__HBconsumer.html',1,'']]],
+  ['heartbeat_20protocol_4',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenLinux/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]]
 ];

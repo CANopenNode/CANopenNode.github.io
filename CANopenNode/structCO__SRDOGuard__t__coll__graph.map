@@ -1,0 +1,12 @@
+<map id="CO_SRDOGuard_t" name="CO_SRDOGuard_t">
+<area shape="rect" id="Node000001" title="Guard Object for SRDO." alt="" coords="183,200,319,225"/>
+<area shape="rect" id="Node000002" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="21,95,96,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,134,54,155,62,174,80,186,110,195,183,205,182,210,109,200,78,191,58,178,49,156,50,134"/>
+<area shape="rect" id="Node000003" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,44,61,95,56,95,56,44"/>
+<area shape="rect" id="Node000004" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="410,95,505,121"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="423,129,275,202,273,197,421,124"/>
+<area shape="rect" id="Node000005" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="251,5,376,31"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="297,43,280,67,266,94,259,123,254,153,253,200,248,200,249,152,253,122,262,92,276,64,292,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="345,36,440,93,437,98,343,40"/>
+</map>

@@ -1,11 +1,34 @@
 <map id="CO_SRDO_t" name="CO_SRDO_t">
-<area shape="rect" id="node1" title="SRDO object." alt="" coords="425,320,523,347"/>
-<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="357,229,437,256"/>
-<area shape="rect" id="node3" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="327,95,437,121"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="423,5,525,32"/>
-<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="23,5,125,32"/>
-<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="167,95,293,121"/>
-<area shape="rect" id="node8" href="$structCO__SRDOCommPar__t.html" title="SRDO communication parameter." alt="" coords="512,229,673,256"/>
-<area shape="rect" id="node9" href="$structCO__SRDOGuard__t.html" title="Gurad Object for SRDO monitors:" alt="" coords="698,229,834,256"/>
+<area shape="rect" id="Node000001" title="SRDO object." alt="" coords="653,365,750,391"/>
+<area shape="rect" id="Node000002" href="$structCO__SRDOGuard__t.html" title="Guard Object for SRDO." alt="" coords="221,268,357,293"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,304,316,323,335,339,360,349,394,357,480,368,653,374,652,379,480,373,393,362,358,354,332,344,312,327,298,307"/>
+<area shape="rect" id="Node000003" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="21,110,96,135"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="54,149,48,191,50,213,57,233,78,261,101,277,165,300,237,325,312,339,406,352,500,362,653,372,652,377,500,367,406,358,312,344,236,330,163,305,99,281,74,265,52,236,44,214,42,190,48,148"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="59,149,63,192,70,214,83,233,105,245,139,256,221,270,220,275,138,261,103,250,80,237,66,217,58,193,54,149"/>
+<area shape="rect" id="Node000004" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="61,45,61,110,56,110,56,45"/>
+<area shape="rect" id="Node000005" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="431,110,526,135"/>
+<area shape="poly" id="edge19_Node000001_Node000005" title=" " alt="" coords="466,148,450,182,436,222,433,264,438,283,447,301,460,312,480,323,534,342,596,357,653,367,652,372,595,362,532,347,478,328,457,317,443,304,433,285,428,264,431,221,445,179,462,146"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="442,143,413,155,384,160,361,160,340,164,319,178,305,199,296,224,292,268,286,268,291,223,300,197,315,174,338,159,361,155,384,155,411,149,440,138"/>
+<area shape="rect" id="Node000007" href="$structOD__t.html" title="Object Dictionary." alt="" coords="633,268,687,293"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="482,149,491,192,501,214,515,233,538,247,560,250,584,250,614,256,638,265,636,270,613,261,584,256,559,256,536,252,512,237,496,217,486,194,477,150"/>
+<area shape="rect" id="Node000006" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="460,5,585,31"/>
+<area shape="poly" id="edge20_Node000001_Node000006" title=" " alt="" coords="545,40,552,54,559,81,559,106,550,151,547,172,547,192,553,212,567,233,582,244,598,248,631,244,666,240,684,244,701,257,715,284,718,314,714,343,708,366,703,364,709,342,713,314,710,285,697,260,682,249,666,245,632,250,597,254,580,249,563,237,548,214,541,192,541,171,545,150,554,106,553,82,547,56,540,43"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="447,23,403,30,359,43,319,64,301,78,286,95,275,116,268,139,268,189,276,234,287,267,282,269,271,236,262,189,263,139,270,114,282,92,297,74,316,59,357,38,402,25,446,18"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="494,41,482,56,477,84,479,110,473,110,471,84,478,54,489,38"/>
+<area shape="rect" id="Node000008" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="780,268,860,293"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="600,18,647,24,697,37,745,59,786,91,802,113,813,136,824,187,826,234,824,268,819,268,821,234,819,188,808,138,797,115,782,95,742,64,695,43,646,30,599,23"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="670,305,684,340,697,364,692,366,679,342,665,307"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="796,304,717,367,714,363,793,300"/>
+<area shape="rect" id="Node000009" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="1009,110,1146,135"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="1084,149,1084,192,1079,215,1068,236,1035,271,996,300,954,323,910,341,823,365,751,376,750,371,822,359,908,336,952,318,993,295,1031,267,1063,233,1074,213,1079,192,1079,149"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1048,145,840,270,838,266,1046,140"/>
+<area shape="rect" id="Node000010" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="987,5,1088,31"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="1038,44,1041,69,1053,90,1067,108,1063,111,1048,93,1036,70,1032,45"/>
+<area shape="rect" id="Node000011" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="1144,5,1245,31"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="1222,38,1245,62,1262,92,1270,123,1263,153,1238,206,1209,244,1172,274,1121,305,1091,318,1050,330,948,350,751,375,750,369,947,344,1049,325,1089,313,1119,300,1169,270,1205,241,1233,204,1257,151,1264,123,1258,94,1240,65,1218,42"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="1195,45,1184,97,1175,126,1161,153,1141,183,1121,204,1098,220,1066,237,1013,257,957,271,861,281,860,276,956,265,1011,252,1064,232,1095,216,1118,200,1137,180,1156,151,1170,124,1179,95,1190,44"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="1152,39,1124,57,1101,84,1085,111,1081,108,1097,81,1121,53,1149,34"/>
+<area shape="rect" id="Node000012" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="663,110,772,135"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="732,147,777,233,808,266,804,270,772,236,727,149"/>
 </map>

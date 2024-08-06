@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['object_20dictionary_2530',['Object Dictionary',['../md_doc_objectDictionary.html',1,'']]]
+  ['log_0',['Change Log',['../md_doc_2CHANGELOG.html',1,'']]]
 ];

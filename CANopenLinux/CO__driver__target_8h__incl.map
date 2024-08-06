@@ -1,16 +1,32 @@
 <map id="CO_driver_target.h" name="CO_driver_target.h">
-<area shape="rect" id="node1" title="Linux socketCAN specific definitions for CANopenNode." alt="" coords="295,5,439,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,80,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,80,187,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="133,155,203,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="477,80,544,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="569,80,647,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="671,80,755,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="228,155,321,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="345,155,412,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="779,80,871,107"/>
-<area shape="rect" id="node11" href="$CO__error_8h.html" title="CANopenNode Linux socketCAN Error handling." alt="" coords="363,80,453,107"/>
-<area shape="rect" id="node12" title=" " alt="" coords="437,155,505,181"/>
-<area shape="rect" id="node13" title=" " alt="" coords="529,155,599,181"/>
-<area shape="rect" id="node14" href="$CO__error__msgs_8h_source.html" title=" " alt="" coords="624,155,757,181"/>
+<area shape="rect" id="Node000001" title="Linux socketCAN specific definitions for CANopenNode." alt="" coords="295,5,439,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,33,94,81,93,76,312,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,187,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,33,195,77,193,72,330,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="133,152,203,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="352,33,197,146,194,141,349,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="477,79,544,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="391,28,476,70,474,75,389,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="569,79,647,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="406,28,556,72,555,77,405,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="671,79,755,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="425,28,658,75,657,81,424,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="228,152,321,177"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="361,33,292,142,287,139,357,30"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="345,152,412,177"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="364,32,354,64,352,84,353,103,367,139,362,141,348,105,346,84,349,63,359,30"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="779,79,871,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="439,26,766,76,765,81,439,32"/>
+<area shape="rect" id="Node000011" href="$CO__error_8h.html" title="CANopenNode Linux socketCAN Error handling." alt="" coords="363,79,453,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="376,30,397,65,392,68,371,32"/>
+<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="370,107,217,152,216,146,369,101"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="388,106,310,148,307,143,385,102"/>
+<area shape="poly" id="edge15_Node000011_Node000009" title=" " alt="" coords="406,105,391,140,386,138,401,103"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="437,152,505,177"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="420,103,453,140,449,143,416,106"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="529,152,599,177"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="434,102,527,144,525,149,432,106"/>
+<area shape="rect" id="Node000014" href="$CO__error__msgs_8h_source.html" title=" " alt="" coords="624,152,757,177"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="454,101,633,146,631,151,453,107"/>
 </map>

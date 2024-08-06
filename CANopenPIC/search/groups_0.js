@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['basic_20definitions_2409',['Basic definitions',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__dataTypes.html',1,'']]]
+  ['16_20calculation_0',['CRC 16 calculation',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__CRC16.html',1,'']]],
+  ['16_20ccitt_1',['CRC 16 CCITT',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__crc16__ccitt.html',1,'']]]
 ];

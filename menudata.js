@@ -27,7 +27,8 @@ var menudata={children:[
 {text:"CANopenNode",url:"CANopenNode/index.html"},
 {text:"Devices",url:"usergroup0.html",children:[
 {text:"CANopenLinux",url:"CANopenLinux/index.html"},
-{text:"CANopenPIC",url:"CANopenPIC/index.html"}]},
+{text:"CANopenPIC",url:"CANopenPIC/index.html"},
+{text:"CANopenADI",url:"CANopenADI/index.html"}]},
 {text:"Other",url:"usergroup1.html",children:[
 {text:"Related Pages",url:"pages.html"},
 {text:"Data Structures",url:"annotated.html",children:[

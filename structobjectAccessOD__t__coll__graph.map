@@ -1,6 +1,9 @@
 <map id="objectAccessOD_t" name="objectAccessOD_t">
-<area shape="rect" id="node1" title="Object declaration for objectAccessOD." alt="" coords="59,184,197,211"/>
-<area shape="rect" id="node2" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__IO__t.html" title=" " alt="" coords="21,95,96,121"/>
-<area shape="rect" id="node3" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__stream__t.html" title=" " alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node4" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__extension__t.html" title=" " alt="" coords="120,95,245,121"/>
+<area shape="rect" id="Node000001" title="Object declaration for objectAccessOD." alt="" coords="107,181,245,207"/>
+<area shape="rect" id="Node000002" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__extension__t.html" title=" " alt="" coords="5,93,131,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,132,67,145,72,156,87,171,107,181,105,185,84,175,67,159,62,146,60,133"/>
+<area shape="rect" id="Node000003" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__IO__t.html" title=" " alt="" coords="247,93,321,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,133,257,159,236,173,215,184,212,179,234,169,253,155,272,130"/>
+<area shape="rect" id="Node000004" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$structOD__stream__t.html" title=" " alt="" coords="231,5,337,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,45,287,93,281,93,281,45"/>
 </map>

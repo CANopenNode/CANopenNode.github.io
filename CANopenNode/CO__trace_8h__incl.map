@@ -1,9 +1,17 @@
 <map id="extra/CO_trace.h" name="extra/CO_trace.h">
-<area shape="rect" id="node1" title="CANopen trace object for recording variables over time." alt="" coords="91,5,222,32"/>
-<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,229,213,256"/>
-<area shape="rect" id="node6" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="137,80,294,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,304,76,331"/>
-<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,304,200,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="225,304,369,331"/>
-<area shape="rect" id="node7" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="188,155,355,181"/>
+<area shape="rect" id="Node000001" title="CANopen trace object for recording variables over time." alt="" coords="91,5,222,31"/>
+<area shape="rect" id="Node000002" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,225,213,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,32,138,54,127,79,123,115,126,151,143,212,138,213,121,152,118,115,122,78,133,51,146,29"/>
+<area shape="rect" id="Node000006" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="137,79,294,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="168,29,199,67,195,70,164,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,299,76,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,253,72,293,69,289,131,248"/>
+<area shape="rect" id="Node000004" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,299,200,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="153,251,153,285,147,285,147,251"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,299,369,324"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="175,248,262,290,259,295,172,253"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="208,106,178,153,158,213,153,211,173,151,204,103"/>
+<area shape="rect" id="Node000007" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="188,152,355,177"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="227,103,256,140,252,143,222,106"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="253,180,183,221,180,216,250,175"/>
 </map>

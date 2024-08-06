@@ -1,13 +1,36 @@
 <map id="301/CO_Emergency.h" name="301/CO_Emergency.h">
-<area shape="rect" id="node1" title="CANopen Emergency protocol." alt="" coords="408,5,566,32"/>
-<area shape="rect" id="node2" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="313,304,408,331"/>
-<area shape="rect" id="node3" href="$CO__HBconsumer_8h.html" title="CANopen Heartbeat consumer protocol." alt="" coords="31,155,202,181"/>
-<area shape="rect" id="node4" href="$CO__NMT__Heartbeat_8h.html" title="CANopen Network management and Heartbeat producer protocol." alt="" coords="296,80,486,107"/>
-<area shape="rect" id="node8" href="$CO__SRDO_8h.html" title="CANopen Safety Related Data Object protocol." alt="" coords="539,155,664,181"/>
-<area shape="rect" id="node10" href="$CO__PDO_8h.html" title="CANopen Process Data Object protocol." alt="" coords="701,155,817,181"/>
-<area shape="rect" id="node11" href="$CO__SYNC_8h.html" title="CANopen Synchronisation protocol." alt="" coords="698,80,820,107"/>
-<area shape="rect" id="node5" href="$CO__TIME_8h.html" title="CANopen Time&#45;stamp protocol." alt="" coords="203,229,323,256"/>
-<area shape="rect" id="node6" href="$CO__LEDs_8h.html" title="CANopen Indicator specification (CiA 303&#45;3 v1.4.0)" alt="" coords="331,155,451,181"/>
-<area shape="rect" id="node7" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="398,229,579,256"/>
-<area shape="rect" id="node9" href="$CO__SRDO_8c.html" title="CANopen Safety Related Data Object protocol." alt="" coords="654,229,778,256"/>
+<area shape="rect" id="Node000001" title="CANopen Emergency protocol." alt="" coords="442,5,601,31"/>
+<area shape="rect" id="Node000002" href="$CO__HBconsumer_8h.html" title="CANopen Heartbeat consumer protocol." alt="" coords="38,152,208,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="478,38,156,154,154,149,477,33"/>
+<area shape="rect" id="Node000003" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="540,299,634,324"/>
+<area shape="poly" id="edge23_Node000001_Node000003" title=" " alt="" coords="429,21,279,27,198,35,124,49,63,69,39,81,22,96,11,112,8,131,13,152,28,176,42,190,62,204,116,228,184,249,260,266,416,291,540,304,539,309,416,296,259,271,183,254,114,233,60,208,39,194,24,179,8,154,3,131,6,110,18,92,36,77,60,64,123,43,198,30,278,21,428,15"/>
+<area shape="rect" id="Node000004" href="$CO__NMT__Heartbeat_8h.html" title="CANopen Network management and Heartbeat producer protocol." alt="" coords="426,79,617,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="524,44,524,79,519,79,519,44"/>
+<area shape="rect" id="Node000005" href="$CO__Node__Guarding_8h.html" title="CANopen Node Guarding slave and master objects." alt="" coords="233,152,421,177"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="485,39,450,58,415,81,371,119,339,154,335,150,368,115,412,77,448,53,483,35"/>
+<area shape="rect" id="Node000009" href="$CO__PDO_8h.html" title="CANopen Process Data Object protocol." alt="" coords="742,152,858,177"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="557,35,780,150,777,154,555,40"/>
+<area shape="rect" id="Node000010" href="$CO__SYNC_8h.html" title="CANopen Synchronisation protocol." alt="" coords="739,79,862,104"/>
+<area shape="poly" id="edge18_Node000001_Node000010" title=" " alt="" coords="580,31,756,76,755,81,579,37"/>
+<area shape="rect" id="Node000011" href="$CO__SRDO_8h.html" title="CANopen Safety Related Data Object protocol." alt="" coords="934,225,1059,251"/>
+<area shape="poly" id="edge21_Node000001_Node000011" title=" " alt="" coords="615,25,762,44,829,59,875,76,918,111,952,153,978,194,994,224,989,226,973,196,948,156,914,115,872,81,827,64,761,49,614,30"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,179,376,248,545,296,543,301,374,253,167,184"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="445,109,188,155,187,149,444,104"/>
+<area shape="poly" id="edge14_Node000004_Node000003" title=" " alt="" coords="555,110,579,128,600,150,620,185,628,225,630,238,628,251,616,279,600,300,596,297,611,276,623,250,625,238,623,226,615,187,596,154,575,132,552,114"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="479,111,360,154,358,149,477,106"/>
+<area shape="rect" id="Node000006" href="$CO__TIME_8h.html" title="CANopen Time&#45;stamp protocol." alt="" coords="688,225,808,251"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="580,106,627,124,674,150,715,188,743,224,739,227,711,192,671,154,625,129,578,111"/>
+<area shape="rect" id="Node000007" href="$CO__LEDs_8h.html" title="CANopen Indicator specification (CiA 303&#45;3 v1.4.0)" alt="" coords="446,152,566,177"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="519,118,511,152,506,151,514,117"/>
+<area shape="rect" id="Node000008" href="$CO__gateway__ascii_8h.html" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="432,225,614,251"/>
+<area shape="poly" id="edge13_Node000004_Node000008" title=" " alt="" coords="550,111,567,129,580,151,582,174,573,195,557,213,541,227,538,223,554,209,568,192,577,173,575,153,563,132,547,115"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="346,186,375,218,413,248,444,265,477,279,540,298,539,303,476,284,442,270,410,253,372,222,342,190"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="711,259,615,301,612,296,709,254"/>
+<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="468,186,445,199,427,215,418,232,419,240,423,249,446,273,476,289,509,299,540,305,539,310,508,304,474,294,443,277,418,252,413,242,413,231,423,212,442,195,465,181"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="514,190,523,225,518,226,509,191"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="545,259,579,297,575,300,541,263"/>
+<area shape="poly" id="edge17_Node000009_Node000003" title=" " alt="" coords="818,189,830,220,829,237,823,252,810,263,792,273,743,288,635,307,634,302,741,283,790,268,807,259,818,249,824,236,824,221,813,191"/>
+<area shape="poly" id="edge20_Node000010_Node000003" title=" " alt="" coords="835,110,856,128,872,151,876,165,875,180,866,212,845,253,808,272,753,287,635,307,634,302,752,282,806,267,841,249,862,210,870,180,870,165,867,153,852,131,831,114"/>
+<area shape="poly" id="edge19_Node000010_Node000009" title=" " alt="" coords="803,118,803,152,798,152,798,118"/>
+<area shape="poly" id="edge22_Node000011_Node000003" title=" " alt="" coords="920,255,635,304,634,299,919,250"/>
 </map>

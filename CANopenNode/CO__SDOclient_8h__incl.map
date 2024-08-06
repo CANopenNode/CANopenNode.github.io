@@ -1,10 +1,21 @@
 <map id="301/CO_SDOclient.h" name="301/CO_SDOclient.h">
-<area shape="rect" id="node1" title="CANopen Service Data Object &#45; client protocol." alt="" coords="74,5,226,32"/>
-<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="107,229,233,256"/>
-<area shape="rect" id="node6" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="27,155,193,181"/>
-<area shape="rect" id="node7" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="130,80,287,107"/>
-<area shape="rect" id="node8" href="$CO__fifo_8h.html" title="FIFO circular buffer." alt="" coords="269,155,380,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="25,304,96,331"/>
-<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="120,304,220,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="245,304,389,331"/>
+<area shape="rect" id="Node000001" title="CANopen Service Data Object &#45; client protocol." alt="" coords="74,5,226,31"/>
+<area shape="rect" id="Node000002" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="106,225,233,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,33,84,58,39,93,22,113,11,134,9,155,17,176,32,193,51,206,94,224,92,229,49,211,29,197,13,179,4,156,6,132,18,110,36,89,81,54,125,28"/>
+<area shape="rect" id="Node000006" href="$CO__ODinterface_8h.html" title="CANopen Object Dictionary interface." alt="" coords="26,152,193,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,32,131,54,120,79,114,109,112,138,107,138,109,109,115,78,127,51,139,30"/>
+<area shape="rect" id="Node000007" href="$CO__SDOserver_8h.html" title="CANopen Service Data Object &#45; server protocol." alt="" coords="130,79,287,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="162,29,192,67,188,70,157,33"/>
+<area shape="rect" id="Node000008" href="$CO__fifo_8h.html" title="FIFO circular buffer." alt="" coords="269,152,380,177"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="213,28,259,46,282,60,301,77,318,107,325,138,320,139,313,109,297,80,279,64,257,51,211,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,299,96,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="154,253,91,293,88,289,151,248"/>
+<area shape="rect" id="Node000004" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="120,299,220,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="172,251,172,285,167,285,167,251"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="244,299,388,324"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="195,248,282,290,279,295,192,253"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="122,176,153,213,149,217,118,179"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="213,104,214,138,208,178,190,215,185,213,203,177,209,138,207,105"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="194,106,138,146,135,142,191,102"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="301,180,209,222,206,217,299,175"/>
 </map>

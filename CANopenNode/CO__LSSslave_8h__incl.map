@@ -1,8 +1,13 @@
 <map id="305/CO_LSSslave.h" name="305/CO_LSSslave.h">
-<area shape="rect" id="node1" title="CANopen Layer Setting Service &#45; slave protocol." alt="" coords="77,5,223,32"/>
-<area shape="rect" id="node2" href="$CO__LSS_8h.html" title="CANopen Layer Setting Services protocol (common)." alt="" coords="95,80,205,107"/>
-<area shape="rect" id="node3" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,155,213,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,229,76,256"/>
-<area shape="rect" id="node5" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,229,200,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="225,229,369,256"/>
+<area shape="rect" id="Node000001" title="CANopen Layer Setting Service &#45; slave protocol." alt="" coords="77,5,223,31"/>
+<area shape="rect" id="Node000002" href="$CO__LSS_8h.html" title="CANopen Layer Setting Services protocol (common)." alt="" coords="95,79,205,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,31,153,65,147,65,147,31"/>
+<area shape="rect" id="Node000003" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,152,213,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,104,153,138,147,138,147,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,76,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,180,72,220,69,215,131,175"/>
+<area shape="rect" id="Node000005" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,225,200,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="153,178,153,212,147,212,147,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="225,225,369,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="175,175,262,217,259,222,172,180"/>
 </map>

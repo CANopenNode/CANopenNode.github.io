@@ -1,4 +1,5 @@
 <map id="309/CO_gateway_ascii.h" name="309/CO_gateway_ascii.h">
-<area shape="rect" id="node1" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="5,5,187,32"/>
-<area shape="rect" id="node2" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="49,80,143,107"/>
+<area shape="rect" id="Node000001" title="CANopen access from other networks &#45; ASCII mapping (CiA 309&#45;3 DS v3.0.0)" alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="49,79,143,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,44,99,79,93,79,93,44"/>
 </map>

@@ -1,7 +1,12 @@
 <map id="CO_TIME_t" name="CO_TIME_t">
-<area shape="rect" id="node1" title="TIME producer and consumer object." alt="" coords="155,184,247,211"/>
-<area shape="rect" id="node2" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node3" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="133,95,270,121"/>
-<area shape="rect" id="node4" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="151,5,252,32"/>
-<area shape="rect" id="node5" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="295,95,420,121"/>
+<area shape="rect" id="Node000001" title="TIME producer and consumer object." alt="" coords="167,181,259,207"/>
+<area shape="rect" id="Node000002" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="27,93,165,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,130,123,155,144,170,168,180,166,185,142,174,119,159,102,133"/>
+<area shape="rect" id="Node000003" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="5,5,107,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="55,44,60,68,68,81,80,91,76,95,64,84,55,70,50,45"/>
+<area shape="rect" id="Node000004" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="147,5,248,31"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="202,44,215,181,210,181,197,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="166,40,143,57,107,95,103,91,140,53,163,36"/>
+<area shape="rect" id="Node000005" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="311,93,436,119"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="341,128,236,183,234,179,338,123"/>
 </map>

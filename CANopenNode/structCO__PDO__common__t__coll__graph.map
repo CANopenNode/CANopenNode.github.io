@@ -1,13 +1,27 @@
 <map id="CO_PDO_common_t" name="CO_PDO_common_t">
-<area shape="rect" id="node1" title="PDO object, common properties." alt="" coords="571,349,723,376"/>
-<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="285,260,365,287"/>
-<area shape="rect" id="node3" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="167,111,277,137"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="214,5,315,32"/>
-<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="5,111,143,137"/>
-<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="23,5,125,32"/>
-<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="585,5,710,32"/>
-<area shape="rect" id="node11" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="920,111,1015,137"/>
-<area shape="rect" id="node8" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="750,260,825,287"/>
-<area shape="rect" id="node9" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="789,111,895,137"/>
-<area shape="rect" id="node10" href="$structOD__t.html" title="Object Dictionary." alt="" coords="888,260,943,287"/>
+<area shape="rect" id="Node000001" title="PDO object, common properties." alt="" coords="593,347,745,372"/>
+<area shape="rect" id="Node000002" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="325,259,405,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,285,630,344,628,349,418,290"/>
+<area shape="rect" id="Node000003" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="18,110,155,135"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="84,149,82,192,86,214,97,233,111,247,129,259,179,282,243,301,314,316,464,338,593,351,593,356,464,344,313,321,241,306,178,287,127,264,107,251,93,236,81,215,77,192,78,149"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,149,98,193,108,215,123,233,137,241,158,248,212,258,325,267,325,272,211,263,156,253,135,246,120,237,104,217,93,194,85,150"/>
+<area shape="rect" id="Node000004" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="5,5,107,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="57,44,60,69,69,90,80,108,76,111,64,93,55,70,52,44"/>
+<area shape="rect" id="Node000005" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="147,5,248,31"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="200,44,207,96,215,124,228,151,254,185,286,215,346,256,343,261,283,219,250,189,223,153,210,126,202,97,195,45"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="165,40,143,57,117,85,97,111,92,108,112,81,140,53,162,36"/>
+<area shape="rect" id="Node000006" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="311,110,420,135"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="368,149,368,259,363,259,363,149"/>
+<area shape="rect" id="Node000007" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="607,5,732,31"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="671,45,668,235,671,346,666,347,663,235,666,45"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="607,37,546,60,516,76,488,95,457,129,440,161,425,196,399,236,379,260,375,257,395,233,420,193,435,159,453,126,485,91,513,71,544,55,605,32"/>
+<area shape="rect" id="Node000011" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="942,110,1037,135"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="732,31,826,57,930,91,968,107,966,112,928,96,824,62,730,36"/>
+<area shape="rect" id="Node000008" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="772,259,847,284"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="780,294,690,349,687,344,777,289"/>
+<area shape="rect" id="Node000009" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="811,110,917,135"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="867,149,862,191,848,236,827,260,823,257,843,233,857,190,861,149"/>
+<area shape="rect" id="Node000010" href="$structOD__t.html" title="Object Dictionary." alt="" coords="910,259,965,284"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="898,291,798,325,715,349,713,344,797,320,896,285"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="983,149,944,259,939,258,978,147"/>
 </map>

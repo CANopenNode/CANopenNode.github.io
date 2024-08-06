@@ -1,4 +1,5 @@
 <map id="extra/CO_trace.h" name="extra/CO_trace.h">
-<area shape="rect" id="node1" title="CANopen trace object for recording variables over time." alt="" coords="5,5,136,32"/>
-<area shape="rect" id="node2" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="23,80,118,107"/>
+<area shape="rect" id="Node000001" title="CANopen trace object for recording variables over time." alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$CANopen_8h.html" title="Main CANopenNode file." alt="" coords="23,79,118,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
 </map>

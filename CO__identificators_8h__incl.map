@@ -1,4 +1,5 @@
 <map id="demo/CO_identificators.h" name="demo/CO_identificators.h">
-<area shape="rect" id="node1" title="Device identificators for CANopenNode." alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node2" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CO__driver_8h.html.html" title=" " alt="" coords="35,80,162,107"/>
+<area shape="rect" id="Node000001" title="Device identificators for CANopenNode." alt="" coords="5,5,192,31"/>
+<area shape="rect" id="Node000002" href="/home/jani/Dokumenti/CANopen/CANopenDemo/CANopenLinux/CANopenNode/doc/html/CANopenNode.tag$CO__driver_8h.html" title=" " alt="" coords="35,79,162,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,31,101,65,96,65,96,31"/>
 </map>

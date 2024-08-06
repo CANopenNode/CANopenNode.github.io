@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['safety_20related_20data_20objects_20_28srdo_29_2449',['Safety Related Data Objects (SRDO)',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__SRDO.html',1,'']]],
-  ['sdo_20client_2450',['SDO client',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__SDOclient.html',1,'']]],
-  ['sdo_20server_2451',['SDO server',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__SDOserver.html',1,'']]],
-  ['sdo_20server_2fclient_2452',['SDO server/client',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__SDO.html',1,'']]],
-  ['srdo_2453',['SRDO',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__SRDO.html',1,'']]],
-  ['stack_20configuration_2454',['Stack configuration',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG.html',1,'']]],
-  ['sync_2455',['SYNC',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__SYNC.html',1,'']]],
-  ['sync_20and_20pdo_20producer_2fconsumer_2456',['SYNC and PDO producer/consumer',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__SYNC__PDO.html',1,'']]]
+  ['nmt_20and_20heartbeat_0',['NMT and Heartbeat',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__NMT__Heartbeat.html',1,'']]],
+  ['nmt_20control_20bitfield_20for_20nmt_20internal_20state_1',['NMT control bitfield for NMT internal state.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__NMT__control__t.html',1,'']]],
+  ['nmt_20internal_20state_2',['NMT control bitfield for NMT internal state.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__NMT__control__t.html',1,'']]],
+  ['nmt_20master_20slave_20and_20hb_20producer_20consumer_3',['NMT master/slave and HB producer/consumer',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__NMT__HB.html',1,'']]],
+  ['node_20guarding_20an_20older_20alternative_20to_20the_20heartbeat_20protocol_4',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['node_20guarding_20canopen_20node_20guarding_20an_20older_20alternative_20to_20the_20heartbeat_20protocol_5',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['node_20guarding_20slave_20and_20master_20objects_6',['CANopen Node Guarding slave and master objects.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__NODE__GUARDING.html',1,'']]]
 ];

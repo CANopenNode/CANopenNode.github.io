@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['led_20indicators_2438',['LED indicators',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__LEDs.html',1,'']]],
-  ['lss_2439',['LSS',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__LSS.html',1,'']]],
-  ['lss_20master_2440',['LSS Master',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__LSSmaster.html',1,'']]],
-  ['lss_20master_2fslave_2441',['LSS master/slave',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__LSS.html',1,'']]],
-  ['lss_20slave_2442',['LSS Slave',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__LSSslave.html',1,'']]]
+  ['gateway_0',['CANopen gateway',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__GATEWAY.html',1,'']]],
+  ['gateway_20ascii_20mapping_1',['Gateway ASCII mapping',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__309__3.html',1,'']]],
+  ['getters_20and_20setters_2',['Getters and setters',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__ODgetSetters.html',1,'']]],
+  ['gfc_3',['GFC',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__GFC.html',1,'']]],
+  ['guarding_20an_20older_20alternative_20to_20the_20heartbeat_20protocol_4',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['guarding_20canopen_20node_20guarding_20an_20older_20alternative_20to_20the_20heartbeat_20protocol_5',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['guarding_20slave_20and_20master_20objects_6',['CANopen Node Guarding slave and master objects.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__NODE__GUARDING.html',1,'']]]
 ];

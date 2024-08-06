@@ -1,7 +1,11 @@
 <map id="305/CO_LSS.h" name="305/CO_LSS.h">
-<area shape="rect" id="node1" title="CANopen Layer Setting Services protocol (common)." alt="" coords="95,5,205,32"/>
-<area shape="rect" id="node2" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,80,213,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" id="node4" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,155,200,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="225,155,369,181"/>
+<area shape="rect" id="Node000001" title="CANopen Layer Setting Services protocol (common)." alt="" coords="95,5,205,31"/>
+<area shape="rect" id="Node000002" href="$CO__driver_8h.html" title="Interface between CAN hardware and CANopenNode." alt="" coords="87,79,213,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,31,153,65,147,65,147,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,76,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,106,72,147,69,142,131,102"/>
+<area shape="rect" id="Node000004" href="$CO__config_8h.html" title="Configuration macros for CANopenNode." alt="" coords="100,152,200,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="153,104,153,138,147,138,147,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,152,369,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="175,102,262,144,259,148,172,106"/>
 </map>

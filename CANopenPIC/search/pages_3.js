@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trace_20usage_2467',['Trace usage',['../../../CANopenPIC/CANopenNode/doc/html/md_doc_traceUsage.html',1,'']]]
+  ['misra_20compliance_0',['MISRA Compliance',['../../../CANopenPIC/CANopenNode/doc/html/md_MISRA.html',1,'']]]
 ];

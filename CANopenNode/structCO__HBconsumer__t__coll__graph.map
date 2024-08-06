@@ -1,10 +1,20 @@
 <map id="CO_HBconsumer_t" name="CO_HBconsumer_t">
-<area shape="rect" id="node1" title="Heartbeat consumer object." alt="" coords="483,317,626,344"/>
-<area shape="rect" id="node2" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="167,228,247,255"/>
-<area shape="rect" id="node3" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="5,95,115,121"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="133,5,235,32"/>
-<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="261,95,398,121"/>
-<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="279,5,380,32"/>
-<area shape="rect" id="node7" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="488,95,613,121"/>
-<area shape="rect" id="node8" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="775,228,918,255"/>
+<area shape="rect" id="Node000001" title="Heartbeat consumer object." alt="" coords="374,313,517,339"/>
+<area shape="rect" id="Node000002" href="$structCO__EM__t.html" title="Emergency object." alt="" coords="225,225,305,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,254,422,311,420,315,301,259"/>
+<area shape="rect" id="Node000003" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="17,93,154,119"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="86,133,88,166,97,200,114,229,141,248,199,276,260,296,320,309,374,317,373,322,319,314,259,301,197,281,139,253,110,232,92,202,83,167,81,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,131,108,171,123,200,146,215,173,225,226,234,225,239,171,230,144,220,119,203,103,173,89,133"/>
+<area shape="rect" id="Node000004" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="5,5,107,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="56,44,60,68,75,91,71,94,55,70,51,45"/>
+<area shape="rect" id="Node000005" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="147,5,248,31"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="206,43,226,114,253,200,263,224,258,226,248,202,221,116,201,45"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="168,40,143,57,99,95,96,91,140,53,165,36"/>
+<area shape="rect" id="Node000006" href="$structCO__EM__fifo__t.html" title="Fifo buffer for emergency producer and error history." alt="" coords="311,93,420,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="299,122,282,131,269,144,260,164,258,186,264,225,259,225,253,186,255,163,264,141,279,127,296,117"/>
+<area shape="rect" id="Node000007" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="444,93,569,119"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="505,133,491,202,470,266,452,314,447,312,465,264,485,201,500,132"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="431,123,325,145,314,157,308,170,304,185,296,203,277,227,273,224,291,200,299,183,303,168,309,154,323,140,430,118"/>
+<area shape="rect" id="Node000008" href="$structCO__HBconsNode__t.html" title="One monitored node inside CO_HBconsumer_t." alt="" coords="666,225,809,251"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="686,257,485,316,484,311,684,252"/>
 </map>

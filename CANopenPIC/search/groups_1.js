@@ -1,18 +1,13 @@
 var searchData=
 [
-  ['canopen_2410',['CANopen',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen.html',1,'']]],
-  ['canopen_20gateway_2411',['CANopen gateway',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__GATEWAY.html',1,'']]],
-  ['canopen_20led_20diodes_2412',['CANopen LED diodes',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__LEDS.html',1,'']]],
-  ['canopen_5f301_2413',['CANopen_301',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__301.html',1,'']]],
-  ['canopen_5f303_2414',['CANopen_303',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__303.html',1,'']]],
-  ['canopen_5f304_2415',['CANopen_304',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__304.html',1,'']]],
-  ['canopen_5f305_2416',['CANopen_305',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__305.html',1,'']]],
-  ['canopen_5f309_2417',['CANopen_309',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__309.html',1,'']]],
-  ['canopen_5fextra_2418',['CANopen_extra',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__extra.html',1,'']]],
-  ['canopen_5fstorage_2419',['CANopen_storage',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__storage.html',1,'']]],
-  ['command_20syntax_2420',['Command syntax',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__309__3__Syntax.html',1,'']]],
-  ['common_20definitions_2421',['Common definitions',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__COMMON.html',1,'']]],
-  ['crc_2016_20calculation_2422',['CRC 16 calculation',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__CRC16.html',1,'']]],
-  ['crc_2016_20ccitt_2423',['CRC 16 CCITT',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__crc16__ccitt.html',1,'']]],
-  ['critical_20sections_2424',['Critical sections',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__critical__sections.html',1,'']]]
+  ['alternative_20to_20the_20heartbeat_20protocol_0',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['an_20older_20alternative_20to_20the_20heartbeat_20protocol_1',['Node Guarding CANopen Node Guarding, an older alternative to the Heartbeat protocol.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__Node__Guarding.html',1,'']]],
+  ['and_20hb_20producer_20consumer_2',['NMT master/slave and HB producer/consumer',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__NMT__HB.html',1,'']]],
+  ['and_20heartbeat_3',['NMT and Heartbeat',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__NMT__Heartbeat.html',1,'']]],
+  ['and_20master_20objects_4',['CANopen Node Guarding slave and master objects.',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__NODE__GUARDING.html',1,'']]],
+  ['and_20pdo_20producer_20consumer_5',['SYNC and PDO producer/consumer',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__STACK__CONFIG__SYNC__PDO.html',1,'']]],
+  ['and_20setters_6',['Getters and setters',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__ODgetSetters.html',1,'']]],
+  ['and_20similar_7',['Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar',['../../../CANopenPIC/CANopenNode/doc/html/group__uint8__t.html',1,'']]],
+  ['argument_20from_20co_5ffifo_5fcpytok2u8_20function_20and_20similar_8',['Bitfields for status argument from CO_fifo_cpyTok2U8 function and similar',['../../../CANopenPIC/CANopenNode/doc/html/group__uint8__t.html',1,'']]],
+  ['ascii_20mapping_9',['Gateway ASCII mapping',['../../../CANopenPIC/CANopenNode/doc/html/group__CO__CANopen__309__3.html',1,'']]]
 ];

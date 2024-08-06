@@ -1,12 +1,23 @@
 <map id="CO_SDOclient_t" name="CO_SDOclient_t">
-<area shape="rect" id="node1" title="SDO client object." alt="" coords="309,288,433,315"/>
-<area shape="rect" id="node2" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="21,184,96,211"/>
-<area shape="rect" id="node3" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="5,95,112,121"/>
-<area shape="rect" id="node4" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="136,95,237,121"/>
-<area shape="rect" id="node5" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="242,184,379,211"/>
-<area shape="rect" id="node6" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="261,95,363,121"/>
-<area shape="rect" id="node7" href="$structOD__t.html" title="Object Dictionary." alt="" coords="455,184,510,211"/>
-<area shape="rect" id="node8" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="495,95,590,121"/>
-<area shape="rect" id="node9" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="376,5,501,32"/>
-<area shape="rect" id="node10" href="$structCO__fifo__t.html" title="Fifo object." alt="" coords="535,184,617,211"/>
+<area shape="rect" id="Node000001" title="SDO client object." alt="" coords="305,284,429,309"/>
+<area shape="rect" id="Node000002" href="$structOD__t.html" title="Object Dictionary." alt="" coords="185,181,239,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,215,259,237,287,258,335,282,333,286,284,262,255,241,231,219"/>
+<area shape="rect" id="Node000003" href="$structOD__entry__t.html" title="Object Dictionary entry for one OD object." alt="" coords="89,93,183,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,125,185,141,209,180,205,183,181,144,164,129"/>
+<area shape="rect" id="Node000004" href="$structOD__extension__t.html" title="Extension of OD object, which can optionally be specified by application in initialization phase with..." alt="" coords="5,5,131,31"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="57,44,46,69,37,98,36,128,45,156,69,187,98,212,131,234,166,251,239,275,305,287,304,292,238,280,164,256,128,238,94,217,65,190,40,159,31,129,32,97,41,67,52,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,40,129,91,124,94,84,43"/>
+<area shape="rect" id="Node000005" href="$structOD__IO__t.html" title="Structure for input / output on the OD variable." alt="" coords="264,181,339,207"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="312,219,333,258,355,282,351,286,328,262,308,221"/>
+<area shape="rect" id="Node000006" href="$structOD__stream__t.html" title="IO stream structure, used for read/write access to OD variable, part of OD_IO_t." alt="" coords="213,93,320,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="279,131,299,180,294,182,274,133"/>
+<area shape="rect" id="Node000007" href="$structCO__CANmodule__t.html" title="Complete CAN module object." alt="" coords="363,181,501,207"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="419,220,376,285,372,283,415,217"/>
+<area shape="rect" id="Node000008" href="$structCO__CANrx__t.html" title="Configuration object for CAN received message for specific CANopenNode Object." alt="" coords="344,93,445,119"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="393,132,397,156,405,169,416,179,413,183,401,172,392,158,388,133"/>
+<area shape="rect" id="Node000009" href="$structCO__CANtx__t.html" title="Configuration object for CAN transmit message for specific CANopenNode Object." alt="" coords="485,93,587,119"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="538,133,535,163,526,198,511,233,487,262,460,279,430,289,428,284,457,274,484,258,507,230,521,197,529,162,533,132"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="504,128,480,145,443,183,439,179,477,141,501,124"/>
+<area shape="rect" id="Node000010" href="$structCO__fifo__t.html" title="Fifo object." alt="" coords="648,181,731,207"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="662,217,620,241,570,263,498,282,429,292,428,287,497,276,568,257,617,236,659,212"/>
 </map>
