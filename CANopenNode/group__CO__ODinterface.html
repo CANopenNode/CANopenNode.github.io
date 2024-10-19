@@ -309,15 +309,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3715e0a6b15bdf45659e1e01f9fc4e65" id="r_ga3715e0a6b15bdf45659e1e01f9fc4e65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3715e0a6b15bdf45659e1e01f9fc4e65">OD_rwRestart</a> (<a class="el" href="structOD__stream__t.html">OD_stream_t</a> *stream)</td></tr>
 <tr class="memdesc:ga3715e0a6b15bdf45659e1e01f9fc4e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart read or write operation on OD variable.  <br /></td></tr>
 <tr class="separator:ga3715e0a6b15bdf45659e1e01f9fc4e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6201bef4595d40b2ead780d9f7ff0fbc" id="r_ga6201bef4595d40b2ead780d9f7ff0fbc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6201bef4595d40b2ead780d9f7ff0fbc">OD_getFlagsPDO</a> (<a class="el" href="structOD__entry__t.html">OD_entry_t</a> *entry)</td></tr>
-<tr class="memdesc:ga6201bef4595d40b2ead780d9f7ff0fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TPDO request flags for OD entry.  <br /></td></tr>
-<tr class="separator:ga6201bef4595d40b2ead780d9f7ff0fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3164283191a778559f10e331bc9d775" id="r_gac3164283191a778559f10e331bc9d775"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac3164283191a778559f10e331bc9d775">OD_requestTPDO</a> (<a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *flagsPDO, <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex)</td></tr>
-<tr class="memdesc:gac3164283191a778559f10e331bc9d775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request TPDO, to which OD variable is mapped.  <br /></td></tr>
-<tr class="separator:gac3164283191a778559f10e331bc9d775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05f326d1d7244ea65ca1187579090cdd" id="r_ga05f326d1d7244ea65ca1187579090cdd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__CO__dataTypes.html#ga490ee355f57f2815cb1aa4626cf525f7">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga05f326d1d7244ea65ca1187579090cdd">OD_TPDOtransmitted</a> (<a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *flagsPDO, <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex)</td></tr>
-<tr class="memdesc:ga05f326d1d7244ea65ca1187579090cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if requested TPDO was transmitted.  <br /></td></tr>
-<tr class="separator:ga05f326d1d7244ea65ca1187579090cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04808fe9528409e02ca78ff7a4fbee58" id="r_ga04808fe9528409e02ca78ff7a4fbee58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO</a> (<a class="el" href="structOD__entry__t.html">OD_entry_t</a> *entry, <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex)</td></tr>
+<tr class="memdesc:ga04808fe9528409e02ca78ff7a4fbee58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request TPDO, to which OD variable is mapped.  <br /></td></tr>
+<tr class="separator:ga04808fe9528409e02ca78ff7a4fbee58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga600fe82152f8157b5ba7a89e7fdbc9a7" id="r_ga600fe82152f8157b5ba7a89e7fdbc9a7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__CO__dataTypes.html#ga490ee355f57f2815cb1aa4626cf525f7">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga600fe82152f8157b5ba7a89e7fdbc9a7">OD_TPDOtransmitted</a> (<a class="el" href="structOD__entry__t.html">OD_entry_t</a> *entry, <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subIndex)</td></tr>
+<tr class="memdesc:ga600fe82152f8157b5ba7a89e7fdbc9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if requested TPDO was transmitted.  <br /></td></tr>
+<tr class="separator:ga600fe82152f8157b5ba7a89e7fdbc9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c24b06bb9365d41b8e60acb4eaecc6c" id="r_ga7c24b06bb9365d41b8e60acb4eaecc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__CO__dataTypes.html#ga33594304e786b158f3fb30289278f5af">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7c24b06bb9365d41b8e60acb4eaecc6c">OD_getSDOabCode</a> (<a class="el" href="#ga0e9afd8ad27de0920d1fe0738834869c">ODR_t</a> returnCode)</td></tr>
 <tr class="memdesc:ga7c24b06bb9365d41b8e60acb4eaecc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SDO abort code from returnCode.  <br /></td></tr>
 <tr class="separator:ga7c24b06bb9365d41b8e60acb4eaecc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -710,7 +707,7 @@ Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>Read and write functions may be called from different threads, so critical sections in custom functions must be observed, see <a class="el" href="group__CO__critical__sections.html">Critical sections</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">subIndex</td><td>Sub-index of the variable from the OD object. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">io</td><td>Structure will be populated on success. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">odOrig</td><td>If true, then potential IO extension on entry will be ignored and access to data entry in the original OD location will be returned</td></tr>
@@ -747,7 +744,7 @@ Functions</h2></td></tr>
 <p>Return index from OD entry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>.</td></tr>
+    <tr><td class="paramname">entry</td><td>Object Dictionary entry.</td></tr>
   </table>
   </dd>
 </dl>
@@ -824,43 +821,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6201bef4595d40b2ead780d9f7ff0fbc" name="ga6201bef4595d40b2ead780d9f7ff0fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6201bef4595d40b2ead780d9f7ff0fbc">&#9670;&#160;</a></span>OD_getFlagsPDO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * OD_getFlagsPDO </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structOD__entry__t.html">OD_entry_t</a> *</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get TPDO request flags for OD entry. </p>
-<p>flagsPDO can be used for <a class="el" href="#gac3164283191a778559f10e331bc9d775">OD_requestTPDO()</a> or <a class="el" href="#ga05f326d1d7244ea65ca1187579090cdd">OD_TPDOtransmitted()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to flagsPDO </dd></dl>
-
-</div>
-</div>
-<a id="gac3164283191a778559f10e331bc9d775" name="gac3164283191a778559f10e331bc9d775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac3164283191a778559f10e331bc9d775">&#9670;&#160;</a></span>OD_requestTPDO()</h2>
+<a id="ga04808fe9528409e02ca78ff7a4fbee58" name="ga04808fe9528409e02ca78ff7a4fbee58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04808fe9528409e02ca78ff7a4fbee58">&#9670;&#160;</a></span>OD_requestTPDO()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -871,7 +833,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void OD_requestTPDO </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>          <td class="paramname"><span class="paramname"><em>flagsPDO</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structOD__entry__t.html">OD_entry_t</a> *</td>          <td class="paramname"><span class="paramname"><em>entry</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -891,7 +853,7 @@ Functions</h2></td></tr>
 <p>TPDO event driven transmission is enabled, if TPDO communication parameter, transmission type is set to 0, 254 or 255. For other transmission types (synchronous) flagPDO bit is ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flagsPDO</td><td>TPDO request flags returned by <a class="el" href="#ga6201bef4595d40b2ead780d9f7ff0fbc">OD_getFlagsPDO</a>. </td></tr>
+    <tr><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramname">subIndex</td><td>subIndex of the OD variable. </td></tr>
   </table>
   </dd>
@@ -899,8 +861,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga05f326d1d7244ea65ca1187579090cdd" name="ga05f326d1d7244ea65ca1187579090cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05f326d1d7244ea65ca1187579090cdd">&#9670;&#160;</a></span>OD_TPDOtransmitted()</h2>
+<a id="ga600fe82152f8157b5ba7a89e7fdbc9a7" name="ga600fe82152f8157b5ba7a89e7fdbc9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga600fe82152f8157b5ba7a89e7fdbc9a7">&#9670;&#160;</a></span>OD_TPDOtransmitted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -911,7 +873,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="group__CO__dataTypes.html#ga490ee355f57f2815cb1aa4626cf525f7">bool_t</a> OD_TPDOtransmitted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__CO__dataTypes.html#gaba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>          <td class="paramname"><span class="paramname"><em>flagsPDO</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structOD__entry__t.html">OD_entry_t</a> *</td>          <td class="paramname"><span class="paramname"><em>entry</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -929,12 +891,12 @@ Functions</h2></td></tr>
 <p>Check if requested TPDO was transmitted. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flagsPDO</td><td>TPDO request flags returned by <a class="el" href="#ga6201bef4595d40b2ead780d9f7ff0fbc">OD_getFlagsPDO</a>. </td></tr>
+    <tr><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramname">subIndex</td><td>subIndex of the OD variable.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return true if event driven TPDO with mapping to OD variable, indicated by flagsPDO and subIndex, was transmitted since last <a class="el" href="#gac3164283191a778559f10e331bc9d775">OD_requestTPDO</a> call. If there was no <a class="el" href="#gac3164283191a778559f10e331bc9d775">OD_requestTPDO</a> call yet and TPDO was transmitted by other event, function also returns true. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true if event driven TPDO with mapping to OD variable, indicated by entry and subIndex, was transmitted since last <a class="el" href="#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO</a> call. If there was no <a class="el" href="#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO</a> call yet and TPDO was transmitted by other event, function also returns true. </dd></dl>
 
 </div>
 </div>
@@ -1000,7 +962,7 @@ Functions</h2></td></tr>
 Read and write functions may be called from different threads, so critical sections in custom functions must be observed, see <a class="el" href="group__CO__critical__sections.html">Critical sections</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>. </td></tr>
+    <tr><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramname">extension</td><td>Extension object, which must be initialized externally. Extension object must exist permanently. If NULL, extension will be removed.</td></tr>
   </table>
   </dd>

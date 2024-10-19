@@ -6,7 +6,7 @@ var searchData=
   ['manufacturer_20software_20version_3',['0x100A - Manufacturer software version',['../md_demo_2demoDevice.html#autotoc_md24',1,'']]],
   ['manufacturer_20specific_20parameters_4',['Manufacturer Specific Parameters',['../md_demo_2demoDevice.html#autotoc_md51',1,'']]],
   ['map_5',['map',['CANopenNode/structCO__trace__t.html#ad6e329507a29f46b41ea6bef210b6502',1,'CO_trace_t']]],
-  ['mapped_20to_20tpdo_20triggers_20its_20sending_6',['OD variable mapped to TPDO triggers its sending',['../md_demo_2README.html#autotoc_md75',1,'']]],
+  ['mapped_6',['Detecting change of state of the OD variable and request TPDO, to which OD variable is mapped',['../md_demo_2README.html#autotoc_md75',1,'']]],
   ['mappedobjectscount_7',['mappedObjectsCount',['CANopenNode/structCO__PDO__common__t.html#a8a45aac4610946b07e343a42e0b54bbd',1,'CO_PDO_common_t::mappedObjectsCount'],['CANopenNode/structCO__SRDO__t.html#ad65e5222801c17762e2ef215b15ced54',1,'CO_SRDO_t::mappedObjectsCount']]],
   ['mapping_8',['PDO Mapping',['../md_demo_2demoDevice.html#autotoc_md10',1,'']]],
   ['mapping_9',['Gateway ASCII mapping',['CANopenNode/group__CO__CANopen__309__3.html',1,'']]],

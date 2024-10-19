@@ -252,7 +252,7 @@ OD object 0x1011 - Restore default parameters</h3>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">storage</td><td>This object will be initialized. It must be defined by application and must exist permanently. </td></tr>
-    <tr><td class="paramname">CANmodule</td><td>CAN device, used for <a class="el" href="group__CO__critical__sections.html#gae91e416633b4df1800e97a2bc02bbeb4">CO_LOCK_OD()</a> macro. </td></tr>
+    <tr><td class="paramname">CANmodule</td><td>CAN device, for optional usage. </td></tr>
     <tr><td class="paramname">OD_1010_StoreParameters</td><td>OD entry for 0x1010 -"Store parameters". Entry is optional, may be NULL. </td></tr>
     <tr><td class="paramname">OD_1011_RestoreDefaultParameters</td><td>OD entry for 0x1011 -"Restore default parameters". Entry is optional, may be NULL. </td></tr>
     <tr><td class="paramname">store</td><td>Pointer to externally defined function, which will store data specified by <a class="el" href="structCO__storage__entry__t.html">CO_storage_entry_t</a>. Function will be called when OD variable 0x1010 will be written. Argument to function is entry, where 'entry-&gt;subIndexOD' equals accessed subIndex. Function returns value from <a class="el" href="group__CO__ODinterface.html#ga0e9afd8ad27de0920d1fe0738834869c">ODR_t</a> : "ODR_OK" in case of success, "ODR_HW" in case of hardware error. </td></tr>

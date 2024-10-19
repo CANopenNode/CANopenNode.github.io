@@ -7,12 +7,13 @@ var searchData=
   ['valuebuffer_4',['valueBuffer',['CANopenNode/structCO__trace__t.html#abc2f00a5f99453c77dd8515f3526e428',1,'CO_trace_t']]],
   ['valueprev_5',['valuePrev',['CANopenNode/structCO__trace__t.html#abe713136228c54327c1540b99a1a2fd1',1,'CO_trace_t']]],
   ['variable_6',['Object oriented access to the OD variable.',['../md_demo_2README.html#autotoc_md68',1,'']]],
-  ['variable_20int32_7',['0x2110 - Variable Int32',['../md_demo_2demoDevice.html#autotoc_md54',1,'']]],
-  ['variable_20int32_20save_8',['0x2111 - Variable Int32 save',['../md_demo_2demoDevice.html#autotoc_md55',1,'']]],
-  ['variable_20mapped_20to_20tpdo_20triggers_20its_20sending_9',['OD variable mapped to TPDO triggers its sending',['../md_demo_2README.html#autotoc_md75',1,'']]],
-  ['variable_20nv_20int32_20auto_20save_10',['0x2112 - Variable NV Int32 auto save',['../md_demo_2demoDevice.html#autotoc_md56',1,'']]],
-  ['variables_20directly_20from_20object_20dictionary_11',['Using global variables directly from Object Dictionary',['../md_demo_2README.html#autotoc_md67',1,'']]],
-  ['version_12',['version',['../md_demo_2demoDevice.html#autotoc_md23',1,'0x1009 - Manufacturer hardware version'],['../md_demo_2demoDevice.html#autotoc_md24',1,'0x100A - Manufacturer software version']]],
-  ['virtual_20can_20device_13',['Virtual CAN device',['../md_test_2test__report.html#autotoc_md125',1,'']]],
-  ['volatile_20storage_14',['Non-volatile storage',['../md_tutorial_2README.html#autotoc_md106',1,'']]]
+  ['variable_20and_20request_20tpdo_20to_20which_20od_20variable_20is_20mapped_7',['Detecting change of state of the OD variable and request TPDO, to which OD variable is mapped',['../md_demo_2README.html#autotoc_md75',1,'']]],
+  ['variable_20int32_8',['0x2110 - Variable Int32',['../md_demo_2demoDevice.html#autotoc_md54',1,'']]],
+  ['variable_20int32_20save_9',['0x2111 - Variable Int32 save',['../md_demo_2demoDevice.html#autotoc_md55',1,'']]],
+  ['variable_20is_20mapped_10',['Detecting change of state of the OD variable and request TPDO, to which OD variable is mapped',['../md_demo_2README.html#autotoc_md75',1,'']]],
+  ['variable_20nv_20int32_20auto_20save_11',['0x2112 - Variable NV Int32 auto save',['../md_demo_2demoDevice.html#autotoc_md56',1,'']]],
+  ['variables_20directly_20from_20object_20dictionary_12',['Using global variables directly from Object Dictionary',['../md_demo_2README.html#autotoc_md67',1,'']]],
+  ['version_13',['version',['../md_demo_2demoDevice.html#autotoc_md23',1,'0x1009 - Manufacturer hardware version'],['../md_demo_2demoDevice.html#autotoc_md24',1,'0x100A - Manufacturer software version']]],
+  ['virtual_20can_20device_14',['Virtual CAN device',['../md_test_2test__report.html#autotoc_md125',1,'']]],
+  ['volatile_20storage_15',['Non-volatile storage',['../md_tutorial_2README.html#autotoc_md106',1,'']]]
 ];

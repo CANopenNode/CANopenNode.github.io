@@ -131,10 +131,10 @@ Reading principle for demonstration</h3>
 Writing principle for demonstration</h3>
 <p>Data bytes are received into device, any number of them. For demonstration purposed data bytes are verified: they must be in sequence 0, 1, ..., 255, 0, 1, ... If not, SDO is aborted. If transfer is successfully finished then internal variable <code>dataSize</code> is set to number of data bytes transferred.</p>
 <h2><a class="anchor" id="autotoc_md75"></a>
-OD variable mapped to TPDO triggers its sending</h2>
-<p>In example we detect change of state of the OD variable. If value changes, then TPDO is triggered, to which that variable is possibly mapped.</p>
-<p><code>CO_application.c</code> shows the principle. In configuration phase extension is added to the OD entry with <code><a class="elRef" href="CANopenNode/group__CO__ODinterface.html#ga41c96feee5da30cd9117a35a307b96e1">OD_extension_init()</a></code>, then <code>flagsPDO</code> are extracted from extension and stored for later use (<code><a class="elRef" href="CANopenNode/group__CO__ODinterface.html#ga6201bef4595d40b2ead780d9f7ff0fbc">OD_getFlagsPDO()</a></code>).</p>
-<p>Inside <code><a class="elRef" href="CANopenLinux/group__CO__applicationLinux.html#ga9781581db25c53072204d12bc432b498">app_programRt()</a></code> function <code><a class="elRef" href="CANopenNode/group__CO__ODinterface.html#gac3164283191a778559f10e331bc9d775">OD_requestTPDO()</a></code> is called on OD variables, when necessary.</p>
+Detecting change of state of the OD variable and request TPDO, to which OD variable is mapped</h2>
+<p>In the example we detect change of state of the OD variable (TPDO COS functionality).</p>
+<p><code>CO_application.c</code> shows the principle. In configuration phase extension is added to the OD entry with <code><a class="elRef" href="CANopenNode/group__CO__ODinterface.html#ga41c96feee5da30cd9117a35a307b96e1">OD_extension_init()</a></code>.</p>
+<p>Inside <code><a class="elRef" href="CANopenLinux/group__CO__applicationLinux.html#ga9781581db25c53072204d12bc432b498">app_programRt()</a></code> function <code><a class="elRef" href="CANopenNode/group__CO__ODinterface.html#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO()</a></code> is called on OD variables, when necessary.</p>
 <p>If OD variable is mapped to any event triggered TPDO, then TPDO will be automatically sent, as specified in its communication parameters.</p>
 <h1><a class="anchor" id="autotoc_md76"></a>
 Run in Linux</h1>

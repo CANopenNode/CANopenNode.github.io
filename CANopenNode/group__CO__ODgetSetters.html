@@ -232,7 +232,7 @@ static <a class="el" href="group__CO__ODinterface.html#ga0e9afd8ad27de0920d1fe07
 <p>Get variable from Object Dictionary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="group__CO__ODinterface.html#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">subIndex</td><td>Sub-index of the variable from the OD object. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">val</td><td>Value will be written here. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">len</td><td>Size of value to retrieve from OD. </td></tr>
@@ -281,7 +281,7 @@ static <a class="el" href="group__CO__ODinterface.html#ga0e9afd8ad27de0920d1fe07
 <p>Set variable in Object Dictionary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="group__CO__ODinterface.html#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>. </td></tr>
+    <tr><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramname">subIndex</td><td>Sub-index of the variable from the OD object. </td></tr>
     <tr><td class="paramname">val</td><td>Pointer to value to write. </td></tr>
     <tr><td class="paramname">len</td><td>Size of value to write. </td></tr>
@@ -326,7 +326,7 @@ static <a class="el" href="group__CO__ODinterface.html#ga0e9afd8ad27de0920d1fe07
 <p>Function always returns "dataOrig" pointer, which points to data in the original OD location. Take care, if IO extension is enabled on OD entry. Take also care that "dataOrig" could be not aligned to data type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>OD entry returned by <a class="el" href="group__CO__ODinterface.html#ga0a7d847e21fb3bf69a378f366f58974e">OD_find()</a>. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">entry</td><td>Object Dictionary entry. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">subIndex</td><td>Sub-index of the variable from the OD object. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">len</td><td>Required length of the variable. If len is different than zero, then actual length of the variable must match len or error is returned. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Error reason is written here in case of error (allow NULL).</td></tr>

@@ -3175,25 +3175,18 @@
       <arglist>(OD_stream_t *stream)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static uint8_t *</type>
-      <name>OD_getFlagsPDO</name>
-      <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>ga6201bef4595d40b2ead780d9f7ff0fbc</anchor>
-      <arglist>(OD_entry_t *entry)</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static void</type>
       <name>OD_requestTPDO</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gac3164283191a778559f10e331bc9d775</anchor>
-      <arglist>(uint8_t *flagsPDO, uint8_t subIndex)</arglist>
+      <anchor>ga04808fe9528409e02ca78ff7a4fbee58</anchor>
+      <arglist>(OD_entry_t *entry, uint8_t subIndex)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool_t</type>
       <name>OD_TPDOtransmitted</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>ga05f326d1d7244ea65ca1187579090cdd</anchor>
-      <arglist>(uint8_t *flagsPDO, uint8_t subIndex)</arglist>
+      <anchor>ga600fe82152f8157b5ba7a89e7fdbc9a7</anchor>
+      <arglist>(OD_entry_t *entry, uint8_t subIndex)</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>
@@ -13215,25 +13208,18 @@
       <arglist>(OD_stream_t *stream)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static uint8_t *</type>
-      <name>OD_getFlagsPDO</name>
-      <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>ga6201bef4595d40b2ead780d9f7ff0fbc</anchor>
-      <arglist>(OD_entry_t *entry)</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static void</type>
       <name>OD_requestTPDO</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>gac3164283191a778559f10e331bc9d775</anchor>
-      <arglist>(uint8_t *flagsPDO, uint8_t subIndex)</arglist>
+      <anchor>ga04808fe9528409e02ca78ff7a4fbee58</anchor>
+      <arglist>(OD_entry_t *entry, uint8_t subIndex)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool_t</type>
       <name>OD_TPDOtransmitted</name>
       <anchorfile>group__CO__ODinterface.html</anchorfile>
-      <anchor>ga05f326d1d7244ea65ca1187579090cdd</anchor>
-      <arglist>(uint8_t *flagsPDO, uint8_t subIndex)</arglist>
+      <anchor>ga600fe82152f8157b5ba7a89e7fdbc9a7</anchor>
+      <arglist>(OD_entry_t *entry, uint8_t subIndex)</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>

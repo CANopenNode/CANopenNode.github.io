@@ -45,8 +45,8 @@ var searchData=
   ['internalstate_42',['internalState',['CANopenNode/structCO__SRDO__t.html#a26258ca7f221820c85b28ea9ba60f292',1,'CO_SRDO_t']]],
   ['inverteddelay_43',['invertedDelay',['CANopenNode/structCO__SRDO__t.html#aeb68df808af0541ab15b7a93ff159725',1,'CO_SRDO_t']]],
   ['io_5faverage_44',['io_average',['../structobjectAccessOD__t.html#ac96b064e8c8ceede60beb64d50ff2088',1,'objectAccessOD_t']]],
-  ['isconsumer_45',['isConsumer',['CANopenNode/structCO__TIME__t.html#aeea1ecdf76e04f37c1d760eee72a1395',1,'CO_TIME_t']]],
-  ['isproducer_46',['isProducer',['CANopenNode/structCO__SYNC__t.html#af37a656db91d31a8187e0350f472ea36',1,'CO_SYNC_t::isProducer'],['CANopenNode/structCO__TIME__t.html#a691d02cb2128a81f4af345165146b761',1,'CO_TIME_t::isProducer']]],
-  ['isrpdo_47',['isRPDO',['CANopenNode/structCO__PDO__common__t.html#a5686c3f49b9c073bfd374501b65ca127',1,'CO_PDO_common_t']]],
-  ['its_20sending_48',['OD variable mapped to TPDO triggers its sending',['../md_demo_2README.html#autotoc_md75',1,'']]]
+  ['is_20mapped_45',['Detecting change of state of the OD variable and request TPDO, to which OD variable is mapped',['../md_demo_2README.html#autotoc_md75',1,'']]],
+  ['isconsumer_46',['isConsumer',['CANopenNode/structCO__TIME__t.html#aeea1ecdf76e04f37c1d760eee72a1395',1,'CO_TIME_t']]],
+  ['isproducer_47',['isProducer',['CANopenNode/structCO__SYNC__t.html#af37a656db91d31a8187e0350f472ea36',1,'CO_SYNC_t::isProducer'],['CANopenNode/structCO__TIME__t.html#a691d02cb2128a81f4af345165146b761',1,'CO_TIME_t::isProducer']]],
+  ['isrpdo_48',['isRPDO',['CANopenNode/structCO__PDO__common__t.html#a5686c3f49b9c073bfd374501b65ca127',1,'CO_PDO_common_t']]]
 ];

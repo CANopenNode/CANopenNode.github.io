@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <li>Data from OD variables are accessed via <a class="el" href="structOD__IO__t.html">OD_IO_t</a> read()/write() functions, which gives a great usefulness to the application.</li>
 <li>For systems with very low memory and processing capabilities there is a simplified <a class="el" href="group__CO__STACK__CONFIG__SYNC__PDO.html#gaa20d1b49249b7f5a15963cc1a4611be9">CO_CONFIG_PDO</a> option, where instead of read()/write() access, PDO data are copied directly to/from memory locations of OD variables.</li>
 <li>After RPDO is received from CAN bus, its data are copied to internal buffer (inside fast CAN receive interrupt). Function <a class="el" href="#gab6a3093f7664ce862c935b2e17d619e4" title="Process received PDO messages.">CO_RPDO_process()</a> (called by application) copies data to the mapped objects in the Object Dictionary. Synchronous RPDOs are processed AFTER reception of the next SYNC message.</li>
-<li>Function <a class="el" href="#ga2a4c4e70cea8797b4165e7d9783a876e" title="Process transmitting PDO messages.">CO_TPDO_process()</a> (called by application) sends TPDO when necessary. There are different transmission types possible, controlled by: SYNC message, event timer, <a class="el" href="#ga83b48c441965596e6d693f879c076ae4">CO_TPDOsendRequest()</a> by application or <a class="el" href="group__CO__ODinterface.html#gac3164283191a778559f10e331bc9d775">OD_requestTPDO()</a>, where application can request TPDO for OD variable mapped to any of them. In later case application may, for example, monitor change of state of the OD variable and indicate TPDO request on it.</li>
+<li>Function <a class="el" href="#ga2a4c4e70cea8797b4165e7d9783a876e" title="Process transmitting PDO messages.">CO_TPDO_process()</a> (called by application) sends TPDO when necessary. There are different transmission types possible, controlled by: SYNC message, event timer, <a class="el" href="#ga83b48c441965596e6d693f879c076ae4">CO_TPDOsendRequest()</a> by application or <a class="el" href="group__CO__ODinterface.html#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO()</a>, where application can request TPDO for OD variable mapped to any of them. In later case application may, for example, monitor change of state of the OD variable and indicate TPDO request on it.</li>
 </ul>
 <p><a class="anchor" id="CO_PDO_CAN_ID"></a></p>
 <h3><a class="anchor" id="autotoc_md140"></a>
@@ -554,7 +554,7 @@ CAN identifiers for PDO</h3>
 </div><div class="memdoc">
 
 <p>Request transmission of TPDO message. </p>
-<p>If TPDO transmission type is 0, 254 or 255, then TPDO will be sent by <a class="el" href="#ga2a4c4e70cea8797b4165e7d9783a876e">CO_TPDO_process()</a> after inhibit timer expires. See also <a class="el" href="group__CO__ODinterface.html#gac3164283191a778559f10e331bc9d775">OD_requestTPDO()</a> and <a class="el" href="group__CO__ODinterface.html#ga05f326d1d7244ea65ca1187579090cdd">OD_TPDOtransmitted()</a>.</p>
+<p>If TPDO transmission type is 0, 254 or 255, then TPDO will be sent by <a class="el" href="#ga2a4c4e70cea8797b4165e7d9783a876e">CO_TPDO_process()</a> after inhibit timer expires. See also <a class="el" href="group__CO__ODinterface.html#ga04808fe9528409e02ca78ff7a4fbee58">OD_requestTPDO()</a> and <a class="el" href="group__CO__ODinterface.html#ga600fe82152f8157b5ba7a89e7fdbc9a7">OD_TPDOtransmitted()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TPDO</td><td>TPDO object. </td></tr>
